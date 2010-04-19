@@ -1,0 +1,157 @@
+.headerInfoInf a{
+	font-family: "Arial";
+	color: #9cc342;
+	text-decoration: none;
+}
+
+a.link{
+	color: #9cc342;
+	font-weight: bold;
+}
+
+a.link:hover{
+	color: green;
+	font-weight: bold;
+}
+
+a.more{
+	color: #9cc342;
+	font-weight: bold;
+	float: right;
+	margin-right: 30px;
+	margin-top: -12px;
+}
+
+a.more:hover{
+	color: green;
+}
+
+.moreICCA p{
+	margin-top: 20px;
+	float: right;
+	margin-right: -30px;
+}
+
+.imageContainer p{
+	color: #9cc342;
+	margin-top: 3px;
+	margin-left: 8px; 
+}
+
+h2{
+	margin-top: 20px;
+	margin-bottom: 6px;
+	color: black;
+	font-family: "Arial";
+	font-size: 24px;
+}
+
+h2.newsColumn{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 14px;
+	color: black;
+	font-family: "Arial";
+	font-size: 24px;
+}
+
+p{
+	color: gray;
+}
+
+p.newsColumn{
+	margin-left: 14px;
+	margin-right: 30px;
+	margin-top: 0px;
+	color: gray;
+}
+
+p.latestNewDate{
+	margin-left: 14px;
+	margin-top: 0px;
+	margin-bottom: -2px;
+	color: gray;
+}
+
+p.latestNew{
+	margin-left: 14px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+p.latestNew a{
+	text-decoration: none;
+	color: black;
+}
+
+.headerTitleSub{
+	font-family: "Arial";
+	font-size: 26px;
+	color: white;
+	margin-top: -20px;
+}
+
+.footerInfo a{
+	color:gray;
+	font-weight: bold;
+}
+
+.footerInfo a:hover{
+	color:black;
+}
+
+.footerInfo p{
+	margin-top: 14px;
+	margin-left: 332px;
+}
+
+.titlesTables{
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 6px;
+	margin-top: 5px;
+}
+
+.razorTables{
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.titlesTables a{
+	text-decoration: none;
+	color: black;
+}
+
+.titlesTables a:hover{
+	color: #9cc342;
+}
+
+.razorTables a{
+	text-decoration: none;
+	color: black;
+}
+
+.razorTables a:hover{
+	color: #9cc342;
+}
+
+.ocurrencesTables{
+	margin-left: 6px;
+	margin-top: -30px;
+	color: silver;
+}
+
+.countryTables{
+	margin-top: -30px;
+}
+
+.countryTables a{
+	color: silver;
+	text-decoration: none;
+}
+
+.countryTables a:hover{
+	color: green;
+	text-decoration: none;
+}

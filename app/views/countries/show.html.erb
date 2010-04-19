@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @country.name %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%=h @country.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%=h @country.lon %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @country.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>
