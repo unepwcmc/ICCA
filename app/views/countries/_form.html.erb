@@ -1,27 +1,8 @@
-<% form_for(@country) do |f| %>
+<% semantic_form_for @country do |f| %>
     <%= f.error_messages %>
-
-    <p>
-      <%= f.label :name %><br />
-      <%= f.text_field :name %>
-    </p>
-    <p>
-      <%= f.label :lat %><br />
-      <%= f.text_field :lat %>
-    </p>
-    <p>
-      <%= f.label :lon %><br />
-      <%= f.text_field :lon %>
-    </p>
-    <p>
-      <%= f.label :description %><br />
-      <%= f.text_area :description, :class => "bigger_text_area" %>
-    </p>
-    <p>
-      <%= f.label :extended_description %><br />
-      <%= f.text_area :extended_description, :class => "tinyMCE bigger_text_area" %>
-    </p>
-    <p>
-      <%= f.submit 'Create' %>
-    </p>
+    <%= f.inputs :name, :lat, :lon, :description %>
+    <% f.inputs do %>
+        <%= f.input :extended_description, :input_html => {:class => 'tinyMCE'} %>
+    <% end %>
+    <%= f.buttons %>
 <% end %>

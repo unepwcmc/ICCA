@@ -25,6 +25,7 @@ class SitesController < ApplicationController
   # GET /sites/new.xml
   def new
     @site = Site.new
+    @site.country_id = params[:country_id] if params[:country_id].present?
 
     respond_to do |format|
       format.html # new.html.erb

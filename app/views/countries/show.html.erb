@@ -11,7 +11,7 @@
 
 <div class="span-8 last newscountry">
   <div class="new">
-      <h2 class="newsColumn flash-h2">All ICCA Sites in <%= @country.name %> <%= link_to "Add", new_site_path, :class => "textLink" if current_user %></h2>
+      <h2 class="newsColumn flash-h2">All ICCA Sites in <%= @country.name %> <%= link_to "Add", new_country_site_path(@country), :class => "textLink" if current_user %></h2>
       <% @country.sites.each do |site| %>
           <div class="newsColumn span-5 tables">
             <p class="razorTables"><a href="icca.html"><%= site.name %></a></p>

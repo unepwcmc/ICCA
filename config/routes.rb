@@ -1,5 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :sites
 
   map.root :controller => :countries, :action => :index
 
@@ -8,7 +7,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :users
   map.resources :user_sessions
-  map.resources :countries
+  map.resources :countries do |countries|
+    countries.resources :sites, :member => [:new]
+  end
+  map.resources :sites
 
   # The priority is based upon order of creation: first created -> highest priority.
 
