@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('textarea.tinyMCE').tinymce({
+        script_url: '/javascripts/tiny_mce/tiny_mce.js'
+    })
+});
 
 window.onerror=function(desc,page,line,chr){
 /* alert('JavaScript error occurred! \n'

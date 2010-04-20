@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
-  <%= stylesheet_link_tag 'layout' %>
+  <%= stylesheet_link_tag 'global' %>
   <%= stylesheet_link_tag 'typo' %>
   <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print">
   <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
@@ -12,6 +12,7 @@
   <%= javascript_include_tag 'jquery.tools.min' %>
   <%= javascript_include_tag 'jquery.flash' %>
   <%= javascript_include_tag 'jquery.simplemodal' %>
+  <%= javascript_include_tag 'tiny_mce/jquery.tinymce' %>
   <%= javascript_include_tag 'init' %>
   <%= javascript_include_tag 'application' %>
 
@@ -29,9 +30,13 @@
       <ul>
         <li><a href="index.html" class="selected">HOME</a> /</li>
         <li class=""><a href="about.html">ABOUT ICCAs</a> /</li>
-        <li class=""><a href="map.html">ICCA REGISTRY</a> /</li>
+        <li class=""><%= link_to "ICCA REGISTRY", countries_path %> /</li>
         <li class=""><a href="faqs.html">FAQS</a> /</li>
         <li class=""><a href="contact.html">CONTACT US</a></li>
+        <% if current_user %>
+             /
+            <li class=""><%= link_to "LOGOUT", logout_path %></li>
+        <% end %>
       </ul>
     </div>
     <div class="span-24 column headerInfoInf">
