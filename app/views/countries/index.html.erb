@@ -13,7 +13,7 @@
     <div class="span-15 last tableContainer">
       <% @countries.each do |country| %>
           <div class="span-15 last table">
-            <p class="titlesTables"><%= link_to "#{country.name}", country%></p>
+            <p class="titlesTables"><%= link_to "#{country.name}", country%>&nbsp <%= link_to "| Edit", edit_country_path(country) if current_user %></p>
             <p class="textTables"><%= country.description %></p>
           </div>
       <% end %>

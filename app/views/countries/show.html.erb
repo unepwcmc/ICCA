@@ -1,4 +1,10 @@
 <div class="span-15 first articles">
+  <%= link_to 'Edit', edit_country_path(@country), :class => "textLink" if current_user %>
+  <div class="span-15 last article">
+      <%= @country.extended_description %>
+  </div>
+</div>
+<!--<div class="span-15 first articles">
   <div class="span-15 last article">
     <h2 class="flash-h2">The project</h2>
     <p>The Indigenous and Community Conserved Areas Registry project has been developed in response to recent global meetings and is advised by the <a class="textLink" target="_blank" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102">ICCA Consortium</a>, a collaborative group of experts and organizations formed during the 2008 World Conservation Congress. Through a multi-faceted process, this group is gradually working with indigenous and local communities who want to raise awareness of this type of governance and the contributions that their communities are making to conservation. UNEP-WCMC, as a partner in the ICCA Consortium, is playing a key role in building awareness and recognition of ICCAs through developing an interactive registry for ICCAs worldwide.</p>
@@ -24,45 +30,53 @@
         <p class="titlesTables"><a>Philippines</a></p>
         <p class="textTables">The Philippines is composed of more than 7,100 islands and this highly archipelagic nature has given rise to great species diversity and endemism. It has been identified as one of 17 megadiverse countries and one of the 25 global biodiversity hotspots. Out of a population of 85 milion, 12 million people are considered indigenous, a population which includes approximately 110 different ethnolinguistic groups or "cultural communities".</p>
       </div>
-      <div class="span-15 last table"> <!-- empty for inferior line -->
+      <div class="span-15 last table">
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-
-<div class="span-8 last news">
+<div class="span-8 last newscountry">
   <div class="new">
-    <h2 class="newsColumn flash-h2">Countries</h2>
+    <div class="new">
+      <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
+      <ul class="newsList" id="newsList"></ul>
+    </div>
+    <h2 class="newsColumn flash-h2">Publications Links</h2>
     <ul>
-      <li><a class="textLinkRight" href="">México</a></li>
-      <li class="listICCA"><a class="textLinkRight" href="">San Crisanto</a></li>
-      <li><a class="textLinkRight" href="">Fiji</a></li>
-      <li><a class="textLinkRight" href="">Kenya</a></li>
-      <li><a class="textLinkRight" href="">Philippines</a></li>
+      <li>
+        <a class="textLinkRight" href="http://cmsdata.iucn.org/downloads/mesoamerica_cca_study.pdf">Community Conserved Areas in Northern Mesoamerica</a>
+        <p>A Review of Status & needs. Preliminary Report. Global Diversity Foundation, Mesoamerica. Pp.71 Camacho, C., Del Campo, C. & Martin, G. (2007). </p>
+      </li>
+      <li>
+        <a class="textLinkRight" href="http://www.ccmss.org.mx/documentos/areas_naturales_de_conservacin_voluntaria.pdf ">Areas Naturales de Conservacion voluntaria</a>
+        <p class="sinUnderline">Estudio elaborado para la Iniciativa Cuenca. Abril de 2007: pp.23 Salvador Anta, F. (2007)</p>
+      </li>
     </ul>
   </div>
 </div>
-<p>
-  <b>Name:</b>
-  <%=h @country.name %>
-</p>
+<script language="javaScript" type="text/javascript">
+    $(document).ready( function() {
+        var url = "http://search.twitter.com/search.json?callback=?&q=<%= @country.name %> indigenous&rpp=5";
+        // var url = "http://search.twitter.com/search.json?callback=?&rpp=3&q=from:#indigenous";
+        // var url = "http://twitter.com/status/user_timeline/Indigenous.json?count=3&callback=?";
+        $.getJSON(url,function(data){
+            $.each(data.results, function(i, item) {
+                $("#newsList").append('<ul class="newsList"><li class="newTweet"><p class="newsTitular">'+item.text.linkify()+'<a class="textLink" href=""></a></p></li></ul>');
+            });
 
-<p>
-  <b>Lat:</b>
-  <%=h @country.lat %>
-</p>
+        });
 
-<p>
-  <b>Lon:</b>
-  <%=h @country.lon %>
-</p>
+        function twitter_callback (){
+            return true;
+        }
 
-<p>
-  <b>Description:</b>
-  <%=h @country.description %>
-</p>
+        String.prototype.linkify = function() {
+            return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
+                return m.link(m);
+            });
+        };
 
+    });
+</script>
 
-<%= link_to 'Edit', edit_country_path(@country) %> |
-<%= link_to 'Back', countries_path %>

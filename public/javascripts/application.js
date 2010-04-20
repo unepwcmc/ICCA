@@ -1,15 +1,22 @@
 $(document).ready(function(){
     $('textarea.tinyMCE').tinymce({
-        script_url: '/javascripts/tiny_mce/tiny_mce.js'
+        script_url: '/javascripts/tiny_mce/tiny_mce.js',
+        theme:"advanced",
+        mode:"textareas",
+        theme_advanced_blockformats : "p,h2",
+        theme_advanced_disable : "styleselect",
+        theme_advanced_toolbar_location : "top",
+        theme_advanced_toolbar_align : "left",
+        plugins : "safari, autoresize"
     })
 });
 
 window.onerror=function(desc,page,line,chr){
-/* alert('JavaScript error occurred! \n'
-  +'\nError description: \t'+desc
-  +'\nPage address:      \t'+page
-  +'\nLine number:       \t'+line
- );*/
+    /* alert('JavaScript error occurred! \n'
+     +'\nError description: \t'+desc
+     +'\nPage address:      \t'+page
+     +'\nLine number:       \t'+line
+     );*/
 }
 
 $(function(){
