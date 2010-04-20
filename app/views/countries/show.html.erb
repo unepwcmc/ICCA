@@ -1,43 +1,23 @@
+<% content_for :title do %>
+    ICCA Sites in <em><%= @country.name %></em>
+<% end %>
+
 <div class="span-15 first articles">
   <%= link_to 'Edit', edit_country_path(@country), :class => "textLink" if current_user %>
   <div class="span-15 last article">
       <%= @country.extended_description %>
   </div>
 </div>
-<!--<div class="span-15 first articles">
-  <div class="span-15 last article">
-    <h2 class="flash-h2">The project</h2>
-    <p>The Indigenous and Community Conserved Areas Registry project has been developed in response to recent global meetings and is advised by the <a class="textLink" target="_blank" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102">ICCA Consortium</a>, a collaborative group of experts and organizations formed during the 2008 World Conservation Congress. Through a multi-faceted process, this group is gradually working with indigenous and local communities who want to raise awareness of this type of governance and the contributions that their communities are making to conservation. UNEP-WCMC, as a partner in the ICCA Consortium, is playing a key role in building awareness and recognition of ICCAs through developing an interactive registry for ICCAs worldwide.</p>
-    <p>The collection of information will be a collaborative process, ensuring slow but positive support of the concept, and engaging staff at UNEP-WCMC as well as members of the Consortium and consultants in the field. Members of indigenous and local communities will be essential and central contributors to this knowledge base.</p>
-    <p>The Registry, developed in the same structure as the World Database on Protected Areas (WDPA, see <a class="textLink" target="_blank" href="http://www.wdpa.org">www.wdpa.org</a> for more information), will store two types of information that are critical to understanding ICCAs: (1) descriptive information, such as the main habitats within the ICCA and the names of the community or communities living within or near the ICCA, and (2) spatial information, such as the size, location and boundaries of the area.	The Registry will be linked in part to the WDPA for enhanced access to information about protected areas.</p>
-  </div>
-  <div class="span-15 last article">
-    <h2 class="flash-h2">ICCA Countries</h2>
-    <div class="span-15 last tableContainer">
-      <div class="span-15 last table">
-        <p class="titlesTables"><a href="country.html">México</a></p>
-        <p class="textTables">One of the megadiverse countries in the world, it harbours between 60 and 70% of the total biodiversity of the planet. In a country where 80% of the remaining forest land is inhabited and managed by 8,400 communities who own rights to the land and base their livelihoods on the use or trade of the natural resources, community conservation has started to be seen as a long term conservation strategy.</p>
-      </div>
-      <div class="span-15 last tableOther">
-        <p class="titlesTables"><a>Fiji</a></p>
-        <p class="textTables">Fiji, one of the most species-rich countries among the Pacific Islands, comprises 322 volcanic, limestone and sand clay islands surrounded by an estimated 1,000 different coral reef ecosystems, and has one of the highest rates of endemism in the Pacific region. Fiji has a strong community-based resource management tradition, with the majority of land held under customary titles by indigenous Fijians, and has paved the way for integrated conservation efforts addressing both land- and sea-based environmental issues.</p>
-      </div>
-      <div class="span-15 last table">
-        <p class="titlesTables"><a>Kenya</a></p>
-        <p class="textTables">Kenya has diverse regions, ranging from low plains to central highlands, with the Great Rift Valley, a highly fertile plateau, to the east. Kenya's forests are of significant environmental importance, containing 50% of the nation's tree species, 40% of the larger mammals and 30% of the birds. Kenya also contains the infamous "big five" animals of Africa: the lion, leopard, buffalo, rhinoceros and elephant. Community- and privately-conserved areas have proved far more successful at conserving Kenya's valuable wildlife populations than the country's other protected areas.</p>
-      </div>
-      <div class="span-15 last tableOther">
-        <p class="titlesTables"><a>Philippines</a></p>
-        <p class="textTables">The Philippines is composed of more than 7,100 islands and this highly archipelagic nature has given rise to great species diversity and endemism. It has been identified as one of 17 megadiverse countries and one of the 25 global biodiversity hotspots. Out of a population of 85 milion, 12 million people are considered indigenous, a population which includes approximately 110 different ethnolinguistic groups or "cultural communities".</p>
-      </div>
-      <div class="span-15 last table">
-      </div>
-    </div>
-  </div>
-</div> -->
 
 <div class="span-8 last newscountry">
   <div class="new">
+      <h2 class="newsColumn flash-h2">All ICCA Sites in <%= @country.name %> <%= link_to "Add", new_site_path, :class => "textLink" if current_user %></h2>
+      <% @country.sites.each do |site| %>
+          <div class="newsColumn span-5 tables">
+            <p class="razorTables"><a href="icca.html"><%= site.name %></a></p>
+            <p class="countryTables"><%= @country.name %></p>
+          </div>
+      <% end %>
     <div class="new">
       <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
       <ul class="newsList" id="newsList"></ul>

@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @site.name %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%=h @site.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%=h @site.lon %>
+</p>
+
+<p>
+  <b>Extended description:</b>
+  <%=h @site.extended_description %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path %>

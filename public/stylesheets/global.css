@@ -99,6 +99,10 @@ div.menu{
 	height: 346px;
 }
 
+.bigger_text_area{
+    width: 650px;
+}
+
 .flash-h2{
 	letter-spacing: -1px;
 }
@@ -346,7 +350,7 @@ div.menu{
 	background-color: white;
 	border: 1px silver solid;
 	margin-top: 12px;
-	height: 3400px;
+    height: 100%;
 }
 
 .newsicca{
