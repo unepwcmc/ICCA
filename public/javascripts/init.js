@@ -23,7 +23,7 @@ $(document).ready(function() {
     });	
 	
     $('#mapmap').flash({
-        src: 'flash/ICCAMap.swf',
+        src: '/flash/ICCAMap.swf',
         flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},        
         width: 938,
         height: 346

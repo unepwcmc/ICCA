@@ -11,13 +11,14 @@
 
 <div class="span-8 last newscountry">
   <div class="new">
+    <div class="new">
       <h2 class="newsColumn flash-h2">All ICCA Sites in <%= @country.name %> <%= link_to "Add", new_country_site_path(@country), :class => "textLink" if current_user %></h2>
       <% @country.sites.each do |site| %>
-          <div class="newsColumn span-5 tables">
-            <p class="razorTables"><a href="icca.html"><%= site.name %></a></p>
-            <p class="countryTables"><%= @country.name %></p>
-          </div>
+          <ul>
+            <li><%= link_to "#{site.name}", site, :class => "textLinkRight" %></li>
+          </ul>
       <% end %>
+    </div>
     <div class="new">
       <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
       <ul class="newsList" id="newsList"></ul>

@@ -1,23 +1,15 @@
-<p>
-  <b>Name:</b>
-  <%=h @site.name %>
-</p>
+<% content_for :title do %>
+    <em><%= "#{@site.name}, #{@site.country.name}" %></em>
+<% end %>
 
-<p>
-  <b>Lat:</b>
-  <%=h @site.lat %>
-</p>
+<div class="span-15 first articles">
+  <%= link_to 'Edit', edit_site_path(@site), :class => "textLink" if current_user %>
+  <div class="span-15 last article">
+    <%= @site.extended_description %>
+  </div>
+</div>
 
-<p>
-  <b>Lon:</b>
-  <%=h @site.lon %>
-</p>
-
-<p>
-  <b>Extended description:</b>
-  <%=h @site.extended_description %>
-</p>
-
-
-<%= link_to 'Edit', edit_site_path(@site) %> |
-<%= link_to 'Back', sites_path %>
+<div class="span-8 last newscountry">
+  <div class="new">
+  </div>
+</div>
