@@ -1,0 +1,16 @@
+<% semantic_form_for @photo do |f| %>
+    <%= f.error_messages %>
+    <%= f.inputs :title, :description %>
+    <% f.inputs do %>
+        <% if @photoable %>
+            <%= f.input :photoable, :label => "#{@photo.photoable_type}", :as => :select, :collection => @photoable %>
+        <% else %>
+            <%= f.input :photoable, :as => :hidden %>
+        <% end %>
+        <%= f.input :photoable_type, :as => :hidden %>
+    <% end %>
+    <% f.inputs do %>
+        <%= f.input :photoable_type, :as => :hidden %>
+    <% end %>
+    <%= f.buttons %>
+<% end %>

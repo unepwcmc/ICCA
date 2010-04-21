@@ -1,0 +1,18 @@
+<% content_for :title do %>
+    <em><%= controller.controller_name %></em>
+<% end %>
+
+<p>
+  <strong>Title:</strong>
+  <%=h @photo.title %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @photo.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_photo_path(@photo) %> |
+  <%= link_to "Destroy", @photo, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", photos_path %>
+</p>

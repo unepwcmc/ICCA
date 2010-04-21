@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100420104512) do
+ActiveRecord::Schema.define(:version => 20100421090008) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(:version => 20100420104512) do
     t.datetime "updated_at"
     t.text     "extended_description"
     t.integer  "site_id"
+  end
+
+  create_table "photos", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "photoable_id"
+    t.string   "photoable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "sites", :force => true do |t|
