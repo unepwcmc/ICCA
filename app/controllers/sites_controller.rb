@@ -14,6 +14,7 @@ class SitesController < ApplicationController
   # GET /sites/1.xml
   def show
     @site = Site.find(params[:id])
+    @top_images = @site.photos :limit =>3
 
     respond_to do |format|
       format.html # show.html.erb
@@ -82,5 +83,10 @@ class SitesController < ApplicationController
       format.html { redirect_to(sites_url) }
       format.xml  { head :ok }
     end
+  end
+
+  def photos
+    @site = Site.find params[:id]
+    @photos = @site.photos
   end
 end

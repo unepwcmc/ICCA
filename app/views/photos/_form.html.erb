@@ -1,15 +1,12 @@
-<% semantic_form_for @photo do |f| %>
+<% semantic_form_for @photo, :html => {:multipart => true} do |f| %>
     <%= f.error_messages %>
-    <%= f.inputs :title, :description %>
+    <%= f.inputs :title, :description, :image%>
     <% f.inputs do %>
         <% if @photoable %>
             <%= f.input :photoable, :label => "#{@photo.photoable_type}", :as => :select, :collection => @photoable %>
         <% else %>
-            <%= f.input :photoable, :as => :hidden %>
+            <%= f.input :photoable_id, :as => :hidden %>
         <% end %>
-        <%= f.input :photoable_type, :as => :hidden %>
-    <% end %>
-    <% f.inputs do %>
         <%= f.input :photoable_type, :as => :hidden %>
     <% end %>
     <%= f.buttons %>

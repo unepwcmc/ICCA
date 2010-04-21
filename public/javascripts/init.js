@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
 	
     $('#countrymap').flash({
-        src: 'flash/ICCAMap2.swf',
+        src: '/flash/ICCAMap2.swf',
         flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},
         width: 938,
         height: 346

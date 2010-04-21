@@ -2,6 +2,12 @@
     <em><%= "#{@site.name}, #{@site.country.name}" %></em>
 <% end %>
 
+<div class="span-15 last article">
+				<div class="span-1 first imageContainer2"><%= image_tag @top_images[0].image.url if @top_images[0].present? %></div>
+				<div class="span-1 imageContainer2"><%= image_tag @top_images[1].image.url if @top_images[1].present? %></div>
+				<div class="span-1 last imageContainer2"><%= image_tag @top_images[2].image.url if @top_images[2].present? %></div>
+</div>
+
 <div class="span-15 first articles">
   <%= link_to 'Edit', edit_site_path(@site), :class => "textLink" if current_user %>
   <div class="span-15 last article">

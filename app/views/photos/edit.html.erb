@@ -1,4 +1,6 @@
-<% title "Edit Photo" %>
+<% content_for :title do %>
+    Edit <em><%= controller.controller_name.singularize %></em>
+<% end %>
 
 <%= render :partial => 'form' %>
 

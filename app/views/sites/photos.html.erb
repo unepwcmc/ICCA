@@ -1,0 +1,21 @@
+<% content_for :title do %>
+    Photos, <%= link_to "#{@site.name}", @site %>
+<% end %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <% for photo in @photos %>
+      <tr>
+        <td><%=h photo.title %></td>
+        <td><%=h photo.description %></td>
+        <td><%= link_to "Show", photo, :class => "textLink" %></td>
+        <td><%= link_to "Edit", edit_photo_path(photo), :class => "textLink" %></td>
+        <td><%= link_to "Destroy", photo, :class => "textLink", :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Photo", new_photo_path %></p>

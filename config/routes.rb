@@ -14,7 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :countries do |countries|
     countries.resources :sites, :member => [:new]
   end
-  map.resources :sites
+  map.resources :sites, :member => [:photos]
 
   # The priority is based upon order of creation: first created -> highest priority.
 

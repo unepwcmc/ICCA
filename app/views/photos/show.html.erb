@@ -1,7 +1,8 @@
 <% content_for :title do %>
-    <em><%= controller.controller_name %></em>
+    <em><%= controller.controller_name.singularize %></em>
 <% end %>
 
+<%= image_tag @photo.image.url %>
 <p>
   <strong>Title:</strong>
   <%=h @photo.title %>
