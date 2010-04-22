@@ -45,7 +45,8 @@
     </div>
   </div>
   <%= yield :banner %>
-  <div class="span-24 last contentContainer">
+
+  <div class="span-24 last contentContainer<%= "2" if controller.class == SitesController %>">
     <p style="color: green"><%= flash[:notice] %></p>
 
     <%= yield %>

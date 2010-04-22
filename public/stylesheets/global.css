@@ -513,7 +513,7 @@ a.browse {
 
 
 a.right 		{ 
-	background:url(../img/right.png) no-repeat;
+	background:url(/images/right.png) no-repeat;
 	background-position: 0 0px; 
 	clear:right; 
 	margin-right: 0px;
@@ -528,7 +528,7 @@ a.right:active 	{ background-position:0px 0px; }
 
 a.left				{ 
 	margin-left: 0px;
-	background:url(../img/left.png) no-repeat;
+	background:url(/images/left.png) no-repeat;
 	background-position: 0 0px;
 }
  

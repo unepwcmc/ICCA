@@ -2,13 +2,13 @@
     <em><%= "#{@site.name}, #{@site.country.name}" %></em>
 <% end %>
 
-<div class="span-15 last article">
-				<div class="span-1 first imageContainer2"><%= image_tag @top_images[0].image.url if @top_images[0].present? %></div>
-				<div class="span-1 imageContainer2"><%= image_tag @top_images[1].image.url if @top_images[1].present? %></div>
-				<div class="span-1 last imageContainer2"><%= image_tag @top_images[2].image.url if @top_images[2].present? %></div>
-</div>
 
 <div class="span-15 first articles">
+  <div class="span-15 last article">
+    <div class="span-1 first imageContainer2"><%= image_tag @top_images[0].image.url(:medium) if @top_images[0].present? %></div>
+    <div class="span-1 imageContainer2"><%= image_tag @top_images[1].image.url if @top_images[1].present? %></div>
+    <div class="span-1 last imageContainer2"><%= image_tag @top_images[2].image.url if @top_images[2].present? %></div>
+  </div>
   <%= link_to 'Edit', edit_site_path(@site), :class => "textLink" if current_user %>
   <div class="span-15 last article">
     <%= @site.extended_description %>
@@ -17,5 +17,39 @@
 
 <div class="span-8 last newscountry">
   <div class="new">
+    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
+    <div class="gallery">
+      <div class="scrollable" id="infinite">
+        <div class="items">
+          <% i = 0
+             @site.photos.each do |photo| %>
+              <img name="photo<%= i %>" id="photo<%= i %>" src="<%= photo.image.url(:small) %>" onclick="javascript: void showImage('photo<%= i %>','<%= photo.image.url %>')"/>
+          <%  i += 1
+             end %>
+        </div>
+      </div>
+      <div class="rule">
+        <hr class="horiRule"/>
+      </div>
+      <div class="naviButtons">
+        <div class="column">
+          <hr class="verRule"/>
+        </div>
+        <div class="column last">
+          <a class="prevPage browse left"></a>
+        </div>
+        <div class="column">
+          <a class="nextPage browse right"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="basic-modal-content">
+    </div>
+
+    <br clear="all" />
   </div>
 </div>

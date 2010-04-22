@@ -32,7 +32,6 @@ class PhotosController < ApplicationController
   
   def update
     @photo = Photo.find(params[:id])
-    debugger
     if @photo.update_attributes(params[:photo])
       flash[:notice] = "Successfully updated photo."
       redirect_to @photo

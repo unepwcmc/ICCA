@@ -1,4 +1,5 @@
 class SitesController < ApplicationController
+  CONTENTSTRIP = true
   # GET /sites
   # GET /sites.xml
   def index
