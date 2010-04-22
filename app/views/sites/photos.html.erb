@@ -1,19 +1,20 @@
 <% content_for :title do %>
     Photos, <%= link_to "#{@site.name}", @site %>
 <% end %>
-
-<table>
+<table class="crudTable">
   <tr>
+    <th>Image</th>
     <th>Title</th>
     <th>Description</th>
   </tr>
   <% for photo in @photos %>
       <tr>
+        <td><%= image_tag photo.image.url(:medium) %></td>
         <td><%=h photo.title %></td>
         <td><%=h photo.description %></td>
-        <td><%= link_to "Show", photo, :class => "textLink" %></td>
-        <td><%= link_to "Edit", edit_photo_path(photo), :class => "textLink" %></td>
-        <td><%= link_to "Destroy", photo, :class => "textLink", :confirm => 'Are you sure?', :method => :delete %></td>
+        <td><%= link_to "Show", photo, :class => "textLink", :style => "color: #9cc342" %></td>
+        <td><%= link_to "Edit", edit_photo_path(photo), :class => "textLink", :style => "color: #9cc342" %></td>
+        <td><%= link_to "Destroy", photo, :class => "textLink", :style => "color: #9cc342", :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
   <% end %>
 </table>

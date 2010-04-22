@@ -17,7 +17,10 @@
 
 <div class="span-8 last newscountry">
   <div class="new">
-    <h2 class="newsColumn flash-h2">Multimedia resources <%= link_to "Add", new_associated_photo_path(:type => :site, :id => @site.id), :class => "textLinkRight" if current_user  %></h2>
+    <h2 class="newsColumn flash-h2">Multimedia resources
+      <%= link_to "Add | ", new_associated_photo_path(:type => :site, :id => @site.id), :class => "textLinkRight" if current_user  %>
+      <%= link_to "Edit", photos_site_path, :class => "textLinkRight" if current_user  %>
+    </h2>
     <div class="gallery">
       <div class="scrollable" id="infinite">
         <div class="items">
