@@ -6,6 +6,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.login "login", :controller => :user_sessions, :action => :new
   map.logout "logout", :controller => :user_sessions, :action => :destroy
+  map.home "home", :controller => :static, :action => :home
+  map.about "about", :controller => :static, :action => :about
+  map.faqs "faqs", :controller => :static, :action => :faqs
+  map.contact "contact", :controller => :static, :action => :contact
 
   map.new_associated_photo ":type/:id/photos/new", :controller => :photos, :action => :new
 

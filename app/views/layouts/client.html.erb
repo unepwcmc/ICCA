@@ -29,11 +29,11 @@
     <a href="index.html"><div class="span-1 last headerLogo"></div></a>
     <div class="span-1 last menu">
       <ul>
-        <li><a href="index.html" class="selected">HOME</a> /</li>
-        <li class=""><a href="about.html">ABOUT ICCAs</a> /</li>
+        <li class=""><%= link_to "HOME", home_path %> /</li>
+        <li class=""><%= link_to "ABOUT ICCAs", about_path %> /</li>
         <li class=""><%= link_to "ICCA REGISTRY", countries_path %> /</li>
-        <li class=""><a href="faqs.html">FAQS</a> /</li>
-        <li class=""><a href="contact.html">CONTACT US</a></li>
+        <li class=""><%= link_to "FAQS", faqs_path %> /</li>
+        <li class=""><%= link_to "CONTACT", contact_path %> </li>
         <% if current_user %>
             /
             <li class=""><%= link_to "LOGOUT", logout_path %></li>
