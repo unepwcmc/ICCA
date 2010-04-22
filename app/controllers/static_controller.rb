@@ -11,6 +11,7 @@ class StaticController < ApplicationController
   end
 
   def contact
+    get_some_images
   end
 
   private
