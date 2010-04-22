@@ -35,8 +35,8 @@ div.headerInfoInf em{
     color: #9cc342;
 }
 
-div.headerInfoInf a:hover;{
-color: #ffffff;
+div.headerInfoInf a:hover{
+    color: #ffffff;
 }
 
 div.menu{
@@ -84,7 +84,7 @@ div.menu{
 }
 
 .widget{
-    background-image: url(../img/widget.jpg);
+    background-image: url(/images/widget.jpg);
     background-repeat: no-repeat;
     margin-top: 6px;
     margin-left: 6px;
@@ -117,7 +117,7 @@ div.menu{
 }
 
 .widget2{
-    /*background-image: url(../img/widget2.jpg);
+    /*background-image: url(/images/widget2.jpg);
          background-repeat: no-repeat;*/
     margin-top: 6px;
     margin-left: 6px;
@@ -126,7 +126,7 @@ div.menu{
 }
 
 .widget3{
-    /*background-image: url(../img/widget3.jpg);
+    /*background-image: url(/images/widget3.jpg);
          background-repeat: no-repeat;*/
     margin-top: 6px;
     margin-left: 6px;
@@ -384,7 +384,7 @@ div.menu{
 }
 
 .multimedia{
-    background-image: url(../img/multimedia.jpg);
+    background-image: url(/images/multimedia.jpg);
     height: 135px;
     width: 321px;
     margin-left: 14px;
@@ -395,7 +395,7 @@ div.protectedContinents{
 }
 
 .widgetnews{
-    background-image: url(../img/widget4.jpg);
+    background-image: url(/images/widget4.jpg);
     height: 203px;
     width: 337px;
     margin-left: 6px;
@@ -403,21 +403,21 @@ div.protectedContinents{
 }
 
 .participation{
-    background-image: url(../img/participation.jpg);
+    background-image: url(/images/participation.jpg);
     height: 107px;
     width: 322px;
     margin-left: 14px;
 }
 
 .worldmapnews{
-    background-image: url(../img/worldmapsmall.jpg);
+    background-image: url(/images/worldmapsmall.jpg);
     height: 181px;
     width: 320px;
     margin-left: 14px;
 }
 
 .rss{
-    background-image: url(../img/rss.jpg);
+    background-image: url(/images/rss.jpg);
     height: 22px;
     width: 45px;
     float: right;
@@ -432,7 +432,7 @@ div.protectedContinents{
 .worldmap{
     height: 305px;
     width: 589px;
-    background-image: url(../img/worldmap.jpg);
+    background-image: url(/images/worldmap.jpg);
     margin-bottom: 10px;
 }
 
@@ -635,7 +635,7 @@ div#slide-holder div#slide-controls p#slide-nav a{
 div#slide-holder div#slide-controls p#slide-nav a.on{
     background-position:0 -12px;
 }
-div#slide-holder div#slide-controls p#slide-nav a{background-image:url(../img/slide-nav2.png);}
+div#slide-holder div#slide-controls p#slide-nav a{background-image:url(/images/slide-nav2.png);}
 
 #basic-modal-content {display:none;}
 
@@ -646,10 +646,10 @@ div#slide-holder div#slide-controls p#slide-nav a{background-image:url(../img/sl
 #simplemodal-container {height:375px; width:500px; color:#bbb; background-color:#333; border:4px solid #444; }
 #simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; margin-bottom:12px;}
 #simplemodal-container a {color:#ddd;}
-#simplemodal-container a.modalCloseImg {background:url(../img/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container a.modalCloseImg {background:url(/images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
 
 .banner{
-    background-image: url(../img/banner.png);
+    background-image: url(/images/banner.png);
     background-repeat: no-repeat;
     height:126px;
     width:468px;
