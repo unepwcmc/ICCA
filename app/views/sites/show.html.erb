@@ -21,33 +21,7 @@
       <%= link_to "Add | ", new_associated_photo_path(:type => :site, :id => @site.id), :class => "textLinkRight" if current_user  %>
       <%= link_to "Edit", photos_site_path, :class => "textLinkRight" if current_user  %>
     </h2>
-    <div class="gallery">
-      <div class="scrollable" id="infinite">
-        <div class="items">
-          <% i = 0
-             @site.photos.each do |photo| %>
-              <img name="photo<%= i %>" id="photo<%= i %>" src="<%= photo.image.url(:small) %>" onclick="javascript: void showImage('photo<%= i %>','<%= photo.image.url %>')"/>
-          <%  i += 1
-             end %>
-        </div>
-      </div>
-      <div class="rule">
-        <hr class="horiRule"/>
-      </div>
-      <div class="naviButtons">
-        <div class="column">
-          <hr class="verRule"/>
-        </div>
-        <div class="column last">
-          <a class="prevPage browse left"></a>
-        </div>
-        <div class="column">
-          <a class="nextPage browse right"></a>
-        </div>
-
-      </div>
-
-    </div>
+    <%= render :partial => "photos/media_browser" %>
 
 
     <div id="basic-modal-content">

@@ -16,6 +16,7 @@ class SitesController < ApplicationController
   def show
     @site = Site.find(params[:id])
     @top_images = @site.photos :limit =>3
+    @images = @site.photos
 
     respond_to do |format|
       format.html # show.html.erb
