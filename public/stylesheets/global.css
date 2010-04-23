@@ -158,6 +158,26 @@ div.menu{
     background-color: #F4EFEB
 }
 
+.new ol{
+    margin:0;
+    margin-left: 16px;
+}
+.new ol li{
+    margin-left: 12px;
+    margin-top: 4px;
+    margin-right: 25px;
+    color: #666666;
+}
+
+.new ol li a{
+    color: #666666;
+    text-decoration: underline;
+}
+
+.new ol li p.sinUnderline{
+    text-decoration: none;
+}
+
 .new ul{
     margin:0;
     margin-left: 16px;

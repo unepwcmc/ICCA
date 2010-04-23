@@ -11,23 +11,31 @@
 
 <div class="span-15 first articles">
   <div class="span-15 last article">
-    <h2>Instructions for contributing to the Registry</h2>
+    <h2>Contributing to the Registry</h2>
     <p>
       For communities and others who want to contribute to the Registry and benefit from using it, there are several
-      important but simple steps to follow.  These are outlined below as a guide.
+      important but simple steps to follow.  These include discussing participation with others, reading the project
+      information sheet, providing consent, choosing the degree to which your information will be shared with others,
+      completing the questionnaire which informs the Registry, and submitting visual and other materials such as photos,
+      videos, website links and documents.  The instructions below are provided to help guide those who are interested
+      in contributing information about their ICCAs to the Registry.  All information is treated with respect and
+      discretion while adhering to the principles of the UN Declaration on the Rights of Indigenous Peoples.
     </p>
 
-    <h2>Step 1: Discuss among community members the ICCA Registry. </h2>
+
+    <h2>Instructions for contributing to the Registry</h2>
+
+    <h4>Step 1: Discuss among community members the ICCA Registry. </h4>
     <p>
       Members of the community need to review together the benefits and risks of contributing to the Registry so that
       everyone is aware of the process, the challenges, and the potential positive and negative consequences.
     </p>
 
-    <h2>
+    <h4>
       Step 2:  Review the <%= link_to "Free Prior Informed Consent Form", "docs/WDPA%20ICCA%20consent%20form.doc" %>
       and <%= link_to "Project Information Sheet", "docs/WDPA%20ICCA%20info%20sheet.doc" %>, organize a meeting with
       community members to attain key signatures, and return the consent form.
-    </h2>
+    </h4>
     <p>
       The purpose of this consent form is to ensure that indigenous and local communities are aware of the process of
       contributing information about their communities to the Registry, they know how and what information will be used
@@ -37,9 +45,9 @@
       Indigenous Peoples (September 2007) to protect communities and their best interests.
     </p>
 
-    <h2>
+    <h4>
       Step 3: Compile data for the Registry’s questionnaire.
-    </h2>
+    </h4>
     <p>
       <% if current_user %>
           The ICCA Registry questionnaire can be accessed and completed
@@ -55,9 +63,9 @@
       representatives where possible to provide spatial and other information.
     </p>
 
-    <h2>
+    <h4>
       Step 4: Submit photos, videos, and visual material.
-    </h2>
+    </h4>
     <p>
       Because the ICCA Registry website is intended to be an interactive and highly visual multi-media tool, we
       encourage all communities to send photos of community members, habitats, species, videos, interview clips and
@@ -65,9 +73,9 @@
       300 dpi, for inclusion on the website. They all should be clearly labelled with the specific ICCA reference.
     </p>
 
-    <h2>
+    <h4>
       Step 5: Submit relevant documents or website links.
-    </h2>
+    </h4>
     <p>
       It will be possible to include useful and relevant documents (such as management plans, community agreements and
       documented awards) on this website as well as links to existing websites that provide additional information about
@@ -82,20 +90,17 @@
 <div class="span-8 last newscontact">
   <div class="new">
 
-    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
-    <%= render :partial => "photos/media_browser" %>
-
-    <div id="basic-modal-content">
-    </div>
-
-    <h2 class="newsColumn flash-h2">Complete the Questionnaire</h2>
-    <ul>
+    <h2 class="newsColumn flash-h2">Follow these Steps to Contribute</h2>
+    <ol>
+      <li><%= link_to "Read the Project Information Sheet", "docs/WDPA%20ICCA%20info%20sheet.doc" %></li>
+      <li><%= link_to "Review and sign the Free Prior Informed Consent form ",  "docs/WDPA%20ICCA%20consent%20form.doc" %></li>
+      <li><%= link_to "Register and login to contribute online", new_user_path %></li>
       <% if current_user %>
-        >> <%= link_to "The ICCA Registry Questionnaire", "http://surveymonkey.com" %>
+         <li><%= link_to "Complete the ICCA Questionnaire online", "http://surveymonkey.com" %></li>
       <% else %>
-        >> <%= link_to "You must first create an account to fill in the questionnaire", new_user_path %>
+          <li><%= link_to "Complete the ICCA Questionnaire online", new_user_path %></li>
       <% end %>
-    </ul>
+    </ol>
     <br clear="all" />
   </div>
 
