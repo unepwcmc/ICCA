@@ -1,6 +1,6 @@
 <% semantic_form_for @photo, :html => {:multipart => true} do |f| %>
     <%= f.error_messages %>
-    <%= f.inputs :title, :description, :image%>
+    <%= f.inputs :title, :description, :citation, :image%>
     <% f.inputs do %>
         <% if @photoable %>
             <%= f.input :photoable, :label => "#{@photo.photoable_type}", :as => :select, :collection => @photoable %>

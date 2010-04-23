@@ -6,11 +6,13 @@
   <tr>
     <th>Title</th>
     <th>Description</th>
+    <th>Citation</th>
   </tr>
   <% for photo in @photos %>
     <tr>
       <td><%=h photo.title %></td>
       <td><%=h photo.description %></td>
+      <td><%=h photo.citation %></td>
       <td><%= link_to "Show", photo %></td>
       <td><%= link_to "Edit", edit_photo_path(photo) %></td>
       <td><%= link_to "Destroy", photo, :confirm => 'Are you sure?', :method => :delete %></td>
