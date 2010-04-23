@@ -21,6 +21,32 @@ class CountriesController < ApplicationController
     end
   end
 
+  # Return json of countries sites
+  def areas
+    if params[:id].present?
+      @country = Country.find params[:id]
+    else
+      @country = Country.first
+    end
+    @json = {}
+    @json[:id] = @country.id
+    @json[:country] = @country.name
+
+    @json[:iccas] = []
+    @country.sites.each do |site|
+      site_details = {}
+      site_details[:name] = site.name
+      site_details[:url] = site_path site
+      site_details[:lat] = site.lat
+      site_details[:lng] = site.lon
+      @json[:iccas] << site_details
+    end
+
+    respond_to do |format|
+      format.json  { render :json => @json.to_json }
+    end
+  end
+
   # GET /countries/new
   # GET /countries/new.xml
   def new
