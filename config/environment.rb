@@ -21,6 +21,7 @@ Rails::Initializer.run do |config|
   config.gem "formtastic"
   config.gem "authlogic"
   config.gem "paperclip"
+  config.gem "cancan"
   config.gem "aws-s3", :lib => "aws/s3"
 
 

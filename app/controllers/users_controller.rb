@@ -25,6 +25,7 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @user = User.new
+    @images = Photo.all :limit => 10
 
     respond_to do |format|
       format.html # new.html.erb
@@ -45,9 +46,10 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         flash[:notice] = 'User was successfully created.'
-        format.html { redirect_to(@user) }
+        format.html { redirect_to(contribute_path) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
+        @images = Photo.all :limit => 10
         format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
       end

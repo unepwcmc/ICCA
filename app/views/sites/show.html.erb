@@ -9,7 +9,9 @@
         <div class="span-1 last imageContainer2"><%= image_tag @top_images[2].image.url(:medium) if @top_images[2].present? %></div>
       </div>
       <div class="span-15 last article">
-        <%= link_to 'Edit', edit_site_path(@site), :class => "textLink" if current_user %>
+        <% if can? :update, @site %>
+            <%= link_to 'Edit', edit_site_path(@site), :class => "textLink" %>
+        <% end %>
         <%= @site.extended_description %>
       </div>
     </div>
@@ -17,11 +19,14 @@
     <div class="span-8 last newscountry contentContainer">
       <div class="new">
         <h2 class="newsColumn flash-h2">Multimedia resources
-          <%= link_to "Add | ", new_associated_photo_path(:type => :site, :id => @site.id), :class => "textLinkRight" if current_user  %>
-          <%= link_to "Edit", photos_site_path, :class => "textLinkRight" if current_user  %>
+          <% if (can? :update, @site) && (can? :create, Photo) %>
+              <%= link_to "Add | ", new_associated_photo_path(:type => :site, :id => @site.id), :class => "textLinkRight"  %>
+          <% end %>
+          <% if (can? :update, @site) && (can? :update, Photo) %>
+              <%= link_to "Edit", photos_site_path, :class => "textLinkRight"  %>
+          <% end %>
         </h2>
         <%= render :partial => "photos/media_browser" %>
-
 
         <div id="basic-modal-content">
         </div>

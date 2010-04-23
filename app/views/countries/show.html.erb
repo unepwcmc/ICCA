@@ -10,7 +10,9 @@
 <% end %>
 
 <div class="span-15 first articles">
-  <%= link_to 'Edit', edit_country_path(@country), :class => "textLink" if current_user %>
+  <% if can? :update, @country %>
+      <%= link_to 'Edit', edit_country_path(@country), :class => "textLink" %>
+  <% end %>
   <div class="span-15 last article">
       <%= @country.extended_description %>
   </div>
@@ -19,7 +21,12 @@
 <div class="span-8 last newscountry">
   <div class="new">
     <div class="new">
-      <h2 class="newsColumn flash-h2">All ICCA Sites in <%= @country.name %> <%= link_to "Add", new_country_site_path(@country), :class => "textLink" if current_user %></h2>
+      <h2 class="newsColumn flash-h2">
+        All ICCA Sites in <%= @country.name %>
+        <% if (can? :update, @country) && (can? :create, Site) %>
+            <%= link_to "Add", new_country_site_path(@country), :class => "textLink" %>
+        <% end %>
+      </h2>
       <% @country.sites.each do |site| %>
           <ul>
             <li><%= link_to "#{site.name}", site, :class => "textLinkRight" %></li>

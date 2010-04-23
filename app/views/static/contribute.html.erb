@@ -1,0 +1,102 @@
+<% content_for :title do %>
+    <p class="flash-Bigtitle"><em>Contribute to the ICCA registry</em></p>
+<% end %>
+
+<% content_for :banner do %>
+    <div class="span-24 column widgetContainer">
+      <div class="widget">
+      </div>
+    </div>
+<% end %>
+
+<div class="span-15 first articles">
+  <div class="span-15 last article">
+    <h2>Instructions for contributing to the Registry</h2>
+    <p>
+      For communities and others who want to contribute to the Registry and benefit from using it, there are several
+      important but simple steps to follow.  These are outlined below as a guide.
+    </p>
+
+    <h2>Step 1: Discuss among community members the ICCA Registry. </h2>
+    <p>
+      Members of the community need to review together the benefits and risks of contributing to the Registry so that
+      everyone is aware of the process, the challenges, and the potential positive and negative consequences.
+    </p>
+
+    <h2>
+      Step 2:  Review the <%= link_to "Free Prior Informed Consent Form", "docs/WDPA%20ICCA%20consent%20form.doc" %>
+      and <%= link_to "Project Information Sheet", "docs/WDPA%20ICCA%20info%20sheet.doc" %>, organize a meeting with
+      community members to attain key signatures, and return the consent form.
+    </h2>
+    <p>
+      The purpose of this consent form is to ensure that indigenous and local communities are aware of the process of
+      contributing information about their communities to the Registry, they know how and what information will be used
+      and accessed, and they have a choice regarding what information will be disclosed through various means (such as
+      the ICCA website and future analytical publications).  All communities can select the extent to which their
+      information is shared.  This step follows the principles of the United Nations Declaration on the Rights of
+      Indigenous Peoples (September 2007) to protect communities and their best interests.
+    </p>
+
+    <h2>
+      Step 3: Compile data for the Registry’s questionnaire.
+    </h2>
+    <p>
+      <% if current_user %>
+          The ICCA Registry questionnaire can be accessed and completed
+          <%= link_to "HERE", "http://surveymonkey.com" %>.
+      <% else %>
+          Before you can fill in the ICCA Registry questionnaire, you must first <%= link_to "register", new_user_path %>
+      <% end %>
+       It is also available as
+      a Word Document to download, or can be requested by email.  There are around 10 core questions that each community
+      should address to help inform key ICCA issues.  Answers to additional questions will enhance understanding of the
+      contribution of ICCAs from around the world, including information on management and governance. If the ICCA is
+      already recognised by national legislation or a protected area system, the community should work with government
+      representatives where possible to provide spatial and other information.
+    </p>
+
+    <h2>
+      Step 4: Submit photos, videos, and visual material.
+    </h2>
+    <p>
+      Because the ICCA Registry website is intended to be an interactive and highly visual multi-media tool, we
+      encourage all communities to send photos of community members, habitats, species, videos, interview clips and
+      other material to iccaregistry@unep-wcmc.org.  Photos and videos should be of good resolution, with a minimum of
+      300 dpi, for inclusion on the website. They all should be clearly labelled with the specific ICCA reference.
+    </p>
+
+    <h2>
+      Step 5: Submit relevant documents or website links.
+    </h2>
+    <p>
+      It will be possible to include useful and relevant documents (such as management plans, community agreements and
+      documented awards) on this website as well as links to existing websites that provide additional information about
+      the ICCA and its conservation efforts and successes.  Please send relevant documents and links to
+      <%= link_to "iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org" %>.
+    </p>
+
+  </div>
+</div>
+
+
+<div class="span-8 last newscontact">
+  <div class="new">
+
+    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
+    <%= render :partial => "photos/media_browser" %>
+
+    <div id="basic-modal-content">
+    </div>
+
+    <h2 class="newsColumn flash-h2">Complete the Questionnaire</h2>
+    <ul>
+      <% if current_user %>
+        >> <%= link_to "The ICCA Registry Questionnaire", "http://surveymonkey.com" %>
+      <% else %>
+        >> <%= link_to "You must first create an account to fill in the questionnaire", new_user_path %>
+      <% end %>
+    </ul>
+    <br clear="all" />
+  </div>
+
+</div>

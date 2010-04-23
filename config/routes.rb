@@ -1,7 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :photos
 
-
   map.root :controller => :countries, :action => :index
 
   map.login "login", :controller => :user_sessions, :action => :new
@@ -10,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.about "about", :controller => :static, :action => :about
   map.faqs "faqs", :controller => :static, :action => :faqs
   map.contact "contact", :controller => :static, :action => :contact
+  map.contribute "contribute", :controller => :static, :action => :contribute
 
   map.new_associated_photo ":type/:id/photos/new", :controller => :photos, :action => :new
 

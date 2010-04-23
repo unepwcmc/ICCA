@@ -18,13 +18,18 @@
   </div>
   <div class="span-15 last article">
     <h2 class="flash-h2">ICCA Countries</h2>
-    <% if current_user%>
+    <% if can? :create, Country %>
         <%= link_to 'New country', new_country_path, :class => "textLink" %>
     <% end %>
     <div class="span-15 last tableContainer">
       <% @countries.each do |country| %>
           <div class="span-15 last table">
-            <p class="titlesTables"><%= link_to "#{country.name}", country%>&nbsp <%= link_to "edit", edit_country_path(country), :class => "textLink"  if current_user %></p>
+            <p class="titlesTables">
+              <%= link_to "#{country.name}", country%>&nbsp
+              <% if can? :update, country %>
+                  <%= link_to "edit", edit_country_path(country), :class => "textLink" %>
+              <% end %>
+            </p>
             <p class="textTables"><%= country.description %></p>
           </div>
       <% end %>

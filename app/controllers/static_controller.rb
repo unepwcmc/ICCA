@@ -14,6 +14,10 @@ class StaticController < ApplicationController
     get_some_images
   end
 
+  def contribute
+    get_some_images
+  end
+
   private
   def get_some_images
     @images = Photo.all :limit => 10
