@@ -12,6 +12,9 @@
         <% if can? :update, @site %>
             <%= link_to 'Edit', edit_site_path(@site), :class => "textLink" %>
         <% end %>
+        <% if can? :delete, @site %>
+             | <%= link_to 'Delete', @site, :confirm => 'Are you sure?', :method => :delete %>
+        <% end %>
         <%= @site.extended_description %>
       </div>
     </div>

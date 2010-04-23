@@ -79,10 +79,11 @@ class SitesController < ApplicationController
   # DELETE /sites/1.xml
   def destroy
     @site = Site.find(params[:id])
+    @country = @site.country
     @site.destroy
 
     respond_to do |format|
-      format.html { redirect_to(sites_url) }
+      format.html { redirect_to(@country) }
       format.xml  { head :ok }
     end
   end
