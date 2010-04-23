@@ -555,7 +555,8 @@ hr.verRule {
 }
 
 a:link,a:visited{
-    color:#fff;
+
+    color:#9CC342;
     text-decoration:none;
 }
 a img{
