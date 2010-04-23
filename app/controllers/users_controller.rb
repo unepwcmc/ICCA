@@ -84,4 +84,18 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def make_user_admin
+    @user = User.find params[:id]
+    @admin_role = Role.find :first, :conditions => {:name => "admin"}
+    @admin_role ||= Role.create({:name => "admin"})
+    @user.role = @admin_role
+    if @user.save!
+      flash[:notice] = "Made user admin"
+      redirect_to @user
+    else
+      flash[:notice] = "Unable to make user admin"
+      redirect_to users_path
+    end
+  end
 end

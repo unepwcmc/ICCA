@@ -10,6 +10,7 @@ ActionController::Routing::Routes.draw do |map|
   map.faqs "faqs", :controller => :static, :action => :faqs
   map.contact "contact", :controller => :static, :action => :contact
   map.contribute "contribute", :controller => :static, :action => :contribute
+  map.make_user_admin "make_user_admin/:id", :controller => :users, :action => :make_user_admin
 
   map.new_associated_photo ":type/:id/photos/new", :controller => :photos, :action => :new
 
