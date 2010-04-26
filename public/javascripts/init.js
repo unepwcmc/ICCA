@@ -7,7 +7,6 @@ $(document).ready(function() {
 	Cufon.replace('.flash-h2',{hover: true});
 	Cufon.replace('.flash-h2-special',{hover: true});
 	
-	
     $('#worldmap').flash({
         src: 'flash/dottedWMap.swf',
         flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},        
@@ -21,15 +20,6 @@ $(document).ready(function() {
         width: 938,
         height: 346
     });	
-
-    $('#widgetnews').flash({
-        src: '/flash/smallMap.swf',
-        flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA',
-                     lat: "50",
-                     lon: "50"},
-        width: 337,
-        height: 203
-    });
 
 
 });

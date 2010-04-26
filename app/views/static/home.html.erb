@@ -10,10 +10,11 @@
             <div class="banner">
               <p class="bannerLink">We welcome feedback or ideas which can be sent to <a class="textLink" href="mailto:iccaregistry@unep-wcmc.org ">here</a></p>
             </div>
-            <a href=""><img id="slide-img-1" src="img/widget.jpg" class="slide" alt="" /></a>
-            <a href=""><img id="slide-img-2" src="img/widget.jpg" class="slide" alt="" /></a>
-            <a href=""><img id="slide-img-3" src="img/widget.jpg" class="slide" alt="" /></a>
-            <a href=""><img id="slide-img-4" src="img/widget.jpg" class="slide" alt="" /></a>
+            <% i = 1
+               @images.each do |photo| %>
+                <a href=""><img id="slide-img-<%= i %>" src="<%= photo.image.url :banner %>" class="slide" alt="" /></a>
+            <%  i += 1
+                end %>
             <div id="slide-controls">
               <p id="slide-client" class="text"><strong></strong><span></span></p>
               <p id="slide-nav"></p>
@@ -22,6 +23,17 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+		if(!window.slider) var slider={};slider.data=[
+            <% i = 1
+               @images.each do |photo| %>
+                {"id":"slide-img-<%= i %>","client":"<%= photo.photoable.name %>","desc":""},
+            <%  i += 1
+                end %>
+		];
+
+
+	</script>
 <% end %>
 
 

@@ -1,21 +1,18 @@
 class StaticController < ApplicationController
+  before_filter :get_some_images
   def home
   end
 
   def about
-    get_some_images
   end
 
   def faqs
-    get_some_images
   end
 
   def contact
-    get_some_images
   end
 
   def contribute
-    get_some_images
   end
 
   private

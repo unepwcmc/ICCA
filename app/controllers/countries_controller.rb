@@ -32,6 +32,7 @@ class CountriesController < ApplicationController
       @country = Country.first
     end
     @json = @country.areas_json
+    debugger
 
     respond_to do |format|
       format.json  { render :json => @json.to_json }

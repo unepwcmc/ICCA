@@ -5,7 +5,8 @@ class Photo < ActiveRecord::Base
   has_attached_file :image,
                     :styles => {
                             :small => "106x80#",
-                            :medium => "190x209#"
+                            :medium => "190x209#",
+                            :banner => "938x346#"
                             },
                     :storage => :s3,
                     :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
