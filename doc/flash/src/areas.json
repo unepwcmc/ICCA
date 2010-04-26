@@ -1,0 +1,18 @@
+{
+	"id": 54,
+	"country": "Mexico",
+	"iccas":[
+			    {
+			        "name":"The Olmecs",
+			        "url":"http://www.vizzuality.com",
+			        "lat": 19.518375478601566, 
+			        "lng": -100.9423828125
+			    },
+			    {
+			        "name":"Nkootos",
+			        "url":"http://www.vizzuality.com",
+			        "lat": 27.21555620902969, 
+			        "lng": -98.4375
+			    } 
+    ]
+}

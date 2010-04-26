@@ -28,19 +28,16 @@ class CountriesController < ApplicationController
     else
       @country = Country.first
     end
-    @json = {}
-    @json[:id] = @country.id
-    @json[:country] = @country.name
+    @json = @country.areas_json
 
-    @json[:iccas] = []
-    @country.sites.each do |site|
-      site_details = {}
-      site_details[:name] = site.name
-      site_details[:url] = site_path site
-      site_details[:lat] = site.lat
-      site_details[:lng] = site.lon
-      @json[:iccas] << site_details
+    respond_to do |format|
+      format.json  { render :json => @json.to_json }
     end
+  end
+
+  # Return json of countries sites
+  def iccaCountryDetails
+    @json = Country.country_details_json
 
     respond_to do |format|
       format.json  { render :json => @json.to_json }

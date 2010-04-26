@@ -15,6 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   map.make_user_admin "make_user_admin/:id", :controller => :users, :action => :make_user_admin
 
   map.areas "areas.json", :controller => :countries, :action => :areas
+  map.iccaCountryDetails "iccaCountryDetails.json", :controller => :countries, :action => :iccaCountryDetails
 
   map.new_associated_photo ":type/:id/photos/new", :controller => :photos, :action => :new
 
