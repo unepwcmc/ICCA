@@ -12,7 +12,7 @@
             </div>
             <% i = 1
                @images.each do |photo| %>
-                <a href=""><img id="slide-img-<%= i %>" src="<%= photo.image.url :banner %>" class="slide" alt="" /></a>
+                <%= link_to "<img id=\"slide-img-#{i}\" src=\"#{ photo.image.url :banner }\" class=\"slide\" alt=\"\" /></a>", photo.photoable %>
             <%  i += 1
                 end %>
             <div id="slide-controls">
