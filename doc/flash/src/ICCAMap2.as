@@ -41,7 +41,7 @@ package {
 
 		
 		public function ICCAMap2() {	
-			var font: LoadFont = new LoadFont("TitilliumText14L.swf",["TitilliumText14L"]);
+			var font: LoadFont = new LoadFont("../TitilliumText14L.swf",["TitilliumText14L"]);
  	 	 	font.addEventListener(LoadFont.COMPLETE, successLoadFont);
  	 	 	
  	 	 	var mapKey:String =root.loaderInfo.parameters.mapkey;
@@ -72,8 +72,9 @@ package {
 			zoomMinus.addEventListener(MouseEvent.CLICK,onUnZoomMap);
 			satellite.addEventListener(MouseEvent.MOUSE_UP,onChangeMapTypeSatellite);
 			terrain.addEventListener(MouseEvent.MOUSE_UP,onChangeMapTypeTerrain);
-						
-			request.url = "areas.json" ;
+            var country_id:String =root.loaderInfo.parameters.country_id;
+
+			request.url = "../areas.json?id=" + country_id ;
 			loader.addEventListener(Event.COMPLETE, decodeJSON) ;
 			loader.load(request);
 

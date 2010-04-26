@@ -15,13 +15,6 @@ $(document).ready(function() {
         height: 305        
     });
 	
-    $('#countrymap').flash({
-        src: '/flash/ICCAMap2.swf',
-        flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},
-        width: 938,
-        height: 346
-    });	
-	
     $('#mapmap').flash({
         src: '/flash/ICCAMap.swf',
         flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},        
@@ -30,11 +23,13 @@ $(document).ready(function() {
     });	
 
     $('#widgetnews').flash({
-        src: 'flash/smallMap.swf',
-        flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},        
+        src: '/flash/smallMap.swf',
+        flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA',
+                     lat: "50",
+                     lon: "50"},
         width: 337,
         height: 203
-    });	
+    });
 
 
 });
