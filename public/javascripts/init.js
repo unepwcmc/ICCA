@@ -6,17 +6,19 @@ $(document).ready(function() {
 	Cufon.replace('.menu',{hover: true});
 	Cufon.replace('.flash-h2',{hover: true});
 	Cufon.replace('.flash-h2-special',{hover: true});
-	
+
+    gmapsKey = $('#gmaps-key').html();
+
     $('#worldmap').flash({
         src: 'flash/dottedWMap.swf',
-        flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},        
+        flashvars: { mapkey: gmapsKey},
         width: 590,
         height: 305        
     });
 	
     $('#mapmap').flash({
         src: '/flash/ICCAMap.swf',
-        flashvars: { mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA'},        
+        flashvars: { mapkey: gmapsKey},        
         width: 938,
         height: 346
     });	
