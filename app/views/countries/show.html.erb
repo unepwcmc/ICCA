@@ -41,6 +41,7 @@
       <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
       <ul class="newsList" id="newsList"></ul>
     </div>
+    <%= render :partial => "links/important_links", :locals => {:linkable => @country} %>
     <h2 class="newsColumn flash-h2">Publications Links</h2>
     <ul>
       <li>

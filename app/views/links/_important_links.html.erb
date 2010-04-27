@@ -1,0 +1,15 @@
+<div class="new">
+  <h2 class="newsColumn flash-h2">Important Links
+    <% if (can? :update, linkable) && (can? :create, Link) %>
+        <%= link_to "Add | ", "/#{linkable.class.to_s.downcase}/#{linkable.id}/links/new", :class => "textLinkRight"  %>
+    <% end %>
+    <% if (can? :update, linkable) && (can? :update, Link) %>
+        <%= link_to "Edit", "/#{linkable.class.to_s.downcase}s/#{linkable.id}/links", :class => "textLinkRight"  %>
+    <% end %>
+  </h2>
+  <ul>
+    <% linkable.links.each do |link| %>
+        <li><a class="textLinkRight" href="<%= link.link %>"><%= link.name %></a></li>
+    <% end %>
+  </ul>
+</div>

@@ -1,6 +1,7 @@
 class Country < ActiveRecord::Base
   has_many :sites
   has_many :photos, :as => :photoable
+  has_many :links, :as => :linkable
 
   validates_presence_of :name, :description, :extended_description
 
