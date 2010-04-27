@@ -2,7 +2,7 @@
     $('#countrymap').flash({
         src: '/flash/ICCAMap2.swf',
         flashvars: {
-            mapkey: 'ABQIAAAAsIunaSEq-72JsQD5i92_2RSBAjOOhu3AGseSip9oOKv69lUsGxQJJZ1BfzmSIDX0FfGUGpci0uokEA',
+            mapkey: '<%= GOOGLE_MAPS_KEY %>',
             country_id: '<%= @country.id %>'
         },
         width: 938,
