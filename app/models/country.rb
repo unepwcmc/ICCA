@@ -18,7 +18,7 @@ class Country < ActiveRecord::Base
       site_json_hash = {}
       site_json_hash[:name] = country.name
       site_json_hash[:url] = "countries/" + country.id.to_s
-      site_json_hash[:values] = country.description
+      site_json_hash[:value] = country.description
       site_json_hash[:lat] = country.lat
       site_json_hash[:lng] = country.lon
       site_json_hash[:short] = country.name.capitalize[0..2]
