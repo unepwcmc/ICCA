@@ -49,6 +49,7 @@
   <%= yield :banner %>
 
   <div class="span-24 last contentContainer<%= "2" if controller.class == SitesController %>">
+    <p style="color: red"><%= flash[:error] %></p>
     <p style="color: green"><%= flash[:notice] %></p>
 
     <%= yield %>

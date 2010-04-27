@@ -1,4 +1,6 @@
 class SitesController < ApplicationController
+  load_and_authorize_resource
+  
   CONTENTSTRIP = true
   # GET /sites
   # GET /sites.xml

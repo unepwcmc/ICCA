@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :photos
 
-  map.root :controller => :countries, :action => :index
+  map.root :controller => :static, :action => :home
 
   map.login "login", :controller => :user_sessions, :action => :new
   map.logout "logout", :controller => :user_sessions, :action => :destroy
