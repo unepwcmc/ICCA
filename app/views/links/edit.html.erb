@@ -1,0 +1,10 @@
+<% content_for :title do %>
+    Edit <em><%= controller.controller_name.singularize %></em>
+<% end %>
+
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to "Show", @link %> |
+  <%= link_to "View All", links_path %>
+</p>

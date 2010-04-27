@@ -1,5 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :photos
 
   map.root :controller => :static, :action => :home
 
@@ -18,13 +17,16 @@ ActionController::Routing::Routes.draw do |map|
   map.iccaCountryDetails "iccaCountryDetails.json", :controller => :countries, :action => :iccaCountryDetails
 
   map.new_associated_photo ":type/:id/photos/new", :controller => :photos, :action => :new
+  map.new_associated_link ":type/:id/links/new", :controller => :links, :action => :new
 
   map.resources :users
   map.resources :user_sessions
   map.resources :countries do |countries|
     countries.resources :sites, :member => [:new]
   end
-  map.resources :sites, :member => [:photos]
+  map.resources :sites, :member => [:photos, :links]
+  map.resources :links
+  map.resources :photos
 
   # The priority is based upon order of creation: first created -> highest priority.
 

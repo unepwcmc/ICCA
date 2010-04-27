@@ -1,0 +1,22 @@
+<% content_for :title do %>
+    <em><%= controller.controller_name.singularize %></em>
+<% end %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @link.name %>
+</p>
+<p>
+  <strong>Link:</strong>
+  <%=h @link.link %>
+</p>
+<p>
+  <strong>Linked to:</strong>
+  <%=h @link.linkable.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_link_path(@link) %> |
+  <%= link_to "Destroy", @link, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", links_path %>
+</p>

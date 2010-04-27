@@ -50,4 +50,19 @@
 
     <br clear="all" />
   </div>
+  <div class="new">
+    <h2 class="newsColumn flash-h2">Important Links
+      <% if (can? :update, @site) && (can? :create, Link) %>
+          <%= link_to "Add | ", new_associated_link_path(:type => :site, :id => @site.id), :class => "textLinkRight"  %>
+      <% end %>
+      <% if (can? :update, @site) && (can? :update, Link) %>
+          <%= link_to "Edit", links_site_path, :class => "textLinkRight"  %>
+      <% end %>
+    </h2>
+    <ul>
+      <% @site.links.each do |link| %>
+          <li><a class="textLinkRight" href="<%= link.link %>"><%= link.name %></a></li>
+      <% end %>
+    </ul>
+  </div>
 </div>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100423144250) do
+ActiveRecord::Schema.define(:version => 20100427105449) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(:version => 20100423144250) do
     t.datetime "updated_at"
     t.text     "extended_description"
     t.integer  "site_id"
+  end
+
+  create_table "links", :force => true do |t|
+    t.string   "name"
+    t.string   "link"
+    t.integer  "linkable_id"
+    t.string   "linkable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "photos", :force => true do |t|

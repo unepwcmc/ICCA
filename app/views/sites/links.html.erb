@@ -1,0 +1,20 @@
+<% content_for :title do %>
+    Links, <%= link_to "#{@site.name}", @site %>
+<% end %>
+<table class="crudTable">
+  <tr>
+    <th>Name</th>
+    <th>Link</th>
+  </tr>
+  <% for link in @links %>
+      <tr>
+        <td><%=h link.name %></td>
+        <td><%= link.link %></td>
+        <td><%= link_to "Show", link, :class => "textLink", :style => "color: #9cc342" %></td>
+        <td><%= link_to "Edit", edit_link_path(link), :class => "textLink", :style => "color: #9cc342" %></td>
+        <td><%= link_to "Destroy", link, :class => "textLink", :style => "color: #9cc342", :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Link", new_link_path %></p>

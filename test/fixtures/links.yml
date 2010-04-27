@@ -1,0 +1,11 @@
+one:
+  name: MyString
+  link: MyString
+  linkable_id: 1
+  linkable_type: MyString
+
+two:
+  name: MyString
+  link: MyString
+  linkable_id: 1
+  linkable_type: MyString

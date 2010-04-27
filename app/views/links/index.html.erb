@@ -1,0 +1,25 @@
+<% content_for :title do %>
+    <em><%= controller.controller_name %></em>
+<% end %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Link</th>
+    <th>Linkable</th>
+    <th>Linkable Type</th>
+  </tr>
+  <% for link in @links %>
+    <tr>
+      <td><%=h link.name %></td>
+      <td><%=h link.link %></td>
+      <td><%=h link.linkable_id %></td>
+      <td><%=h link.linkable_type %></td>
+      <td><%= link_to "Show", link %></td>
+      <td><%= link_to "Edit", edit_link_path(link) %></td>
+      <td><%= link_to "Destroy", link, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Link", new_link_path %></p>

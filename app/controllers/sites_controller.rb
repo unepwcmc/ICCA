@@ -94,4 +94,9 @@ class SitesController < ApplicationController
     @site = Site.find params[:id]
     @photos = @site.photos
   end
+
+  def links
+    @site = Site.find params[:id]
+    @links = @site.links
+  end
 end
