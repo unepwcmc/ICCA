@@ -39,6 +39,13 @@
         <% if current_user %>
             /
             <li class=""><%= link_to "LOGOUT", logout_path %></li>
+            <% if current_user.role? :admin %>
+                /
+                <li class=""><%= link_to "VIEW CONTRIBUTORS", users_path %></li>
+            <% end %>
+        <% else %>
+            /
+            <li class=""><%= link_to "LOGIN", login_path %></li>
         <% end %>
       </ul>
     </div>
