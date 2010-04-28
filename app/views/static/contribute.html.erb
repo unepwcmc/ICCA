@@ -51,7 +51,7 @@
     <p>
       <% if current_user %>
           The ICCA Registry questionnaire can be accessed and completed
-          <%= link_to "HERE", "http://surveymonkey.com" %>.
+          <%= link_to "HERE", "http://www.surveymonkey.com/s/9QVPHVH?c=#{current_user.survey_id} " %>.
       <% else %>
           Before you can fill in the ICCA Registry questionnaire, you must first <%= link_to "register", new_user_path %>
       <% end %>
@@ -96,7 +96,7 @@
       <li><%= link_to "Review and sign the Free Prior Informed Consent form ",  "docs/WDPA%20ICCA%20consent%20form.doc" %></li>
       <li><%= link_to "Register and login to contribute online", new_user_path %></li>
       <% if current_user %>
-         <li><%= link_to "Complete the ICCA Questionnaire online", "http://surveymonkey.com" %></li>
+         <li><%= link_to "Complete the ICCA Questionnaire online", "http://surveymonkey.com/s/9QVPHVH?c=#{current_user.survey_id}" %></li>
       <% else %>
           <li><%= link_to "Complete the ICCA Questionnaire online", new_user_path %></li>
       <% end %>

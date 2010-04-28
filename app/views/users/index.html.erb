@@ -4,14 +4,14 @@
   <tr>
     <th>Username</th>
     <th>Email</th>
-    <th>Password</th>
+    <th>Survey ID</th>
   </tr>
 
 <% @users.each do |user| %>
   <tr>
     <td><%=h user.username %></td>
     <td><%=h user.email %></td>
-    <td><%=h user.password %></td>
+    <td><%=h user.survey_id %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Make Admin', make_user_admin_path(user) %></td>
