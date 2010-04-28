@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100427161401) do
+ActiveRecord::Schema.define(:version => 20100428151346) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20100427161401) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.string   "citation"
+    t.boolean  "preferred"
   end
 
   create_table "roles", :force => true do |t|

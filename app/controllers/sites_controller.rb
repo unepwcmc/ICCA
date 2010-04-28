@@ -17,7 +17,7 @@ class SitesController < ApplicationController
   # GET /sites/1.xml
   def show
     @site = Site.find(params[:id])
-    @top_images = @site.photos :limit =>3
+    @top_images = @site.preferred_photos
     @images = @site.photos
 
     respond_to do |format|

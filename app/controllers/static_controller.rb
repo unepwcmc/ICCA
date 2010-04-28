@@ -17,6 +17,6 @@ class StaticController < ApplicationController
 
   private
   def get_some_images
-    @images = Photo.all :limit => 10
+    @images = Photo.all :limit => 10, :order => "preferred DESC"
   end
 end
