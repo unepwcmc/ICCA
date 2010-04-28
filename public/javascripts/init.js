@@ -38,6 +38,10 @@ function showImage(idPhoto,srcPhoto) {
 	newImage.src = srcPhoto;
 	var widthPhoto = newImage.width;
 	var heightPhoto = newImage.height;
+    if (widthPhoto == 0) {
+        widthPhoto = 700;
+        heightPhoto = 525;
+    }
 	$("#simplemodal-container").css("width", widthPhoto +'px');
 	$("#simplemodal-container").css("height", heightPhoto +'px');
 	$("#basic-modal-content").html('<img src="'+ srcPhoto +'"/>');
@@ -52,4 +56,5 @@ function showImage(idPhoto,srcPhoto) {
 	// estableciendo ventana modal en el centro
 	$('#simplemodal-container').css("left", mleft+'px');
 	$('#simplemodal-container').css("top", mtop+'px')
+    $('#simplemodal-container').css("text-align", 'center')
 };

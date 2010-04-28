@@ -3,7 +3,7 @@
     <div class="items">
       <% i = 0
          @images.each do |photo| %>
-          <img name="photo<%= i %>" id="photo<%= i %>" src="<%= photo.image.url(:small) %>" onclick="javascript: void showImage('photo<%= i %>','<%= photo.image.url %>')"/>
+          <img name="photo<%= i %>" id="photo<%= i %>" src="<%= photo.image.url(:small) %>" onclick="javascript: void showImage('photo<%= i %>','<%= photo.image.url(:full) %>')"/>
       <%  i += 1
           end %>
     </div>

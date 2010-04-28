@@ -6,7 +6,8 @@ class Photo < ActiveRecord::Base
                     :styles => {
                             :small => "106x80#",
                             :medium => "190x209#",
-                            :banner => "938x346#"
+                            :banner => "938x346#",
+                            :full => "700x525>"
                             },
                     :storage => :s3,
                     :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
