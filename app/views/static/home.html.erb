@@ -7,11 +7,8 @@
       <div class="widgetHome">
         <div id="slide-holder">
           <div id="slide-runner">
-            <div class="banner">
-              <p class="bannerLink">We welcome feedback or ideas which can be sent to <a class="textLink" href="mailto:iccaregistry@unep-wcmc.org ">here</a></p>
-            </div>
             <% i = 1
-               @images.each do |photo| %>
+               @images.each do |photo|%>
                 <%= link_to "<img id=\"slide-img-#{i}\" src=\"#{ photo.image.url :banner }\" class=\"slide\" alt=\"\" /></a>", photo.photoable %>
             <%  i += 1
                 end %>

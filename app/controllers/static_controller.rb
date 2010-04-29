@@ -17,6 +17,10 @@ class StaticController < ApplicationController
 
   private
   def get_some_images
-    @images = Photo.all :limit => 10, :order => "preferred DESC"
+    sites = Site.all :limit => 10, :order => "updated_at DESC"
+    @images = []
+    sites.each do |s|
+      @images += s.preferred_photo
+    end
   end
 end
