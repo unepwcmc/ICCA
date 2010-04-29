@@ -49,7 +49,7 @@ function showImage(idPhoto,srcPhoto) {
 	var wscr = $(window).width();
 	var hscr = $(window).height();
 
-	// obtener posicion central
+	// obtain center point
 	var mleft = ( wscr - widthPhoto) / 2;
     var mtop = ( hscr - heightPhoto ) / 2;
 
