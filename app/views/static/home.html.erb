@@ -48,8 +48,7 @@
   </div>
   <div class="span-15 last moreICCA">
     <p><a href="about.html" class="more">Learn more about ICCAs</a></p>
-  </div>
-</div>
+  </div> </div>
 
 
 <div class="span-8 last newshome">
@@ -60,16 +59,46 @@
   </div>
 
   <div class="new">
-    <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
-    <ul class="newsList" id="newsList"></ul>
-  </div>
-
-  <div class="new">
     <h2 class="newsColumn flash-h2">Important Links</h2>
     <ul>
       <li><a class="textLinkRight" href="http://www.unep-wcmc.org/protected_areas/docs/WDPA%20ICCA%20info%20sheet,%20Jan%2010.doc">ICCA Registry Information Sheet</a></li>
       <li><a class="textLinkRight" href="http://www.unep-wcmc.org/protected_areas/docs/WDPA%20ICCA%20consent%20form,%20Jan%2010.doc">ICCA Registry Free Prior Informed Consent Form</a></li>
-      <li><a class="textLinkRight" href="http://www.unep-wcmc.org/protected_areas/docs/ICCA%20Brochure%20v9.pdf">A handbook for the Indigenous and Community Conserved Areas Registry</a></li>
+      <li>
+        <a class="textLinkRight" href="http://www.unep-wcmc.org/protected_areas/docs/ICCA%20Handbook%201.2%20English.pdf">A handbook for the Indigenous and Community Conserved Areas Registry</a> (
+        <a class="textLinkRight" href="http://www.unep-wcmc.org/protected_areas/docs/ICCA%20Handbook%201.2%20English.pdf">English</a> |
+        <a class="textLinkRight" href="http://www.unep-wcmc.org/protected_areas/docs/ICCA%20Handbook%201.2%20Spanish.pdf">Spanish</a> )
+        <%= image_tag "ICCA_handbook_cover_1.2.png", :width => "160px" %>
+      </li>
     </ul>
   </div>
+
+  <div class="new">
+    <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
+    <ul class="newsList" id="newsList"></ul>
+  </div>
+
 </div>
+<script language="javaScript" type="text/javascript">
+    $(document).ready( function() {
+        var url = "http://search.twitter.com/search.json?callback=?&q=Indigenous Conservation&rpp=5";
+        // var url = "http://search.twitter.com/search.json?callback=?&rpp=3&q=from:#indigenous";
+        // var url = "http://twitter.com/status/user_timeline/Indigenous.json?count=3&callback=?";
+        $.getJSON(url,function(data){
+            $.each(data.results, function(i, item) {
+                $("#newsList").append('<ul class="newsList"><li class="newTweet"><p class="newsTitular">'+item.text.linkify()+'<a class="textLink" href=""></a></p></li></ul>');
+            });
+
+        });
+
+        function twitter_callback (){
+            return true;
+        }
+
+        String.prototype.linkify = function() {
+            return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
+                return m.link(m);
+            });
+        };
+
+    });
+</script>

@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 });
 
-function showImage(idPhoto,srcPhoto) {
+function showImage(idPhoto,srcPhoto, citation) {
     $("#basic-modal-content").modal({onOpen: function (dialog) {
 		dialog.overlay.fadeIn('slow', function () {
 			dialog.container.slideDown('slow', function () {
@@ -44,7 +44,7 @@ function showImage(idPhoto,srcPhoto) {
     }
 	$("#simplemodal-container").css("width", widthPhoto +'px');
 	$("#simplemodal-container").css("height", heightPhoto +'px');
-	$("#basic-modal-content").html('<img src="'+ srcPhoto +'"/>');
+	$("#basic-modal-content").html('<img src="'+ srcPhoto +'"/><br />' + citation);
 	
 	var wscr = $(window).width();
 	var hscr = $(window).height();
