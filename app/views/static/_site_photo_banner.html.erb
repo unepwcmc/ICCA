@@ -4,8 +4,8 @@
       <div id="slide-runner">
         <% i = 1
            @images.each do |photo|%>
-            <%= link_to "<img id=\"slide-img-#{i}\" src=\"#{ photo.image.url :banner }\" class=\"slide\" alt=\"\" /></a>", photo.photoable %>
-        <%  i += 1
+                <%= link_to "<img id=\"slide-img-#{i}\" src=\"#{ photo.image.url :banner }\" class=\"slide\" alt=\"\" /></a>", photo.photoable %>
+        <%      i += 1
             end %>
         <div id="slide-controls">
           <p id="slide-client" class="text"><strong></strong><span></span></p>
@@ -15,6 +15,7 @@
     </div>
   </div>
 </div>
+
 <script type="text/javascript">
     if(!window.slider) var slider={};slider.data=[
         <% i = 1

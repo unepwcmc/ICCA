@@ -27,7 +27,7 @@
 <div class="container">
   <div id="gmaps-key" style="display:none"><%= GOOGLE_MAPS_KEY %></div>
   <div class="span-24 column header">
-    <a href="home"><div class="span-1 last headerLogo"></div></a>
+    <%= link_to "<div class='span-1 last headerLogo'></div>", home_path %>
     <div class="span-1 last menu">
       <ul>
         <li class=""><%= link_to "HOME", home_path %> /</li>
