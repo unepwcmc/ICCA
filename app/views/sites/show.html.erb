@@ -1,5 +1,5 @@
 <% content_for :title do %>
-    <em><%= "#{@site.name}, #{@site.country.name}" %></em>
+    <em><%= "#{@site.name},"%></em> <%= link_to @site.country.name, @site.country %> 
 <% end %>
 
 <div class="span-15 first articles ">
