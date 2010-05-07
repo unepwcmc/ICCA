@@ -9,7 +9,7 @@ config.action_controller.consider_all_requests_local = false
 config.action_controller.perform_caching             = true
 config.action_view.cache_template_loading            = true
 
-GOOGLE_MAPS_KEY = "ABQIAAAAeHILri4AWFPUe0-e6P_4ABTV42nOCjdEguFi-XL3kzsHPOwSwBQRL67LR53C5tQHivLMYpgJQ_XJgA"
+GOOGLE_MAPS_KEY = "ABQIAAAAeHILri4AWFPUe0-e6P_4ABQ5R5Myl8ql1yuPsFsd7WCm78zulxT5_xrxqOUC67T8fneBIjfbHg80qw"
 
 # See everything in the log (default is :info)
 # config.log_level = :debug
