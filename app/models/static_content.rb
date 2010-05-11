@@ -1,6 +1,6 @@
 class StaticContent < ActiveRecord::Base
   
-  validates_presence_of [:content_for, :body]
+  validates_presence_of [:content_for, :title, :body]
   
   def validate_on_update
     if changes.include? "content_for"
