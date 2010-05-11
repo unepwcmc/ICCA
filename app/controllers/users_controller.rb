@@ -43,11 +43,12 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-
+    
     respond_to do |format|
       if @user.save
+        
 
-        flash[:notice] = 'User was successfully created.'
+        flash[:notice] = "Thank you #{@user.username}, you are now logged in"
         format.html { redirect_to(contribute_path) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else

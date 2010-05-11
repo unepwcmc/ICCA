@@ -7,6 +7,7 @@ class Ability
     can :read, Site
     can :edit, User, :id => user.id
     can :new, User
+    can :create, User
     can :areas, :all
     can :iccaCountryDetails, :all
     if user.role? :admin

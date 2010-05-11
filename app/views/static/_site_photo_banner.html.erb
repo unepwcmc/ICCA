@@ -20,7 +20,7 @@
     if(!window.slider) var slider={};slider.data=[
         <% i = 1
      @images.each do |photo| %>
-        {"id":"slide-img-<%= i %>","client":"<%= "#{photo.photoable.name}, #{photo.photoable.country.name}" %>","desc":""},
+        {"id":"slide-img-<%= i %>","client":"<%= "#{truncate(photo.photoable.name,50)}, #{photo.photoable.country.name}" %>","desc":""},
         <%  i += 1
        end %>
     ];

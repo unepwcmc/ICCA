@@ -5,6 +5,24 @@ body{
     background-position: center top;
 }
 
+div.flash {
+	position:absolute;
+	top:0;
+	right:0;
+	font-weight:bold;
+	padding:0.5em;
+	color:white;
+}
+
+div.flash_error {
+	background: #812000;
+} 
+
+div.flash_notice {
+	background: #008148;
+}
+ 
+
 div.header{
     height: 174px;
 /* 	padding-bottom: 10px; */
@@ -13,7 +31,7 @@ div.header{
 .headerLogo{
     background-image: url(/images/logo.jpg);
     height: 62px;
-    width: 455px;
+    width: 355px;
     float: left;
     border-bottom: 1px white dotted;
 }
@@ -41,8 +59,8 @@ div.headerInfoInf a:hover{
 
 div.menu{
     height: 32px;
-    width: 494px;
-    border-bottom: 1px white solid;
+    width: 594px;
+    border-bottom: 1px white dotted;
     color: white;
     font-family: "Arial";
     font-size: 18px;
@@ -390,7 +408,10 @@ div.menu{
 
 .newborder{
     padding-bottom: 10px;
-    border-bottom: 1px silver solid;
+}
+
+.polaroid{
+	padding:4px;background:#fff;border:1px solid #ddd;
 }
 
 .newsContent{
@@ -640,7 +661,7 @@ div#slide-holder div#slide-controls p#slide-nav a{
     height:12px;
     display:inline;
     font-size:11px;
-    line-height:32px;
+    line-height:12px;
     font-weight:bold;
     text-align:center;
     text-decoration:none;
