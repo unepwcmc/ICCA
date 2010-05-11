@@ -1,0 +1,8 @@
+<% semantic_form_for @static_content do |f| %>
+    <%= f.error_messages %>
+    <%= f.inputs :content_for %>
+    <% f.inputs do %>
+        <%= f.input :body, :input_html => {:class => 'tinyMCE'} %>
+    <% end %>
+    <%= f.buttons %>
+<% end %>

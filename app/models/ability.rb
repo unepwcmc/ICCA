@@ -8,10 +8,11 @@ class Ability
     can :edit, User, :id => user.id
     can :new, User
     can :create, User
+    can :read, StaticContent
     can :areas, :all
     can :iccaCountryDetails, :all
     if user.role? :admin
-      can :manage, :all
+      can :manage, :all      
     end
   end
   

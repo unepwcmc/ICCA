@@ -27,6 +27,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :sites, :member => [:photos, :links]
   map.resources :links
   map.resources :photos
+  map.resources :static_contents, :only => [:new, :edit, :create, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
 

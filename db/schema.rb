@@ -9,69 +9,76 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100428151346) do
+ActiveRecord::Schema.define(:version => 20100511153035) do
 
   create_table "countries", :force => true do |t|
-    t.string   "name"
-    t.string   "lat"
-    t.string   "lon"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.text     "extended_description"
-    t.integer  "site_id"
+    t.string    "name"
+    t.string    "lat"
+    t.string    "lon"
+    t.text      "description"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.text      "extended_description"
+    t.integer   "site_id"
   end
 
   create_table "links", :force => true do |t|
-    t.string   "name"
-    t.string   "link"
-    t.integer  "linkable_id"
-    t.string   "linkable_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "name"
+    t.string    "link"
+    t.integer   "linkable_id"
+    t.string    "linkable_type"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "photos", :force => true do |t|
-    t.string   "title"
-    t.string   "description"
-    t.integer  "photoable_id"
-    t.string   "photoable_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-    t.string   "citation"
-    t.boolean  "preferred"
+    t.string    "title"
+    t.string    "description"
+    t.integer   "photoable_id"
+    t.string    "photoable_type"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "image_file_name"
+    t.string    "image_content_type"
+    t.integer   "image_file_size"
+    t.timestamp "image_updated_at"
+    t.string    "citation"
+    t.boolean   "preferred"
   end
 
   create_table "roles", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "name"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "sites", :force => true do |t|
-    t.string   "name"
-    t.string   "lat"
-    t.string   "lon"
-    t.text     "extended_description"
-    t.integer  "country_id"
+    t.string    "name"
+    t.string    "lat"
+    t.string    "lon"
+    t.text      "extended_description"
+    t.integer   "country_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+  end
+
+  create_table "static_contents", :force => true do |t|
+    t.string   "content_for"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "email"
-    t.string   "crypted_password"
-    t.string   "password_salt"
-    t.string   "persistence_token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "role_id"
-    t.string   "survey_id"
+    t.string    "username"
+    t.string    "email"
+    t.string    "crypted_password"
+    t.string    "password_salt"
+    t.string    "persistence_token"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.integer   "role_id"
+    t.string    "survey_id"
   end
 
 end

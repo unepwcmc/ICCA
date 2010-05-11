@@ -494,6 +494,16 @@ div.protectedContinents{
     color: gray;
 }
 
+.form_holder{
+	width:70%;
+	padding:2em;
+	background:#726D50;
+	color:white;
+}
+
+.form_holder h2{
+	color:white;
+}
 
 /*PHOTOS GALLERY*/
 
