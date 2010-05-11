@@ -1,5 +1,7 @@
 <% content_for :title do %>
-    <p class="flash-Bigtitle"><em>Frequently Asked Questions</em></p>
+    <p class="flash-Bigtitle"><em>
+				Frequently Asked Questions
+	</em></p>
 <% end %>
 
 <% content_for :banner do %>
@@ -8,7 +10,21 @@
 
 <div class="span-15 first articles">
   <div class="span-15 last article">
-    <h2 class="flash-h2-special">What are Indigenous and Community Conserved Areas?</h2>
+    <h2 class="flash-h2-special">
+			<% if @content %>
+				<%= @content.title %>
+			<% else %>				
+				What are Indigenous and Community Conserved Areas?
+			<% end -%>
+		</h2>
+		
+		<% if @content %>
+			<%= @content.body %>
+			<% if can? :update, @content %>
+	        <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
+	    <% end %>			
+		<% else %>			
+		
     <p>Indigenous and Community Conserved Areas (ICCAs) are natural sites, resources and species' habitats conserved in a voluntary and self-directed way through community values, practices, rules and institutions.	Examples of ICCAs include indigenous territories, indigenous protected areas, cultural land- and seascapes, sacred sites and species, migration routes of mobile indigenous peoples, bio-cultural heritage territories, sustainable resource reserves, fishing grounds, and community-managed areas.</p>
     <h2 class="flash-h2">What is the ICCA Consortium?</h2>
     <p>The ICCA Consortium was formed during the 2008 World Conservation Congress by several mutually respected small Non-Government Organisations (NGOs) and organizations representing indigenous and community constituencies with years of experience working on ICCA issues.	The group developed a broad programme to promote the recognition and appropriate support of ICCAs at national and international levels.</p>
@@ -27,6 +43,7 @@
     <p>This website is still in the pilot phase of the ICCA Registry online database. As such it only contains information for four pilot countries that were selected during the initial phase of the project. These countries are: Fiji, Kenya, México and the Philippines.</p>
     <p>The site will gradually be updated with more countries and sites, so please do check back for updates. New contributions on ICCAs, in any country, for the Registry can be submitted at any time. To submit information upon an ICCA please see the FAQ "How do I submit information to the Registry about an ICCA?"</p>
     <p><b>iccaregistry@unep-wcmc.org</b></p>
+		<% end -%>
   </div>
 </div>
 
