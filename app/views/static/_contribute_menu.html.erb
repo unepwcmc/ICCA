@@ -5,7 +5,7 @@
       <li><%= link_to "Review and sign the Free Prior Informed Consent form ",  "/docs/WDPA%20ICCA%20consent%20form.doc" %></li>
       <li><%= link_to "Register and login to contribute online", new_user_path %></li>
       <% if current_user %>
-         <li><%= link_to "Complete the ICCA Questionnaire online", "http://surveymonkey.com/s/9QVPHVH?c=#{current_user.survey_id}" %></li>
+         <li><%= link_to "Complete the ICCA Questionnaire", forms_path %></li>
       <% else %>
           <li><%= link_to "Complete the ICCA Questionnaire online", new_user_path %></li>
       <% end %>
