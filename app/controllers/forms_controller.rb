@@ -45,7 +45,6 @@ class FormsController < ApplicationController
   # POST /forms.xml
   def create
     @form = Form.new(params[:form])
-    debugger
 
     respond_to do |format|
       if @form.save
