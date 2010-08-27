@@ -10,30 +10,31 @@
 <div class="span-15 first articles">
   <div class="span-15 last article">
     <h2 class="flash-h2">
-			<% if @content %>
-				<%= @content.title %>
-			<% else %>		
-				Contact us
-			<% end -%>
-		</h2>
-		
-		<% if @content %>
-			<%= @content.body %>
-			<% if can? :update, @content %>
-	        <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
-	    <% end %>
-		<% else %>		
-	    <p class="infoContact">Write or phone us at:</p> 
-			<br>
-			<p class="infoContact"><b>iccaregistry@unep-wcmc.org</b></p>
-			<p class="infoContact"><b>+44 (0)1223 277314</b></p>
-			<br>
-	    <p class="infoContact">United Nations Environment Programme</p>
-	    <p class="infoContact">World Conservation Monitoring Centre</p>
-	    <p class="infoContact">219 Huntingdon Road</p>
-	    <p class="infoContact">Cambridge, UK</p>
-	    <p class="infoContact">CB3 0DL</p>
-	    <p class="infoContact">&nbsp</p>
+      <% if @content %>
+        <%= @content.title %>
+      <% else %>		
+        Contact us
+      <% end -%>
+    </h2>
+        
+    <% if @content %>
+      <%= @content.body %>
+      <% if can? :update, @content %>
+        <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
+      <% end %>
+    <% else %>		
+
+      <p class="infoContact">Write or phone us at:</p> 
+        <br>
+        <p class="infoContact"><b>iccaregistry@unep-wcmc.org</b></p>
+        <p class="infoContact"><b>+44 (0)1223 277314</b></p>
+        <br>
+      <p class="infoContact">United Nations Environment Programme</p>
+      <p class="infoContact">World Conservation Monitoring Centre</p>
+      <p class="infoContact">219 Huntingdon Road</p>
+      <p class="infoContact">Cambridge, UK</p>
+      <p class="infoContact">CB3 0DL</p>
+      <p class="infoContact">&nbsp</p>
     <% end -%>
   </div>
 

@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   acts_as_authentic
 
   belongs_to :role
+  has_many :forms
+
   after_create :create_survey_id
 
   validates_uniqueness_of :username

@@ -20,15 +20,16 @@
 
   <%= javascript_include_tag 'cufon/cufon-yui' %>
   <%= javascript_include_tag 'cufon/TitilliumText14L_400.font' %>
+  <title>ICCA Registry</title>
 </head>
 
 <body>
-	<% if flash[:error] %>	
-  	<div class="flash flash_error"><%= flash[:error] %></div>
-	<% end -%>
-	<% if flash[:notice] %>	
-  	<div class="flash flash_notice"><%= flash[:notice] %></div>
-	<% end -%>
+  <% if flash[:error] %>	
+  <div class="flash flash_error"><%= flash[:error] %></div>
+  <% end -%>
+  <% if flash[:notice] %>	
+  <div class="flash flash_notice"><%= flash[:notice] %></div>
+  <% end -%>
 
 <div class="container">
   <div id="gmaps-key" style="display:none"><%= GOOGLE_MAPS_KEY %></div>

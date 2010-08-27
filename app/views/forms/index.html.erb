@@ -1,0 +1,53 @@
+<% content_for :title do %>
+    <p class="flash-Bigtitle"><em>Contribute to the ICCA registry</em></p>
+<% end %>
+
+<% content_for :banner do %>
+    <%= render :partial => "static/site_photo_banner" %>
+<% end %>
+
+<h1>ICCA Registry Questionnaire</h1>
+<p>
+  You must fill in a questionnaire for each ICCA you wish to submit to us.
+  The survey is also available as a Word Document to download, or can be requested by email. There 
+  are around 10 core questions that each community should address to help inform key ICCA issues. Answers
+  to additional questions will enhance understanding of the contribution of ICCAs from around the world,
+  including information on management and governance. If the ICCA is already recognised by national
+  legislation or a protected area system, the community should work with government representatives where
+  possible to provide spatial and other information.
+</p>
+<% form_for @form do |f| %>
+  <%= hidden_field :form, :user_id %>
+  <% if @forms.size == 0 %>
+    <%= f.submit 'Fill in the ICCA Registry Questionnaire' %>
+  <% else %>
+    <%= f.submit 'Fill in another ICCA Registry Questionnaire' %>
+  <% end %>
+<% end %>
+<% if @forms.size > 0 %>
+  <h2>Questionnaires completed you</h2>
+  <table>
+    <tr>
+      <th>Questionnaire ID</th>
+      <th>Date Created</th>
+      <th>Site</th>
+    </tr>
+
+    <% @forms.each do |form| %>
+      <tr>
+        <td><%=h form.id %></td>
+        <td><%=h form.created_at %></td>
+        <td><%=h form.site.try(:name) %></td>
+        <% if can? :manage, Form %>
+          <td><%= link_to 'Show', form %></td>
+          <td><%= link_to 'Edit', edit_form_path(form) %></td>
+          <td><%= link_to 'Destroy', form, :confirm => 'Are you sure?', :method => :delete %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+
+  <br />
+  <%= link_to 'Fill in the questionnaire for another ICCA', @form, :method => :post %>
+<% end %>
+      

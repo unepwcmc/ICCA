@@ -47,8 +47,9 @@
     </h4>
     <p>
       <% if current_user %>
-          The ICCA Registry questionnaire can be accessed and completed
-          <%= link_to "HERE", "http://www.surveymonkey.com/s/9QVPHVH?c=#{current_user.survey_id} " %>.
+        Once you have logged in, you can start filling in the ICCA Registry questionnaire. You may fill in as many
+        questionnaires as you need. Click here to fill in the survey:
+          <%= link_to "ICCA Registry Survey", forms_path %>
       <% else %>
           Before you can fill in the ICCA Registry questionnaire, you must first <%= link_to "register", new_user_path %>
       <% end %>
