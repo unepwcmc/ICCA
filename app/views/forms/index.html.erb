@@ -25,9 +25,10 @@
   <% end %>
 <% end %>
 <% if @forms.size > 0 %>
-  <h2>Questionnaires completed you</h2>
+  <h2>Questionnaires completed</h2>
   <table>
     <tr>
+      <%= "<th>User<th>" if can? :manage, Form %>
       <th>Questionnaire ID</th>
       <th>Date Created</th>
       <th>Site</th>
@@ -35,6 +36,7 @@
 
     <% @forms.each do |form| %>
       <tr>
+        <%= "<th>#{form.user.username}<th>" if can? :manage, Form %>
         <td><%=h form.id %></td>
         <td><%=h form.created_at %></td>
         <td><%=h form.site.try(:name) %></td>

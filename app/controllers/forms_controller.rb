@@ -5,7 +5,11 @@ class FormsController < ApplicationController
   # GET /forms
   # GET /forms.xml
   def index
-    @forms = current_user.forms
+    if current_user.role? :admin
+      @forms = Form.all
+    else
+      @forms = current_user.forms
+    end
     @form = Form.new(:user => current_user)
 
     respond_to do |format|
