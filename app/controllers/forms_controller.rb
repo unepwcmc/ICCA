@@ -70,7 +70,7 @@ class FormsController < ApplicationController
     respond_to do |format|
       if @form.update_attributes(params[:form])
         flash[:notice] = 'Form was successfully updated.'
-        format.html { redirect_to(@form) }
+        format.html { redirect_to forms_path }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

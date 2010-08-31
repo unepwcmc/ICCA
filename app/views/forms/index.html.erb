@@ -1,9 +1,9 @@
 <% content_for :title do %>
-    <p class="flash-Bigtitle"><em>Contribute to the ICCA registry</em></p>
+  <p class="flash-Bigtitle"><em>Contribute to the ICCA registry</em></p>
 <% end %>
 
 <% content_for :banner do %>
-    <%= render :partial => "static/site_photo_banner" %>
+  <%= render :partial => "static/site_photo_banner" %>
 <% end %>
 
 <h1>ICCA Registry Questionnaire</h1>
@@ -32,6 +32,7 @@
       <th>Questionnaire ID</th>
       <th>Date Created</th>
       <th>Site</th>
+      <%= "<th>Spatial Data<th>" if can? :manage, Form %>
     </tr>
 
     <% @forms.each do |form| %>
@@ -41,9 +42,15 @@
         <td><%=h form.created_at %></td>
         <td><%=h form.site.try(:name) %></td>
         <% if can? :manage, Form %>
-          <td><%= link_to 'Show', form %></td>
+          <td>
+            <% if form.spatial_data.file? %>
+              <%= link_to 'Download', form.spatial_data.url %>
+            <% end %>
+          </td>
           <td><%= link_to 'Edit', edit_form_path(form) %></td>
           <td><%= link_to 'Destroy', form, :confirm => 'Are you sure?', :method => :delete %></td>
+        <% else %>
+          <td><%= link_to 'Upload Spatial Data', edit_form_path(form) %></td>
         <% end %>
       </tr>
     <% end %>

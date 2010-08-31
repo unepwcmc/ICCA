@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100827124628) do
+ActiveRecord::Schema.define(:version => 20100831090147) do
 
   create_table "countries", :force => true do |t|
     t.string    "name"
@@ -27,6 +27,10 @@ ActiveRecord::Schema.define(:version => 20100827124628) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "spatial_data_file_name"
+    t.string   "spatial_data_content_type"
+    t.integer  "spatial_data_file_size"
+    t.datetime "spatial_data_updated_at"
   end
 
   create_table "links", :force => true do |t|
