@@ -2,7 +2,9 @@ class Form < ActiveRecord::Base
   belongs_to :user
   belongs_to :site
   
-  validates_presence_of :user
+  validates_presence_of :user, :name
+
+  validates_uniqueness_of :name, :message => 'Please give the questionnaire a unique name for easier identification'
 
   has_attached_file :spatial_data,
                     :storage => :s3,

@@ -5,11 +5,7 @@ class FormsController < ApplicationController
   # GET /forms
   # GET /forms.xml
   def index
-    if current_user.role? :admin
-      @forms = Form.all
-    else
-      @forms = current_user.forms
-    end
+    get_forms_for_index
     @form = Form.new(:user => current_user)
 
     respond_to do |format|
@@ -56,7 +52,8 @@ class FormsController < ApplicationController
         format.html { redirect_to(@form) }
         format.xml  { render :xml => @form, :status => :created, :location => @form }
       else
-        format.html { render :action => "new" }
+        get_forms_for_index
+        format.html { render :index }
         format.xml  { render :xml => @form.errors, :status => :unprocessable_entity }
       end
     end
@@ -96,6 +93,16 @@ class FormsController < ApplicationController
     @images = []
     sites.each do |s|
       @images += s.preferred_photo
+    end
+  end
+
+  private
+  
+  def get_forms_for_index
+    if current_user.role? :admin
+      @forms = Form.all
+    else
+      @forms = current_user.forms
     end
   end
 end

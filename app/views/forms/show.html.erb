@@ -2,5 +2,5 @@
   <p class="flash-Bigtitle"><em>ICCA Registry Questionnaire #<%=h @form.id %></em></p>
 <% end %>
 <div style="padding:10px">
-  <iframe src="https://spreadsheets.google.com/embeddedform?formkey=dGxrWHpYR3FBcVpCeG1icExtcTJmOXc6MQ&entry_114=<%=h @form.id %>" width="930" height="11025" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  <iframe src="https://spreadsheets.google.com/embeddedform?formkey=dGxrWHpYR3FBcVpCeG1icExtcTJmOXc6MQ&entry_114=<%= CGI::escape(@form.name) %>" width="930" height="11025" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>

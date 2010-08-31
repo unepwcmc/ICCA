@@ -16,13 +16,13 @@
   legislation or a protected area system, the community should work with government representatives where
   possible to provide spatial and other information.
 </p>
+<h2>Fill in a new questionnaire</h2>
 <% form_for @form do |f| %>
+  <%= f.error_messages %>
   <%= hidden_field :form, :user_id %>
-  <% if @forms.size == 0 %>
-    <%= f.submit 'Fill in the ICCA Registry Questionnaire' %>
-  <% else %>
-    <%= f.submit 'Fill in another ICCA Registry Questionnaire' %>
-  <% end %>
+  <div style="float:left"><b>Site </b><%= f.label :name %></div>
+  <div style="float:left"><%= f.text_field :name %></div>
+  <%= f.submit 'Start the questionnaire' %>
 <% end %>
 <% if @forms.size > 0 %>
   <h2>Questionnaires completed</h2>
