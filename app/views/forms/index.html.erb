@@ -20,7 +20,8 @@
 <% form_for @form do |f| %>
   <%= f.error_messages %>
   <%= hidden_field :form, :user_id %>
-  <div style="float:left"><b>Site </b><%= f.label :name %></div>
+  Please give each questionnaire a meaningful name (e.g. site name)<br/>
+  <div style="float:left"><%= f.label :name %></div>
   <div style="float:left"><%= f.text_field :name %></div>
   <%= f.submit 'Start the questionnaire' %>
 <% end %>
@@ -29,7 +30,7 @@
   <table>
     <tr>
       <%= "<th>User<th>" if can? :manage, Form %>
-      <th>Questionnaire ID</th>
+      <th>Questionnaire Name</th>
       <th>Date Created</th>
       <th>Site</th>
       <%= "<th>Spatial Data<th>" if can? :manage, Form %>
@@ -38,7 +39,7 @@
     <% @forms.each do |form| %>
       <tr>
         <%= "<th>#{form.user.username}<th>" if can? :manage, Form %>
-        <td><%=h form.id %></td>
+        <td><%=h form.name %></td>
         <td><%=h form.created_at %></td>
         <td><%=h form.site.try(:name) %></td>
         <% if can? :manage, Form %>
