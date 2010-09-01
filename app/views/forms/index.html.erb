@@ -54,10 +54,23 @@
           <td><%= link_to 'Upload Spatial Data', edit_form_path(form) %></td>
         <% end %>
       </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Documents</td>
+        <td><%= link_to 'Upload A Document', new_form_document_path(form) %>
+      </tr>
+      <% form.documents.each do |doc| %>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <%=h doc.name %>
+            <%= link_to 'Download', form.spatial_data.url %>
+          </td>
+        </tr>
+      <% end %>
     <% end %>
   </table>
-
-  <br />
-  <%= link_to 'Fill in the questionnaire for another ICCA', @form, :method => :post %>
 <% end %>
       

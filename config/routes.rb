@@ -1,7 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :forms
-
-
   map.root :controller => :static, :action => :home
 
   map.login "login", :controller => :user_sessions, :action => :new
@@ -30,7 +27,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :links
   map.resources :photos
   map.resources :static_contents, :only => [:new, :edit, :create, :update]
-  map.resources :forms
+  map.resources :forms do |forms|
+    forms.resources :documents
+  end
+  map.resources :documents
 
   # The priority is based upon order of creation: first created -> highest priority.
 

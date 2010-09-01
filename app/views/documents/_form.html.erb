@@ -1,0 +1,6 @@
+<% semantic_form_for @document, :html => {:multipart => true} do |f| %>
+    <%= f.error_messages %>
+    <%= hidden_field :document, :form_id %>
+    <%= f.inputs :name, :doc %>
+    <%= f.buttons %>
+<% end %>

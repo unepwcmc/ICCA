@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100831124802) do
+ActiveRecord::Schema.define(:version => 20100901105405) do
 
   create_table "countries", :force => true do |t|
     t.string    "name"
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(:version => 20100831124802) do
     t.timestamp "updated_at"
     t.text      "extended_description"
     t.integer   "site_id"
+  end
+
+  create_table "documents", :force => true do |t|
+    t.integer  "form_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "doc_file_name"
+    t.string   "name"
   end
 
   create_table "forms", :force => true do |t|

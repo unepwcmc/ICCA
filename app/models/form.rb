@@ -1,6 +1,8 @@
 class Form < ActiveRecord::Base
   belongs_to :user
   belongs_to :site
+
+  has_many :documents
   
   validates_presence_of :user, :name
 
