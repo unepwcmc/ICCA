@@ -28,6 +28,7 @@
 <% if @forms.size > 0 %>
   <h2>Questionnaires completed</h2>
   <table>
+     top #F4EFEB
     <tr>
       <%= "<th>User<th>" if can? :manage, Form %>
       <th>Questionnaire Name</th>
@@ -57,7 +58,7 @@
       <tr>
         <td></td>
         <td></td>
-        <td>Documents</td>
+        <td><b>Documents</b></td>
         <td><%= link_to 'Upload A Document', new_form_document_path(form) %>
       </tr>
       <% form.documents.each do |doc| %>
@@ -66,7 +67,11 @@
           <td></td>
           <td>
             <%=h doc.name %>
-            <%= link_to 'Download', form.spatial_data.url %>
+            <%= link_to 'Download', doc.doc.url %>
+          </td>
+          <td>
+            <%= link_to 'Edit', edit_document_path(doc) %> |
+            <%= link_to 'Destroy', doc, :confirm => 'Are you sure?', :method => :delete %>
           </td>
         </tr>
       <% end %>
