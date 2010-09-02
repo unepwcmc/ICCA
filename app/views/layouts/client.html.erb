@@ -45,7 +45,9 @@
         <li class=""><%= link_to "CONTRIBUTE", contribute_path %> </li>
         <% if current_user %>
             /
-            <li class=""><%= link_to "LOGOUT", logout_path %></li>
+            <li class=""><%= link_to "LOGOUT", logout_path %></li>&nbsp;&nbsp;&nbsp;
+            <li class=""><%= link_to "COMPLETE THE QUESTIONNAIRE", forms_path %></li>/
+            <li class=""><%= link_to "USER ADMIN #{current_user.username}", edit_user_path(current_user)%></li>
             <% if current_user.role? :admin %>
                 /
                 <li class=""><%= link_to "USERS", users_path %></li>

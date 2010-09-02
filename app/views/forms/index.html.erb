@@ -29,7 +29,7 @@
   <h2>Questionnaires completed</h2>
   <table>
     <tr>
-      <%= "<th>User<th>" if can? :manage, Form %>
+      <%= "<th>User</th>" if can? :manage, Form %>
       <th>Questionnaire Name</th>
       <th>Date Created</th>
       <th>Site</th>
@@ -38,7 +38,7 @@
 
     <% @forms.each do |form| %>
       <tr>
-        <%= "<th>#{form.user.username}<th>" if can? :manage, Form %>
+        <%= "<th>#{form.user.username}</th>" if can? :manage, Form %>
         <td><%=h form.name %></td>
         <td><%=h form.created_at %></td>
         <td><%=h form.site.try(:name) %></td>

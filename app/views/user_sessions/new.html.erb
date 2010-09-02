@@ -1,18 +1,25 @@
-<h1>Login</h1>
-
-<% form_for(@user_session) do |f| %>
-    <%= f.error_messages %>
-
-    <p>
-      <%= f.label :username %><br />
-      <%= f.text_field :username %>
-    </p>
-    <p>
-      <%= f.label :password %><br />
-      <%= f.password_field :password %>
-    </p>
-    <p>
-      <%= f.submit 'Login' %>
-    </p>
-    <span><%= link_to "I've forgotten my password!", forgot_password_path %></span>
+<% content_for :title do %>
+  <p class="flash-Bigtitle"><em>Login </em></p>
 <% end %>
+<div class='contentIndent'>
+  <% form_for(@user_session) do |f| %>
+      <%= f.error_messages %>
+
+      <p>
+        <%= f.label :username %><br />
+        <%= f.text_field :username %>
+      </p>
+      <p>
+        <%= f.label :password %><br />
+        <%= f.password_field :password %>
+      </p>
+      <p>
+        <%= f.submit 'Login' %>
+      </p>
+  <% end %>
+  <span><%= link_to "I've forgotten my password!", forgot_password_path %></span>
+
+  <h2>Not yet registered?</h2>
+  <%= link_to "Register here >>>", new_user_path %>
+
+</div>

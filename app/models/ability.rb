@@ -7,6 +7,7 @@ class Ability
     can :read, Site
 
     can :edit, User, :id => user.id
+    can :update, User, :id => user.id
     can :new, User
     can :create, User
     can :forgot_password, User
