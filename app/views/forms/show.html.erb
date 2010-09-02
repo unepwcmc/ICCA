@@ -1,6 +1,20 @@
 <% content_for :title do %>
-  <p class="flash-Bigtitle"><em>ICCA Registry Questionnaire #<%=h @form.id %></em></p>
+  <p class="flash-Bigtitle"><em>ICCA Registry Questionnaire - '<%=h @form.name %>'</em></p>
 <% end %>
 <div style="padding:10px">
-  <iframe src="https://spreadsheets.google.com/embeddedform?formkey=dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA&entry_114=<%= CGI::escape(@form.name) %>" width="930" height="11025" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  <h1>Important information to note before filling in the form</h1>
+  <h2>Editing form responses</h2>
+  <p>
+    Upon completeing the survey, you will be given a link which will allow you to return
+    to the form and edit your results. Please take note of this link , as without it, you
+    will be unable to return to your form.
+  </p>
+
+  <h2>Partially completing the form</h2>
+  <p>
+    If you wish to partially complete a form to then return to it later, you must first 
+    complete all the questionnaire's required fields and submit the form. Upon submission,
+    take note of the Edit link provided, and you may return to the survey at any point.
+  </p>
+  <a href="http://spreadsheets.google.com/a/unep-wcmc.org.uk/viewform?hl=en&formkey=dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA#gid=0&entry_114=<%= CGI::escape(@form.name) %>" >Fill in the form</a>
 </div>
