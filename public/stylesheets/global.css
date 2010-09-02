@@ -735,3 +735,7 @@ td, th{
         border-bottom: 2px solid #F4EFEB;
         border-style: solid;
 }
+
+.register {
+  width: 400px;
+}

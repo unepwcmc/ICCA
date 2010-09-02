@@ -101,4 +101,30 @@ class UsersController < ApplicationController
       redirect_to users_path
     end
   end
+
+  def forgot_password
+    @user_session = UserSession.new unless current_user
+  end
+
+  def reset_password
+    email = params[:email]
+    @user = User.find(:first, :conditions => "email = '#{email}'")
+    if @user.nil?
+      flash[:notice] = "Unable to find user with email address '" + email + "'"
+      redirect_to :forgot_password
+    else
+      new_password = ActiveSupport::SecureRandom.base64()
+      @user.password = new_password
+      @user.password_confirmation = new_password
+      if @user.save
+        Emailer.deliver_mail_user_new_password(@user, new_password)
+        flash[:notice] = "Password reset and email sent to " + email
+        UserSession.find.destroy
+        redirect_to contribute_path
+      else
+        flash[:notice] = "Something went wrong and we were unable to reset your password, please try again, or contact us"
+        redirect_to :forgot_password
+      end
+    end
+  end
 end

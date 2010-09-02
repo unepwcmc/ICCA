@@ -9,6 +9,8 @@ class Ability
     can :edit, User, :id => user.id
     can :new, User
     can :create, User
+    can :forgot_password, User
+    can :reset_password, User
 
     can :read, Form if user.id.present?
     can :create, Form if user.id.present?

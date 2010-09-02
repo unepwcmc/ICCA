@@ -16,5 +16,7 @@
     complete all the questionnaire's required fields and submit the form. Upon submission,
     take note of the Edit link provided, and you may return to the survey at any point.
   </p>
-  <a href="http://spreadsheets.google.com/a/unep-wcmc.org.uk/viewform?hl=en&formkey=dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA#gid=0&entry_114=<%= CGI::escape(@form.name) %>" >Fill in the form</a>
+  <div id="getFormId">
+  </div>
+  <iframe src="http://spreadsheets.google.com/embeddedform?formkey=dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA&entry_114=<%= CGI::escape(@form.name) %>" width="930" height="11415" frameborder="0" marginheight="0" marginwidth="0" id='formFrame' onload="javascript:scroll(0,0)">Loading...</iframe>
 </div>

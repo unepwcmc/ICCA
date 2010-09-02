@@ -28,3 +28,17 @@ GOOGLE_MAPS_KEY = "ABQIAAAAeHILri4AWFPUe0-e6P_4ABQ5R5Myl8ql1yuPsFsd7WCm78zulxT5_
 
 # Enable threaded mode
 # config.threadsafe!
+
+# Don't care if the mailer can't send
+config.action_mailer.raise_delivery_errors = false
+
+#set delivery method to :smtp, :sendmail or :test
+config.action_mailer.delivery_method = :smtp
+
+config.action_mailer.default_content_type = "text/html"
+
+config.action_mailer.smtp_settings = {
+        :address  => 'email-filter.unep-wcmc.org',
+        :port     => 25,
+        :domain   => 'unep-wcmc.org'
+}
