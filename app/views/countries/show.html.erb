@@ -37,29 +37,11 @@
           </ul>
       <% end %>
     </div>
-    <div class="new">
-      <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
-      <ul class="newsList" id="newsList"></ul>
-    </div>
     <%= render :partial => "links/important_links", :locals => {:linkable => @country} %>
   </div>
 </div>
 <script language="javaScript" type="text/javascript">
-    $(document).ready( function() {
-        var url = "http://search.twitter.com/search.json?callback=?&q=<%= @country.name %> indigenous&rpp=5";
-        // var url = "http://search.twitter.com/search.json?callback=?&rpp=3&q=from:#indigenous";
-        // var url = "http://twitter.com/status/user_timeline/Indigenous.json?count=3&callback=?";
-        $.getJSON(url,function(data){
-            $.each(data.results, function(i, item) {
-                $("#newsList").append('<ul class="newsList"><li class="newTweet"><p class="newsTitular">'+item.text.linkify()+'<a class="textLink" href=""></a></p></li></ul>');
-            });
-
-        });
-
-        function twitter_callback (){
-            return true;
-        }
-
+/*    $(document).ready( function() {
         String.prototype.linkify = function() {
             return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
                 return m.link(m);
@@ -67,5 +49,6 @@
         };
 
     });
+*/
 </script>
 

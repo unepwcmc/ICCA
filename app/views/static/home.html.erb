@@ -6,7 +6,6 @@
     <%= render :partial => "site_photo_banner" %>
 <% end %>
 
-
 <div class="span-15 first articles">
   <div class="span-15 last article">
     <h2 class="flash-h2">Explore the ICCA world map</h2>
@@ -57,11 +56,6 @@
   
 	
   <div class="new">
-    <h2 class="newsColumn flash-h2">Latest news<div class="rss"></div></h2>
-    <ul class="newsList" id="newsList"></ul>
-  </div>
-
-  <div class="new">
     <h2 class="newsColumn flash-h2">Partners</h2>
     <ul >
       <li>
@@ -85,20 +79,7 @@
   </div>
 </div>
 <script language="javaScript" type="text/javascript">
-    $(document).ready( function() {
-        var url = "http://search.twitter.com/search.json?callback=?&q=Indigenous Conservation&rpp=5";
-        // var url = "http://search.twitter.com/search.json?callback=?&rpp=3&q=from:#indigenous";
-        // var url = "http://twitter.com/status/user_timeline/Indigenous.json?count=3&callback=?";
-        $.getJSON(url,function(data){
-            $.each(data.results, function(i, item) {
-                $("#newsList").append('<ul class="newsList"><li class="newTweet"><p class="newsTitular">'+item.text.linkify()+'<a class="textLink" href=""></a></p></li></ul>');
-            });
-
-        });
-
-        function twitter_callback (){
-            return true;
-        }
+    /*$(document).ready( function() {
 
         String.prototype.linkify = function() {
             return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
@@ -107,4 +88,5 @@
         };
 
     });
+    */
 </script>

@@ -45,9 +45,9 @@
         <li class=""><%= link_to "CONTRIBUTE", contribute_path %> </li>
         <% if current_user %>
             /
-            <li class=""><%= link_to "LOGOUT", logout_path %></li>&nbsp;&nbsp;&nbsp;
-            <li class=""><%= link_to "COMPLETE THE QUESTIONNAIRE", forms_path %></li>/
-            <li class=""><%= link_to "USER ADMIN #{current_user.username}", edit_user_path(current_user)%></li>
+            <li class=""><%= link_to "LOGOUT", logout_path %></li> <br/>
+            <li class=""><%= link_to "USER PAGE", forms_path %> /</li>
+            <li class=""><%= link_to "CHANGE PASSWORD", edit_user_path(current_user)%></li>
             <% if current_user.role? :admin %>
                 /
                 <li class=""><%= link_to "USERS", users_path %></li>
@@ -71,7 +71,7 @@
 <div class="footerContainer">
   <div class="container">
     <div class="span-1 last logos"></div>
-    <div class="span-18 last footerInfo"><p style="float:right;">All rights reserved, ICCA 2010  /  <a href="contact">Contact us</a></p></div>
+    <div class="span-18 last footerInfo"><p style="float:right;">All rights reserved, ICCA 2010  /  <%= link_to "Contact us", contact_path %></p></div>
   </div>
 </div>
 </body>

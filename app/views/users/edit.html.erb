@@ -1,6 +1,9 @@
-<h1>Editing user</h1>
+<% content_for :title do %>
+  <p class="flash-Bigtitle"><em>Edit user details</em></p>
+<% end %>
+<div class='contentIndent'>
+  <%= render :partial => 'form' %>
 
-<%= render :partial => 'form' %>
-
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+  <%= link_to 'Show', @user %> |
+  <%= link_to 'Back', users_path %>
+</div>

@@ -4,7 +4,7 @@ class CountriesController < ApplicationController
   # GET /countries
   # GET /countries.xml
   def index
-    @countries = Country.all
+    @countries = Country.find(:all, :order => 'name ASC')
 
     respond_to do |format|
       format.html # index.html.erb

@@ -47,7 +47,7 @@
           <li>
             <%= link_to "#{country.name}", country, :class => "textLinkRight" %>
             <ul>
-              <% country.sites.each do |site| %>
+              <% country.sites.sort!{|a,b| a.name <=> b.name}.each do |site| %>
                   <li class="listICCA"><%= link_to "#{site.name}", site %></li>
               <% end %>
             </ul>
