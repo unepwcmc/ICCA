@@ -51,6 +51,7 @@
           <td><%= link_to 'Edit', edit_form_path(form) %></td>
           <td><%= link_to 'Destroy', form, :confirm => 'Are you sure?', :method => :delete %></td>
         <% else %>
+          <td><%= link_to 'Edit', form.edit_link if form.edit_link.present? %></td>
           <td><%= link_to 'Upload Spatial Data', edit_form_path(form) %></td>
         <% end %>
       </tr>

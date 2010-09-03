@@ -15,6 +15,7 @@ class Ability
 
     can :read, Form if user.id.present?
     can :create, Form if user.id.present?
+    can :update, Form, :user_id => user.id
 
     can :read, StaticContent
 

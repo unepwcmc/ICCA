@@ -6,8 +6,24 @@
   <h2>Editing form responses</h2>
   <p>
     Upon completeing the survey, you will be given a link which will allow you to return
-    to the form and edit your results. Please take note of this link , as without it, you
-    will be unable to return to your form.
+    to the form and edit your results. If you want to be able to return to the form through
+    this site, right click the 'Edit your response' link and select either 'Copy Link Location'
+    or 'Copy Shortcut' and paste the link into the box below and submit it.
+  </p>
+  <% form_for @form, :html => {:onsubmit => "return validateUrl()"} do |f| %>
+    <%= f.error_messages %>
+
+    <p>
+      <%= f.label :edit_link %><br />
+      <%= f.text_field :edit_link %>
+    </p>
+    <p>
+      <%= f.submit 'Save Edit Link' %>
+    </p>
+  <% end %>
+
+  <p>
+    After doing this, you will be able to return to your form at any time from the <%= link_to "User Page", forms_path %>
   </p>
 
   <h2>Partially completing the form</h2>
@@ -18,5 +34,20 @@
   </p>
   <div id="getFormId">
   </div>
-  <iframe src="http://spreadsheets.google.com/embeddedform?formkey=dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA&entry_114=<%= CGI::escape(@form.name) %>" width="930" height="11415" frameborder="0" marginheight="0" marginwidth="0" id='formFrame' onload="javascript:scroll(0,0)">Loading...</iframe>
+  <% form_key = 'dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA' %>
+  <iframe src="http://spreadsheets.google.com/embeddedform?formkey=<%= form_key %>&entry_114=<%= CGI::escape(@form.name) %>" width="930" height="11415" frameborder="0" marginheight="0" marginwidth="0" id='formFrame' onload="javascript:scroll(0,0)">Loading...</iframe>
 </div>
+<script>
+  var googleLinkRegex = /^https:\/\/spreadsheets\.google\.com\/embeddedform\?formkey=<%= form_key %>(.*)edit=.*$/;
+
+  validateUrl = function () {
+    if (googleLinkRegex.test($('#form_edit_link').val())){
+      return true
+    }
+    else {
+      alert('The link you copied is not valid, please follow the instructions to copy the link from the form, it should look like https://spreadsheets.google.com/a/....')
+      return false
+    }
+  }
+
+</script>
