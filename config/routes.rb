@@ -23,12 +23,14 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :countries do |countries|
     countries.resources :sites, :member => [:new]
   end
-  map.resources :sites, :member => [:photos, :links]
+  map.resources :sites, :member => [:photos, :links] do |sites|
+    sites.resources :documents, :only => [:new, :index]
+  end
   map.resources :links
   map.resources :photos
   map.resources :static_contents, :only => [:new, :edit, :create, :update]
   map.resources :forms do |forms|
-    forms.resources :documents
+    forms.resources :documents, :only => [:new, :index]
   end
   map.resources :documents
 

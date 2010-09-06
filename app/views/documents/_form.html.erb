@@ -2,5 +2,8 @@
     <%= f.error_messages %>
     <%= hidden_field :document, :form_id %>
     <%= f.inputs :name, :doc %>
+    <% if current_user.try(:role?, :admin) %>
+      <%= f.inputs :site %>
+    <% end %>
     <%= f.buttons %>
 <% end %>

@@ -26,6 +26,7 @@ class DocumentsController < ApplicationController
   def new
     @document = Document.new
     @document.form_id = params[:form_id]
+    @document.site_id = params[:site_id]
 
     respond_to do |format|
       format.html # new.html.erb
@@ -46,7 +47,7 @@ class DocumentsController < ApplicationController
     respond_to do |format|
       if @document.save
         flash[:notice] = 'Document was successfully created.'
-        format.html { redirect_to(form_path) }
+        format.html { redirect_to(forms_path) }
         format.xml  { render :xml => @document, :status => :created, :location => @document }
       else
         format.html { render :action => "new" }
@@ -63,7 +64,7 @@ class DocumentsController < ApplicationController
     respond_to do |format|
       if @document.update_attributes(params[:document])
         flash[:notice] = 'Document was successfully updated.'
-        format.html { redirect_to(form_path) }
+        format.html { redirect_to(forms_path) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

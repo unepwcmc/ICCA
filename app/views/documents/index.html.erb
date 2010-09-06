@@ -3,11 +3,17 @@
 <table>
   <tr>
     <th>Form</th>
+    <th>Name</th>
+    <th>File</th>
+    <th>Site</th>
   </tr>
 
 <% @documents.each do |document| %>
   <tr>
     <td><%=h document.form_id %></td>
+    <td><%=h document.name %></td>
+    <td><%= link_to document.doc.url %></td>
+    <td><%=h document.site.try(:name) %></td>
     <td><%= link_to 'Show', document %></td>
     <td><%= link_to 'Edit', edit_document_path(document) %></td>
     <td><%= link_to 'Destroy', document, :confirm => 'Are you sure?', :method => :delete %></td>

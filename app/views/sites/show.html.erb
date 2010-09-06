@@ -35,6 +35,7 @@
     </div>
     <%= render :partial => "sites_flash_map" %>
   </div>
+
   <div class="new">
     <h2 class="newsColumn flash-h2">Multimedia resources
       <% if (can? :update, @site) && (can? :create, Photo) %>
@@ -51,5 +52,25 @@
 
     <br clear="all" />
   </div>
+
+  <div class="new">
+    <h2 class="newsColumn flash-h2">Resources
+      <% if (can? :update, @site) && (can? :create, Photo) %>
+          <%= link_to "Add | ", new_site_document_path(:site_id => @site.id), :class => "textLinkRight"  %>
+      <% end %>
+      <% if (can? :update, @site) && (can? :update, Photo) %>
+          <%= link_to "Edit", site_documents_path(@site.id), :class => "textLinkRight"  %>
+      <% end %>
+    </h2>
+    <ul>
+      <% @site.documents.each do |doc| %>
+        <% if doc.doc.file? %>
+          <li><%= link_to doc.name, doc.doc.url %></li>
+        <% end %>
+      <% end %>
+    </ul>
+    <br clear="all" />
+  </div>
+
   <%= render :partial => "links/important_links", :locals => {:linkable => @site} %>
 </div>

@@ -1,7 +1,8 @@
 class Document < ActiveRecord::Base
   belongs_to :form
+  belongs_to :site
 
-  validates_presence_of :name, :doc, :form
+  validates_presence_of :name, :doc
 
   has_attached_file :doc,
                     :storage => :s3,
