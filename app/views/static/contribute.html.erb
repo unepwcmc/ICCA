@@ -11,76 +11,85 @@
     <h2>Contributing to the Registry</h2>
     <p>
       For communities and others who want to contribute to the Registry and benefit from using it, there are several
-      important but simple steps to follow.  These include discussing participation with others, reading the project
-      information sheet, providing consent, choosing the degree to which your information will be shared with others,
-      completing the questionnaire which informs the Registry, and submitting visual and other materials such as photos,
-      videos, website links and documents.  The instructions below are provided to help guide those who are interested
-      in contributing information about their ICCAs to the Registry.  All information is treated with respect and
-      discretion while adhering to the principles of the UN Declaration on the Rights of Indigenous Peoples.
+      important but simple steps to follow. All information is treated with respect and discretion while adhering to the
+      principles of the 2007 UN Declaration on the Rights of Indigenous Peoples. There are two opportunities for contributing: <br/>
+        (a) provide information via an online questionnaire to the ICCA Registry Database, and <br/>
+        (b) create a Case Study for the ICCA Registry website.
     </p>
 
 
-    <h2>Instructions for contributing to the Registry</h2>
+    <h2>(A) Instructions for contributing to the ICCA Registry Database</h2>
 
-    <h4>Step 1: Discuss among community members the ICCA Registry. </h4>
+    <h4>
+      Step 1: Read the <%= link_to "Project Information Sheet", "docs/WDPA%20ICCA%20info%20sheet.doc" %> and discuss
+      among community members the ICCA Registry.
+    </h4>
     <p>
-      Members of the community need to review together the benefits and risks of contributing to the Registry so that
-      everyone is aware of the process, the challenges, and the potential positive and negative consequences.
+      Members of the community need to review together the benefits and risks of contributing to the Registry Database so
+      that everyone is aware of the process, the challenges, and the potential positive and negative consequences. 
     </p>
 
     <h4>
       Step 2:  Review the <%= link_to "Free Prior Informed Consent Form", "docs/WDPA%20ICCA%20consent%20form.doc" %>
-      and <%= link_to "Project Information Sheet", "docs/WDPA%20ICCA%20info%20sheet.doc" %>, organize a meeting with
-      community members to attain key signatures, and return the consent form.
+      with community members to attain key signatures. Two options exist for completing the form: <br/>
+      (a) Download the FPIC form, sign, and return to Registry managers  <br/>
+      (b) Register online, open the electronic questionnaire form and complete the FPIC section.
     </h4>
     <p>
       The purpose of this consent form is to ensure that indigenous and local communities are aware of the process of
-      contributing information about their communities to the Registry, they know how and what information will be used
-      and accessed, and they have a choice regarding what information will be disclosed through various means (such as
-      the ICCA website and future analytical publications).  All communities can select the extent to which their
-      information is shared.  This step follows the principles of the United Nations Declaration on the Rights of
-      Indigenous Peoples (September 2007) to protect communities and their best interests.
+      contributing information to the Registry, they know how and what information will be used and accessed, and they
+      have a choice regarding what information will be disclosed through various means (such as the ICCA website and
+      future analytical publications). All communities can select the extent to which their information is shared. 
     </p>
 
     <h4>
-      Step 3: Compile data for the Registry’s questionnaire.
+      Step 3: Complete the ICCA Registry questionnaire with your ICCA information.
     </h4>
     <p>
       <% if current_user %>
-        Once you have logged in, you can start filling in the ICCA Registry questionnaire. You may fill in as many
-        questionnaires as you need. Click here to fill in the survey:<br/>
-        <%= link_to "ICCA Registry Survey", forms_path %><br/>
+        Visit your <%= link_to "user page", forms_path %> to fill in the ICCA Registry questionnaire online.
       <% else %>
-          Before you can fill in the ICCA Registry questionnaire, you must first <%= link_to "register", new_user_path %>
+        In order to fill in the ICCA Registry questionnaire online, you must first <%= link_to "register", new_user_path %>
+        register (or, if you have already registered, <%= link_to "login", login_path %>) to access your user page and
+        the electronic questionnaire.
       <% end %>
-       It is also available as
-      a Word Document to download, or can be requested by email.  There are around 10 core questions that each community
-      should address to help inform key ICCA issues.  Answers to additional questions will enhance understanding of the
-      contribution of ICCAs from around the world, including information on management and governance. If the ICCA is
-      already recognised by national legislation or a protected area system, the community should work with government
-      representatives where possible to provide spatial and other information.
+      There are several required core questions (highlighted) that each community must answer to help inform key ICCA
+      issues. Answers to additional questions will enhance understanding of ICCAs.  If the ICCA is already recognised by
+      national legislation or a protected area system, the community should work with government representatives where
+      possible to provide spatial and other information. The questionnaire can be downloaded as a PDF Document, or can be
+      requested by email
     </p>
 
     <h4>
-      Step 4: Submit photos, videos, and visual material.
+      Step 4: Submit spatial data and relevant documents. 
     </h4>
     <p>
-      Because the ICCA Registry website is intended to be an interactive and highly visual multi-media tool, we
-      encourage all communities to send photos of community members, habitats, species, videos, interview clips and
-      other material to iccaregistry@unep-wcmc.org.  Photos and videos should be of good resolution, with a minimum of
-      300 dpi, for inclusion on the website. They all should be clearly labelled with the specific ICCA reference.
+      Spatial data can be uploaded for each questionnaire submitted through a link provided on your <%= link_to "user page", forms_path %>.
+      You can also upload useful and relevant documents (such as management plans, community agreements and
+      documented awards) on the user page. 
     </p>
 
-    <h4>
-      Step 5: Submit relevant documents or website links.
-    </h4>
+    <h2>(B) Instructions for contributing ICCA Case Studies</h2>
     <p>
-      It will be possible to include useful and relevant documents (such as management plans, community agreements and
-      documented awards) on this website as well as links to existing websites that provide additional information about
-      the ICCA and its conservation efforts and successes.  Please send relevant documents and links to
-      <%= link_to "iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org" %>.
+      Communities who are interested in having a visual presence on the ICCA Registry website can propose a case study
+      webpage for their ICCA.
     </p>
-
+    <h4>Step 1: Submit your completed case study template. </h4>
+    <p>Download and complete the case study template using information from your ICCA.</p>
+    <h4>Step 2: Submit photos, videos, visual material, documents and weblinks.</h4>
+    <p>
+      We encourage you to send photos of community members, habitats, species, videos, website links, documents and
+      other materials (such as scans of brochures or maps) to <%= link_to "iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org"%>
+    </p>
+    <p>
+      Photos should be of good resolution, with a minimum of 300 dpi, for inclusion on the website. Any videos,
+      including interview clips, to be included on the webpage must have a hyperlink provided from open source video
+      website, e.g. YouTube or Google Videos. You can also submit useful and relevant documents (such as management
+      plans, community agreements and documented awards).  Links to existing websites can also be included on the case
+      study webpage to provide additional information about the ICCA and its conservation efforts and successes. All
+      submissions should be clearly labelled with the specific ICCA reference.
+    </p>
+    
   </div>
 </div>
 

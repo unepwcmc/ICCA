@@ -2,13 +2,19 @@
     <h2 class="newsColumn flash-h2">Follow these Steps to Contribute</h2>
     <ol>
       <li><%= link_to "Read the Project Information Sheet", "/docs/WDPA%20ICCA%20info%20sheet.doc" %></li>
-      <li><%= link_to "Review and sign the Free Prior Informed Consent form ",  "/docs/WDPA%20ICCA%20consent%20form.doc" %></li>
-      <li><%= link_to "Register and login to contribute online", new_user_path %></li>
+      <li>
+        <%= link_to "Review and sign the Free Prior Informed Consent form ",  "/docs/WDPA%20ICCA%20consent%20form.doc" %><br/>
+          <i>
+            (a)Download, complete and submit<br/>
+            (b)Register and complete online<br/>
+          </i>
+      </li>
       <% if current_user %>
          <li><%= link_to "Complete the ICCA Questionnaire", forms_path %></li>
       <% else %>
           <li><%= link_to "Complete the ICCA Questionnaire online", new_user_path %></li>
       <% end %>
+      <li>Upload spatial data and other documents</li>
     </ol>
     <br clear="all" />
 </div>
