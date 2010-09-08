@@ -1,2 +1,2 @@
-access_key_id: 0XR6Q16EQ8AVQRCK8R82
-secret_access_key: NqT0fcoRu47/UtjeykCauoJxIuUlawwehnyQ9IgR
+access_key_id: ENV[:S3_KEY]
+secret_access_key: ENV[:S3_SECRET]
