@@ -2,14 +2,28 @@
   <p class="flash-Bigtitle"><em>ICCA Registry Questionnaire - '<%=h @form.name %>'</em></p>
 <% end %>
 <div class='contentIndent'>
-  <h1>Important information to note before filling in the form</h1>
-  <h2>Editing form responses</h2>
+  <h1>Important Information</h1>
+  <h2>Partially completing or editing your responses</h2>
   <p>
-    Upon completeing the survey, you will be given a link which will allow you to return
-    to the form and edit your results. If you want to be able to return to the form through
-    this site, right click the 'Edit your response' link and select either 'Copy Link Location'
-    or 'Copy Shortcut' and paste the link into the box below and submit it.
+      If you wish to partially complete a questionnaire and then return to it
+      later or be able to edit your responses in the future, you must first
+      complete all the questionnaire's required fields and submit your responses,
+      by clicking the ‘Submit’ button on the last page.
   </p>
+  <p>
+      Upon submitting the questionnaire, you will see a link ‘Edit your response’
+      which will allow you to return to the questionnaire and edit your results
+      at any time through your user page when you are logged in on the ICCA
+      Registry website. 
+  </p>
+  <p>
+      Please copy this ‘Edit your response’ link below, as without it you will be
+      unable to return to your questionnaire. [Click the right button of your
+      mouse while hovering over the ‘Edit your response’ link and select ‘Copy
+      Link Location’ or 'Copy Shortcut'. Click the right button of your mouse in the blank box below
+      the select ‘Paste’.] 
+  </p>
+  
   <% form_for @form, :html => {:onsubmit => "return validateUrl()"} do |f| %>
     <%= f.error_messages %>
 
@@ -26,12 +40,7 @@
     After doing this, you will be able to return to your form at any time from the <%= link_to "User Page", forms_path %>
   </p>
 
-  <h2>Partially completing the form</h2>
-  <p>
-    If you wish to partially complete a form to then return to it later, you must first 
-    complete all the questionnaire's required fields and submit the form. Upon submission,
-    take note of the Edit link provided, and you may return to the survey at any point.
-  </p>
+  <!-- FORM INCLUDE -->
   <div id="getFormId">
   </div>
   <% form_key = 'dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA' %>
