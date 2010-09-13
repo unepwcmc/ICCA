@@ -7,9 +7,9 @@
           <i>
             (a)<%= link_to "Download", "docs/WDPA%20ICCA%20consent%20form.doc" %>, complete and submit<br/>
             <% if current_user %>
-              (b)<%= link_to "Register", new_user_path %> and complete online<br/>
-            <% else %>
               (b)<%= link_to "Complete the form online", forms_path %><br/>
+            <% else %>
+              (b)<%= link_to "Register", new_user_path %> and complete online<br/>
             <% end %>
           </i>
       </li>

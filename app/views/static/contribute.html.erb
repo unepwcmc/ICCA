@@ -34,7 +34,7 @@
       exist for completing the form: <br/>
       (a) <%= link_to "Download the FPIC form", "docs/WDPA%20ICCA%20consent%20form.doc" %>, sign, and return to Registry managers  <br/>
       <% if current_user %>
-        (b) <%= link_to "Open the electronic questionnaire form and complete the FPIC section.", forms_path %><br/>
+        (b) <%= link_to "Open the electronic questionnaire form", forms_path %> and complete the FPIC section.<br/>
       <% else %>
         (b) <%= link_to "Register", new_user_path %> online, open the electronic questionnaire form and complete the FPIC section.
       <% end %>
@@ -54,7 +54,7 @@
         Visit your <%= link_to "user page", forms_path %> to fill in the ICCA Registry questionnaire online.<br/>
       <% else %>
         In order to fill in the ICCA Registry questionnaire online, you must first <%= link_to "register", new_user_path %>
-        register (or, if you have already registered, <%= link_to "login", login_path %>) to access your user page and
+        (or, if you have already registered, <%= link_to "login", login_path %>) to access your user page and
         the electronic questionnaire.<br/>
       <% end %>
       There are several required core questions (highlighted) that each community must answer to help inform key ICCA
