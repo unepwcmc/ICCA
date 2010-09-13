@@ -10,14 +10,22 @@
 <% end %>
 
 <div class="span-15 first articles">
-  <div class="span-15 last article">
+  <div class="span-9 first article">
     <h2>Register</h2>
     <p>Register with the ICCA to contribute </p>
 
     <%= render :partial => 'form' %>
     <%= link_to 'Back', users_path %>
   </div>
+
+
+  <div class="span-6 last article">
+    <h2>Already registered?</h2>
+    <%= link_to "Login here >>>", login_path %>
+  </div>
+
 </div>
+
 
 <div class="span-8 last newscontact">
 	<%= render :partial => '/static/contribute_menu' %> 		
