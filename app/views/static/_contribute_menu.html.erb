@@ -6,7 +6,11 @@
         Review and sign the Free Prior Informed Consent form <br/>
           <i>
             (a)<%= link_to "Download", "docs/WDPA%20ICCA%20consent%20form.doc" %>, complete and submit<br/>
-            (b)<%= link_to "Register", new_user_path %> and complete online<br/>
+            <% if current_user %>
+              (b)<%= link_to "Register", new_user_path %> and complete online<br/>
+            <% else %>
+              (b)<%= link_to "Complete the form online", forms_path %><br/>
+            <% end %>
           </i>
       </li>
       <% if current_user %>

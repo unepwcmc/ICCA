@@ -30,10 +30,14 @@
     </p>
 
     <h4>
-      Step 2:  Review the Free Prior Informed Consent Form with community members to attain key signatures. Two options
+      Step 2:  Review the Free Prior Informed Consnt Form with community members to attain key signatures. Two options
       exist for completing the form: <br/>
       (a) <%= link_to "Download the FPIC form", "docs/WDPA%20ICCA%20consent%20form.doc" %>, sign, and return to Registry managers  <br/>
-      (b) <%= link_to "Register", new_user_path %> online, open the electronic questionnaire form and complete the FPIC section.
+      <% if current_user %>
+        (b) <%= link_to "Open the electronic questionnaire form and complete the FPIC section.", forms_path %><br/>
+      <% else %>
+        (b) <%= link_to "Register", new_user_path %> online, open the electronic questionnaire form and complete the FPIC section.
+      <% end %>
     </h4>
     <p>
       The purpose of this consent form is to ensure that indigenous and local communities are aware of the process of
