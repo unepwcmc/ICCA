@@ -6,7 +6,7 @@
   <%= render :partial => "static/site_photo_banner" %>
 <% end %>
 
-<h1>ICCA Registry Questionnaire</h1>
+<h1 class="flash-h2">ICCA Registry Questionnaire</h1>
 <p>
     You must fill in a separate questionnaire for each ICCA you wish to submit
     to the ICCA Registry database. There are several required core questions 
@@ -16,7 +16,7 @@
     possible to provide spatial and other information. The questionnaire can be
     downloaded as a PDF Document, or can be requested by email.
 </p>
-<h2>Fill in a new questionnaire</h2>
+<h2 class="flash-h2">Fill in a new questionnaire</h2>
 <% form_for @form do |f| %>
   <%= f.error_messages %>
   <%= hidden_field :form, :user_id %>
@@ -26,7 +26,7 @@
   <%= f.submit 'Start the questionnaire' %>
 <% end %>
 <% if @forms.size > 0 %>
-  <h2>Questionnaires completed</h2>
+  <h2 class="flash-h2">Questionnaires completed</h2>
   <table>
     <tr>
       <%= "<th>User</th>" if can? :manage, Form %>

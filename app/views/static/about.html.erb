@@ -12,28 +12,28 @@
   </div>
   <div class="span-15 last article articleborder">
     <h2 class="flash-h2">
-				<% if @content %>
-					<%= @content.title %>
-				<% else %>
-					About ICCAs
-				<% end -%>	
-		</h2>
-		
-			<% if @content %>
-				<%= @content.body %>
-				<% if can? :update, @content %>
-		        <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
-		    <% end %>				
-			<% else %>
-    <p>Indigenous and Community Conserved Areas (ICCAs) are defined as:</p>
-    <p><b>"natural and/or modified ecosystems containing significant biodiversity values and ecological services, voluntarily conserved by (sedentary and mobile) indigenous and local communities, through customary laws or other effective means."</b> (World Parks Congress Recommendation V26, 2003)</p>
-    <p>Examples of ICCAs include indigenous territories, indigenous protected areas, cultural land- and seascapes, sacred sites and species, migration routes of mobile indigenous peoples, bio-cultural heritage territories, sustainable resource reserves, fishing grounds, and community-managed areas. The total size of areas under this type of governance is not clear and likely severely underestimated.</p>
-    <p>ICCAs protect an enormous range of natural environments, wildlife species and agricultural and pastoral landscapes managed through a wide diversity of institutions and rules by traditional and modern communities alike. These sites range from less than one hectare to entire mountains, lakes or landscapes and seascapes. Although there is no clear idea of the extent of area that ICCAs cover across the globe, it is estimated that some 11% of the world's forests are under community ownership or administration. Thus, the contribution of ICCAs to biodiversity conservation is an important consideration as a tool for protecting natural resources and human livelihoods.</p>
-    <p>In addition to the direct value that ICCAs may confer to the diverse species, habitats and ecological processes that benefit from their management, there are multiple environmental services, such as carbon storage and water purification, that are enabled by supporting the viability of ICCAs.	Given the significant but undocumented role of indigenous and locally managed areas in maintaining biological diversity and ecological processes, initiatives such as Reduced Emissions from Deforestation and forest Degradation (REDD) and those that address adaption to climate change will rely more on current knowledge of ICCAs as their efforts become more widespread and urgent.</p>
-    <p>Though ICCAs are extremely diverse in a number of ways, they all contain three essential features:</p>
-    <p>1. A strong relationship exists between one or more indigenous or local communities (sedentary or mobile) and their physical environment (such as a given ecosystem, habitat, resource or species) as a result of cultural, social, economic and other reasons.</p>
-    <p>2. The concerned indigenous peoples or local community plays a key role in making decisions about the management of the ecosystem, area or species. The community possesses (in law or in practice) the power to make and enforce key management decisions regarding the territory and resources.</p>
-    <p>3. The voluntary management decisions and efforts of the concerned community lead to, or at least are well in the process of leading to, the conservation of biodiversity, habitats, species, ecological functions and associated cultural values, regardless of the original management objectives as perceived by the community.</p>
+        <% if @content %>
+                <%= @content.title %>
+        <% else %>
+                About ICCAsss
+        <% end -%>	
+    </h2>
+
+    <% if @content %>
+        <%= @content.body %>
+        <% if can? :update, @content %>
+            <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
+        <% end %>				
+    <% else %>
+        <p>Indigenous and Community Conserved Areas (ICCAs) are defined as:</p>
+        <p><b>"natural and/or modified ecosystems containing significant biodiversity values and ecological services, voluntarily conserved by (sedentary and mobile) indigenous and local communities, through customary laws or other effective means."</b> (World Parks Congress Recommendation V26, 2003)</p>
+        <p>Examples of ICCAs include indigenous territories, indigenous protected areas, cultural land- and seascapes, sacred sites and species, migration routes of mobile indigenous peoples, bio-cultural heritage territories, sustainable resource reserves, fishing grounds, and community-managed areas. The total size of areas under this type of governance is not clear and likely severely underestimated.</p>
+        <p>ICCAs protect an enormous range of natural environments, wildlife species and agricultural and pastoral landscapes managed through a wide diversity of institutions and rules by traditional and modern communities alike. These sites range from less than one hectare to entire mountains, lakes or landscapes and seascapes. Although there is no clear idea of the extent of area that ICCAs cover across the globe, it is estimated that some 11% of the world's forests are under community ownership or administration. Thus, the contribution of ICCAs to biodiversity conservation is an important consideration as a tool for protecting natural resources and human livelihoods.</p>
+        <p>In addition to the direct value that ICCAs may confer to the diverse species, habitats and ecological processes that benefit from their management, there are multiple environmental services, such as carbon storage and water purification, that are enabled by supporting the viability of ICCAs.	Given the significant but undocumented role of indigenous and locally managed areas in maintaining biological diversity and ecological processes, initiatives such as Reduced Emissions from Deforestation and forest Degradation (REDD) and those that address adaption to climate change will rely more on current knowledge of ICCAs as their efforts become more widespread and urgent.</p>
+        <p>Though ICCAs are extremely diverse in a number of ways, they all contain three essential features:</p>
+        <p>1. A strong relationship exists between one or more indigenous or local communities (sedentary or mobile) and their physical environment (such as a given ecosystem, habitat, resource or species) as a result of cultural, social, economic and other reasons.</p>
+        <p>2. The concerned indigenous peoples or local community plays a key role in making decisions about the management of the ecosystem, area or species. The community possesses (in law or in practice) the power to make and enforce key management decisions regarding the territory and resources.</p>
+        <p>3. The voluntary management decisions and efforts of the concerned community lead to, or at least are well in the process of leading to, the conservation of biodiversity, habitats, species, ecological functions and associated cultural values, regardless of the original management objectives as perceived by the community.</p>
 	<% end -%>
   </div>
   <div class="span-15 last moreICCA">
