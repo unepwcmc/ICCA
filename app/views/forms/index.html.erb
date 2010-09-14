@@ -10,11 +10,11 @@
 <p>
     You must fill in a separate questionnaire for each ICCA you wish to submit
     to the ICCA Registry database. There are several required core questions 
-    highlighted) that each community must answer to help inform key ICCA issues.
+    (highlighted) that each community must answer to help inform key ICCA issues.
     If the ICCA is already recognised by national legislation or a protected
     area system, the community should work with government representatives where
     possible to provide spatial and other information. The questionnaire can be
-    downloaded as a PDF Document, or can be requested by email.
+    <%= link_to "downloaded as a PDF Document", "docs/ICCA%20Registry%20Questionnaire.pdf" %>, or can be requested by email.
 </p>
 <h2 class="flash-h2">Fill in a new questionnaire</h2>
 <% form_for @form do |f| %>
@@ -48,10 +48,10 @@
               <%= link_to 'Download', form.spatial_data.url %>
             <% end %>
           </td>
-          <td><%= link_to 'Edit', edit_form_path(form) %></td>
+          <td><%= link_to 'Edit the questionnaire', edit_form_path(form) %></td>
           <td><%= link_to 'Destroy', form, :confirm => 'Are you sure?', :method => :delete %></td>
         <% else %>
-          <td><%= link_to 'Edit', form.edit_link if form.edit_link.present? %></td>
+          <td><%= link_to 'Edit the questionnaire', form.edit_link if form.edit_link.present? %></td>
           <td><%= link_to 'Upload Spatial Data', edit_form_path(form) %></td>
         <% end %>
       </tr>

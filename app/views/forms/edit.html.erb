@@ -1,4 +1,9 @@
-<h1>Editing form</h1>
+<% if can? :manage, Form -%>
+  <h1>Editing form</h1>
+<% else -%>
+  <h1>Upload Spatial Data</h1>
+  <p>Upload spatial data for the ICCA in the form of a shapefile or kml file</p>
+<% end -%>
 
 <% semantic_form_for @form, :html => {:multipart => true} do |f| %>
     <%= f.error_messages %>
