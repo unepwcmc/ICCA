@@ -10,7 +10,8 @@ class Form < ActiveRecord::Base
 
   has_attached_file :spatial_data,
                     :storage => :s3,
-                    :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+                    :s3_credentials => { :access_key_id     => ENV['S3_KEY'], 
+                                       :secret_access_key => ENV['S3_SECRET'] },
                     :path => "spatial_data/:id/:style_:extension",
                     :bucket => "icca-#{RAILS_ENV}-spatial-data"
 end
