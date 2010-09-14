@@ -737,8 +737,8 @@ td, tr{
 }
 
 th {
-  border-right: 2px solid red;
-  border-bottom: 2px solid red;
+  background: #362d26;
+  color: #9CC342;
   border-style: solid;
 }
 

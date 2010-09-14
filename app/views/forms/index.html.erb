@@ -32,8 +32,11 @@
       <%= "<th>User</th>" if can? :manage, Form %>
       <th>Questionnaire Name</th>
       <th>Date Created</th>
-      <th>Site</th>
-      <%= "<th>Spatial Data<th>" if can? :manage, Form %>
+      <%= "<th>Site</th>" if can? :manage, Form %>
+      <%= "<th>Spatial Data</th>" if can? :manage, Form %>
+      <th>Edit</th>
+      <%= "<th>Destroy</th>" if can? :manage, Form %>
+      <%= "<th>Spatial Data</th>" unless can? :manage, Form %>
     </tr>
 
     <% @forms.each do |form| %>
@@ -41,8 +44,8 @@
         <%= "<th>#{form.user.username}</th>" if can? :manage, Form %>
         <td><%=h form.name %></td>
         <td><%=h form.created_at %></td>
-        <td><%=h form.site.try(:name) %></td>
         <% if can? :manage, Form %>
+          <td><%=h form.site.try(:name) %></td>
           <td>
             <% if form.spatial_data.file? %>
               <%= link_to 'Download', form.spatial_data.url %>
@@ -56,15 +59,15 @@
         <% end %>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        <td style="border: 0px"></td>
+        <td style="border: 0px"></td>
         <td><b>Documents</b></td>
         <td><%= link_to 'Upload A Document', new_form_document_path(form) %>
       </tr>
       <% form.documents.each do |doc| %>
         <tr>
-          <td></td>
-          <td></td>
+          <td style="border: 0px"></td>
+          <td style="border: 0px"></td>
           <td>
             <%=h doc.name %>
             <%= link_to 'Download', doc.doc.url %>
