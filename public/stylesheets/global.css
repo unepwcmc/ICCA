@@ -749,3 +749,18 @@ th {
 .contentIndent {
   padding:10px;
 }
+
+
+
+/*COUNTRY MAP*/
+a#zoom_in {position:absolute; top:15px; left:15px; z-index:1000; background:url(../images/zoom_in.png) no-repeat 0 0; height:25px; width:25px;}
+a#zoom_in:hover {background-position:0 -25px; }
+a#zoom_out {position:absolute; top:44px; left:15px; z-index:1000; background:url(../images/zoom_out.png) no-repeat 0 0; height:25px; width:25px;}
+a#zoom_out:hover {background-position:0 -25px; }
+
+a#satellite {position:absolute; top:15px; right:15px; z-index:1000; background:url(../images/satellite.png) no-repeat 0 0; height:25px; width:74px;}
+a#satellite:hover {background-position:0 -25px; }
+a#satellite.current {background-position:0 -25px;}
+a#terrain {position:absolute; top:15px; right:95px; z-index:1000; background:url(../images/terrain.png) no-repeat 0 0; height:25px; width:74px;}
+a#terrain:hover {background-position:0 -25px; }
+a#terrain.current {background-position:0 -25px;}

@@ -1,54 +1,68 @@
-<% content_for :title do %>
-    ICCA Sites in <em><%= @country.name %></em>
-<% end %>
 
-<% content_for :banner do %>
-    <div class="span-24 column widgetContainer">
-      <div class="widget2" id="countrymap">
+  
+    
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+    <script type="text/javascript" src="../javascripts/country/country_map.js"></script>
+     <script type="text/javascript" src="../javascripts/country/Marker.js"></script>
+    
+    <span id="country_id" style="display:none"><%= @country.id %></span>
+  
+    <% content_for :title do %>
+        ICCA Sites in <em><%= @country.name %></em>
+    <% end %>
+
+    <% content_for :banner do %>
+
+        
+        <div class="span-24 column widgetContainer" style="position:relative">
+          <div class="widget2" id="countrymap">
+          </div>
+          <a href="javascript:void zoomIn()" id="zoom_in"></a>
+          <a href="javascript:void zoomOut()" id="zoom_out"></a>
+          <a href="javascript:void changeMapType('satellite')" id="satellite"></a>
+          <a href="javascript:void changeMapType('terrain')" id="terrain" class="current"></a>
+        </div>
+    <% end %>
+
+    <div class="span-15 first articles">
+      <% if can? :update, @country %>
+          <%= link_to 'Edit', edit_country_path(@country), :class => "textLink" %>
+      <% end %>
+      <% if can? :delete, @country %>
+          | <%= link_to 'Delete', @country, :confirm => 'Are you sure?', :method => :delete %>
+      <% end %>
+      <div class="span-15 last article">
+          <%= @country.extended_description %>
       </div>
     </div>
-    <%= render :partial => "country_flash_map" %>
-<% end %>
 
-<div class="span-15 first articles">
-  <% if can? :update, @country %>
-      <%= link_to 'Edit', edit_country_path(@country), :class => "textLink" %>
-  <% end %>
-  <% if can? :delete, @country %>
-      | <%= link_to 'Delete', @country, :confirm => 'Are you sure?', :method => :delete %>
-  <% end %>
-  <div class="span-15 last article">
-      <%= @country.extended_description %>
-  </div>
-</div>
-
-<div class="span-8 last newscountry">
-  <div class="new">
-    <div class="new">
-      <h2 class="newsColumn flash-h2">
-        All ICCA Sites in <%= @country.name %>
-        <% if (can? :update, @country) && (can? :create, Site) %>
-            <%= link_to "Add", new_country_site_path(@country), :class => "textLink" %>
-        <% end %>
-      </h2>
-      <% @country.sites.each do |site| %>
-          <ul>
-            <li><%= link_to "#{site.name}", site, :class => "textLinkRight" %></li>
-          </ul>
-      <% end %>
+    <div class="span-8 last newscountry">
+      <div class="new">
+        <div class="new">
+          <h2 class="newsColumn flash-h2">
+            All ICCA Sites in <%= @country.name %>
+            <% if (can? :update, @country) && (can? :create, Site) %>
+                <%= link_to "Add", new_country_site_path(@country), :class => "textLink" %>
+            <% end %>
+          </h2>
+          <% @country.sites.each do |site| %>
+              <ul>
+                <li><%= link_to "#{site.name}", site, :class => "textLinkRight" %></li>
+              </ul>
+          <% end %>
+        </div>
+        <%= render :partial => "links/important_links", :locals => {:linkable => @country} %>
+      </div>
     </div>
-    <%= render :partial => "links/important_links", :locals => {:linkable => @country} %>
-  </div>
-</div>
-<script language="javaScript" type="text/javascript">
-/*    $(document).ready( function() {
-        String.prototype.linkify = function() {
-            return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
-                return m.link(m);
-            });
-        };
+    <script language="javaScript" type="text/javascript">
+    /*    $(document).ready( function() {
+            String.prototype.linkify = function() {
+                return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
+                    return m.link(m);
+                });
+            };
 
-    });
-*/
-</script>
+        });
+    */
+    </script>
 
