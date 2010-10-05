@@ -17,14 +17,18 @@
   Marker.prototype.onAdd = function() {
 
     var div = document.createElement('DIV');
-    div.style.borderStyle = "none";
-    div.style.borderWidth = "0px";
+    div.style.width = "43px";
+    div.style.height = "43px";
     div.style.position = "absolute";
  
-    var img = document.createElement("img");
-    img.src = "../images/marker.png";
-    img.style.width = "100%";
-    img.style.height = "100%";
+    var img = document.createElement("div");
+    img.src = "/images/marker.png";
+    img.style.width = "43px";
+    img.style.height = "43px";
+		img.style.position = "relative";
+		img.style.background = "url(/images/marker.png) no-repeat 0 0";
+		img.style.float = "left";
+		img.style.display = "block";
     div.appendChild(img);
 
 		var over = document.createElement('DIV');
@@ -34,13 +38,12 @@
 		over.style.top = "-8px";
 		over.style.left = "-6px";
 		over.style.height = "60px";
-		over.style.background = "url(../images/over_marker.png) no-repeat 0 0";
+		over.style.background = "url(/images/over_marker.png) no-repeat 0 0";
     over.style.position = "absolute";
     over.style.display = "none";
 
 		var over_txt = document.createElement('a');
 		over_txt.href = this.data_.url;
-		console.log($(over_txt).attr('href'));
     over_txt.style.borderStyle = "none";
     over_txt.style.borderWidth = "0px";
 		if (this.data_.name.length>18) {
