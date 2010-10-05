@@ -39,7 +39,8 @@
     over.style.display = "none";
 
 		var over_txt = document.createElement('a');
-		over_txt.href = "/" + this.data_.url;
+		over_txt.href = this.data_.url;
+		console.log($(over_txt).attr('href'));
     over_txt.style.borderStyle = "none";
     over_txt.style.borderWidth = "0px";
 		if (this.data_.name.length>18) {
