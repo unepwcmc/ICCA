@@ -26,7 +26,7 @@ class CountriesController < ApplicationController
     end
   end
 
-  # Return json of countries sites
+  # Return json of a countries sites
   def areas
     if params[:id].present?
       @country = Country.find params[:id]
@@ -40,7 +40,7 @@ class CountriesController < ApplicationController
     end
   end
 
-  # Return json of countries sites
+  # Return json of all countries sites
   def iccaCountryDetails
     @json = Country.country_details_json
 

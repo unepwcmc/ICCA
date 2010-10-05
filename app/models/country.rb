@@ -47,7 +47,7 @@ class Country < ActiveRecord::Base
     self.sites.each do |site|
       site_details = {}
       site_details[:name] = site.name
-      site_details[:url] = "sites/" + site.id.to_s
+      site_details[:url] = "/sites/" + site.id.to_s
       site_details[:lat] = site.lat
       site_details[:lng] = site.lon
       @json[:iccas] << site_details
