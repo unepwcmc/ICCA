@@ -16,6 +16,9 @@ class ApplicationController < ActionController::Base
     redirect_to root_url
   end
 
+  before_filter :set_user_language
+  before_filter :default_url_options
+
   private
 
   def current_user_session
@@ -28,4 +31,13 @@ class ApplicationController < ActionController::Base
     @current_user = current_user_session && current_user_session.record
   end
 
+  def set_user_language
+    I18n.locale =  (params[:locale].present? ? params[:locale] : 'es')
+  end
+
+  # add the local to URLs
+  def default_url_options(options={})
+    logger.debug "default_url_options is passed options: #{options.inspect}\n"
+    { :locale => I18n.locale.to_s }
+  end
 end

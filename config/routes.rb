@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.filter 'locale'
   map.root :controller => :static, :action => :home
 
   map.login "login", :controller => :user_sessions, :action => :new
@@ -18,6 +20,7 @@ ActionController::Routing::Routes.draw do |map|
   map.new_associated_photo ":type/:id/photos/new", :controller => :photos, :action => :new
   map.new_associated_link ":type/:id/links/new", :controller => :links, :action => :new
 
+  
   map.resources :users
   map.resources :user_sessions
   map.resources :countries do |countries|
