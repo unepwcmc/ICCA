@@ -51,3 +51,94 @@ es:
 
     countries_title: "Países ICCA"
     side_countries_title: "Países"
+
+  contribute:
+    title: "<em>Contribuya al Registro ICCA</em>"
+
+    contribute_title: "Contribuir al Registro"
+    para_1: "Para las comunidades y todos aquellos que quieran contribuir al Registro y beneficiarse de usarlo, se muestran algunos pasos importantes y simples que hay que seguir. Toda la información incluida se trata con el respeto y la discreción que garantiza la adhesión a los principios contenidos en la Declaración de los Derechos de los Pueblos Indígenas de las NNUU, de 2007. Hay dos formas de contribuir:"
+    opp_1: "(a) Proporcionar información a la Base de Datos del Registro ICCA a través de un cuestionario en línea, y"
+    opp_2: "(b) Elaborar un Caso Práctico para la página web del Registro ICCA."
+    
+    instructions_title: "(A) Instrucciones para contribuir a la Base de Datos del Registro ICCA"
+
+    step_1:
+      title: 'Paso 1: Lea el <a href="docs/ICCA%20Registry%20FPIC%20Form.doc">Formulario CIPV del Registro ICCA</a> y comente entre los miembros de su comunidad acerca del Registro ICCA.'
+      text: 'Los miembros de la comunidad han de evaluar conjuntamente los beneficios y los riesgos de contribuir a la Base de Datos del Registro para que todo el mundo sea consciente del proceso, los retos, y las consecuencias potenciales positivas y negativas'
+
+    step_2:
+      title: 'Paso 2: Revise el Formulario de Consentimiento Informado, Previo y Voluntario para conseguir las firmas clave. Existen dos opciones para rellenar el Formulario:'
+      consent_link:
+        text: 'Descargue el Formulario CIPV'
+        suffix: ', fírmelo y devuélvalo a los gestores del Registro.'
+      questionnaire_link:
+        text: 'Open the electronic questionnaire form'
+        suffix: ' and complete the FPIC section.'
+      register_link:
+        text: 'Regístrese'
+        suffix: ' en línea, abra el cuestionario electrónico y rellene la parte correspondiente al CIPV.'
+      text: 'El propósito de este formulario de consentimiento es asegurar que las comunidades indígenas y locales estén informadas del proceso de facilitar información al Registro, que conozcan qué tipo de información se proporcionará y será accesible, y cómo se utilizará, y que puedan decidir qué información se mostrará a través de los distintos medios (como la página web de las ICCAs o futuras publicaciones analíticas). Todas las comunidades pueden determinar el grado de difusión de su información'
+
+    step_3:
+      title: 'Paso 3: Rellene el Cuestionario del Registro ICCA con la información de su ICCA.'
+      logged_in:
+        pre_link: "Visit your "
+        link_text: "user page "
+        post_link: "to fill in the ICCA Registry questionnaire online."
+      logged_out:
+        pre_register_link: "Para rellenar el cuestionario del Registro ICCA en línea, debe primero "
+        register_link_text: "registrarse "
+        pre_login_text: "(o, si ya se ha registrado, "
+        login_link_text: "entrar"
+        post_link_text: ") para acceder a su página de usuario y al cuestionario electrónico."
+      pre_link_text: 'Se solicitan muchas preguntas clave (resaltadas) que cada comunidad debe responder para clarificar aspectos clave sobre su ICCA. Las respuestas a las preguntas adicionales ayudarán a mejorar el conocimiento de las ICCAs. Si la ICCA ha sido ya reconocida por la legislación nacional o por el sistema de áreas protegidas, la comunidad debería, en la medida de lo posible, trabajar con los representantes públicos para proporcionar información espacial y de otro tipo. El cuestionario puede '
+      questionnaire_pdf_link_text: 'descargarse como un Documento PDF '
+      post_link_text: 'o puede solicitarse por correo electrónico.'
+
+    step_4:
+      title: 'Paso 4: Remita información espacial y otros documentos relevantes.'
+      pre_link_text: 'La información espacial puede subirse a la aplicación para cada cuestionario remitido mediante un enlace en su '
+      user_page_link: 'página de usuario'
+      post_link_text: '. También puede subir documentos útiles y relevantes en la página de usuario (como planes de gestión, acuerdos comunitarios, o premios y menciones acreditados).'
+
+    case_study_instructions:
+      title: "(B) Instructions for contributing ICCA Case Studies"
+      text: "Communities who are interested in having a visual presence on the ICCA Registry website can propose a case study webpage for their ICCA."
+
+      step_1:
+        title: "Step 1: Submit your completed case study template."
+        text_1: 'Download and complete the '
+        link_text_1: 'case study template'
+        text_2: ' using information from your ICCA.'
+      step_2:
+        title: 'Step 2: Submit photos, videos, visual material, documents and weblinks.'
+        para_1:
+          text: 'We encourage you to send photos of community members, habitats, species, videos, website links, documents and other materials (such as scans of brochures or maps) to '
+          link_text: 'iccaregistry@unep-wcmc.org'
+        para_2: "Photos should be of good resolution, with a minimum of 300 dpi, for inclusion on the website. Any videos,
+                including interview clips, to be included on the webpage must have a hyperlink provided from video website with embeddable
+                links, e.g. YouTube or Google Videos. You can also submit useful and relevant documents (such as management
+                plans, community agreements and documented awards).  Links to existing websites can also be included on the case
+                study webpage to provide additional information about the ICCA and its conservation efforts and successes. All
+                submilink_text_1 should be clearly labelled with the specific ICCA reference."
+
+
+  contribute_menu:
+    title: "Follow these Steps to Contribute"
+    step_list:
+      step_1: 
+        link_text: "Read the ICCA Registry FPIC Form"
+      step_2: 
+        text: "Review and sign the Free Prior Informed Consent form"
+        sub_step_1:
+          link_text: 'Download'
+          text: ', complete and submit'
+        sub_step_2:
+          logged_in: 'Complete the form online'
+          logged_out:
+            link_text: 'Register'
+            text: ' and complete online'
+      step_3: 
+        logged_in: 'Complete the ICCA Questionnaire'
+        logged_out: 'Complete the ICCA Questionnaire online'
+      step_4: 'Upload spatial data and other documents'
