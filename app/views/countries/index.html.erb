@@ -1,23 +1,23 @@
 <% content_for :title do %>
-    <%= link_to "<em>ICCA Registry</em>", countries_path %>
+  <%= link_to t('registry.title'), countries_path %>
 <% end %>
 
 <% content_for :banner do %>
-    <div class="span-24 column widgetContainer">
-      <div class="widget2" id="mapmap">
-      </div>
+  <div class="span-24 column widgetContainer">
+    <div class="widget2" id="mapmap">
     </div>
+  </div>
 <% end %>
 
 <div class="span-15 first articles">
   <div class="span-15 last article">
-    <h2 class="flash-h2">The project</h2>
-    <p>The Indigenous and Community Conserved Areas Registry project has been developed in response to recent global meetings and is advised by the <a class="textLink" target="_blank" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102">ICCA Consortium</a>, a collaborative group of experts and organizations formed during the 2008 World Conservation Congress. Through a multi-faceted process, this group is gradually working with indigenous and local communities who want to raise awareness of this type of governance and the contributions that their communities are making to conservation. UNEP-WCMC, as a partner in the ICCA Consortium, is playing a key role in building awareness and recognition of ICCAs through developing an interactive registry for ICCAs worldwide.</p>
-    <p>The collection of information will be a collaborative process, ensuring slow but positive support of the concept, and engaging staff at UNEP-WCMC as well as members of the Consortium and consultants in the field. Members of indigenous and local communities will be essential and central contributors to this knowledge base.</p>
-    <p>The Registry, developed in the same structure as the World Database on Protected Areas (WDPA, see <a class="textLink" target="_blank" href="http://www.wdpa.org">www.wdpa.org</a> for more information), will store two types of information that are critical to understanding ICCAs: (1) descriptive information, such as the main habitats within the ICCA and the names of the community or communities living within or near the ICCA, and (2) spatial information, such as the size, location and boundaries of the area.	The Registry will be linked in part to the WDPA for enhanced access to information about protected areas.</p>
+    <h2 class="flash-h2"><%= t 'registry.project_title' %></h2>
+    <p><%= t 'registry.project_text_1' %></p>
+    <p><%= t 'registry.project_text_2' %></p>
+    <p><%= t 'registry.project_text_3' %></p>
   </div>
   <div class="span-15 last article">
-    <h2 class="flash-h2">ICCA Countries</h2>
+    <h2 class="flash-h2"><%= t 'registry.countries_title' %></h2>
     <% if can? :create, Country %>
         <%= link_to 'New country', new_country_path, :class => "textLink" %>
     <% end %>
@@ -41,7 +41,7 @@
 
 <div class="span-8 last news">
   <div class="new">
-    <h2 class="newsColumn flash-h2">Countries</h2>
+    <h2 class="newsColumn flash-h2"><%= t 'registry.side_countries_title' %></h2>
     <ul>
       <% @countries.each do |country| %>
           <li>

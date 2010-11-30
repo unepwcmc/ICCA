@@ -2,6 +2,17 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 es:
+  nav:
+    home: "HOME"
+    about: "ACERCA DE"
+    registry: "REGISTRO"
+    faqs: "FAQS"
+    contact: "CONTACTO"
+    contribute: "CONTRIBUYE"
+    login: "ACCESO"
+
+  learn_more: "Conozca más"
+
   home:
     title: "<em>Valorando la conservación por pueblos indígenas</em> y comunidades locales"
 
@@ -17,11 +28,26 @@ es:
     featured_publications: "Publicaciones relacionadas"
     partners: "Socios"
 
-  nav:
-    home: "HOME"
-    about: "ACERCA DE"
-    registry: "REGISTRO"
-    faqs: "FAQS"
-    contact: "CONTACTO"
-    contribute: "CONTRIBUYE"
-    login: "ACCESO"
+  about:
+    about_title: "Acerca de las ICCAs"
+    para_1: "Las Áreas Conservadas por Comunidades Indígenas y Locales se definen como:"
+    para_2: '<b>“ecosistemas naturales y/o modificados que contienen valores de biodiversidad y servicios ecológicos significativos, conservadas de forma voluntaria por comunidades indígenas y locales (sedentarias y móviles), mediante leyes tradicionales u otros medios efectivos”</b>  (Recomendación V26 del Congreso Mundial de Parques, 2003).'
+    para_3: 'Ejemplos de ICCAs incluyen territorios indígenas, áreas protegidas indígenas, paisajes culturales terrestres y marinos, especies y lugares sagrados, rutas migratorias de pueblos indígenas nómadas, territorios de patrimonio bio-cultural, reservas de recursos sostenibles, zonas pesqueras, y áreas gestionadas por comunidades. La superficie total de las áreas con este tipo de gobernanza no está clara y es muy posible que esté bastante subestimada.'
+    para_4: "Las ICCAs protegen un rango enorme de ambientes naturales, especies silvestres y paisajes agrícolas y pastorales gestionados por comunidades tradicionales y modernas mediante una amplia diversidad de instituciones y normas. Estas áreas abarcan desde menos de una hectárea hasta montañas, lagos o paisajes completos. Aunque no existe un dato claro acerca de la extensión que las ICCAs alcanzan a lo largo del globo, se estima que un 11% de los bosques del Mundo son bien propiedad  o bien administrados por comunidades.  Por tanto, la contribución de las ICCAs a la conservación de la biodiversidad constituye una herramienta importante para proteger los recursos naturales y los medios de vida humanos."
+    para_5: "Además del valor directo que las ICCAs pueden conferir a las diversas especies, hábitats y procesos ecológicos que se benefician de su gestión, existen múltiples servicios ambientales, como el secuestro de carbono o la depuración del agua, que se ven favorecidos al promover la viabilidad de las ICCAs. Dado el papel significativo pero indocumentado de las áreas gestionadas por pueblos indígenas y comunidades locales en el mantenimiento de la diversidad biológica y de los procesos ecológicos, iniciativas como la Reducción de Emisiones procedentes de la Deforestación y Degradación de los bosques (REDD, por sus siglas en inglés) y aquellas otras dirigidas a la adaptación al cambio climático se basarán cada vez más en el conocimiento actual sobre las ICCAs a medida que sus esfuerzos se hagan más extensos y urgentes."
+
+    para_6: "A pesar de que las ICCAs son extremadamente diversas en muchos aspectos, todas comparten tres rasgos esenciales:"
+    icca_elem_1: "Existencia de una fuerte relación entre una o más comunidades indígenas o locales (sedentarias o nómadas) y su ambiente físico (como un ecosistema, hábitat, recurso o especie determinados) por razones culturales, sociales, económicas o de otro tipo."
+    icca_elem_2: "Los pueblos indígenas o las comunidades locales implicadas juegan un papel fundamental en la toma de decisiones sobre la gestión del ecosistema, del área o de sus especies. Dichas comunidades tienen (por ley o en la práctica) el poder de elaborar y hacer respetar decisiones cruciales de gestión que impliquen al territorio y sus recursos"
+    icca_elem_3: "Las decisiones voluntarias de gestión y los esfuerzos de las comunidades implicadas conllevan, o al menos están en proceso de permitir,  la conservación de la biodiversidad, los hábitats, las especies, las funciones ecológicas y los valores culturales asociados, independientemente de los objetivos originales de gestión tal y como los entiende la comunidad."
+
+
+  registry:
+    title: "<em>Registro ICCA</em>"
+    project_title: "El Proyecto"
+    project_text_1: 'El proyecto del Registro de las Áreas Conservadas por Comunidades Indígenas y Locales se ha desarrollado como respuesta a recientes encuentros globales y se encuentra asesorado por el <a class="textLink" target="_blank" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102">Consorcio ICCA</a>, un grupo de expertos y organizaciones formado durante el Congreso Mundial de la Naturaleza de 2008. A través de un proceso multifacético, este grupo está trabajando poco a poco con comunidades indígenas y locales que quieren concienciar sobre este tipo de gobernanza y sobre la contribución a la conservación que realizan estas comunidades.  El Centro Mundial de Seguimiento de la Conservación del Programa de Naciones Unidas para el Medio Ambiente  (UNEP-WCMC, por sus siglas en inglés), como integrante del Consorcio ICCA, está jugando un papel decisivo en la concienciación y el reconocimiento de las ICCAs mediante el desarrollo de un registro interactivo mundial sobre ICCAs.'
+    project_text_2: 'La compilación de información será un proceso cooperativo que asegure un apoyo continuado y positivo del concepto de ICCA, y que implique a personal del UNEP-WCMC así como a otros miembros del Consorcio y a consultores sobre el terreno. Los integrantes de las comunidades indígenas y locales constituirán el soporte central y esencial para la generación básica de dicho conocimiento.'
+    project_text_3: 'El Registro, desarrollado con la misma estructura que la Base de Datos Mundial sobre Áreas Protegidas  (WDPA, por sus siglas en inglés. Véase <a class="textLink" target="_blank" href="http://www.wdpa.org">www.wdpa.org</a> para más información), almacenará dos tipos de información que son críticos para la comprensión de las ICCAs: 1) información descriptiva, como por ejemplo los principales hábitats incluidos en la ICCA y los nombres de la comunidad o comunidades que viven en la ICCA o cerca de ella, y 2) información espacial, como el tamaño, localización y fronteras del área. El Registro estará relacionado con la información contenida en la WDPA y también mediante un enlace que se habilitará entre ambas webs, para un mejor acceso a la información sobre áreas protegidas.'
+
+    countries_title: "Países ICCA"
+    side_countries_title: "Países"

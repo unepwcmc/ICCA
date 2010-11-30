@@ -1,5 +1,5 @@
 <% content_for :title do %>
-    <p class="flash-Bigtitle"><em>Contribute to the ICCA registry</em></p>
+  <p class="flash-Bigtitle"><%= t 'contribute.title' %></p>
 <% end %>
 
 <% content_for :banner do %>
@@ -9,96 +9,85 @@
 <div class="span-15 first articles">
   <div class="span-15 last article">
     <h1 class="flash-h2">
-      Contributing to the Registry
+      <%= t 'contribute.contribute_title' %>
     </h1>
     <p>
-      For communities and others who want to contribute to the Registry and benefit from using it, there are several
-      important but simple steps to follow. All information is treated with respect and discretion while adhering to the
-      principles of the 2007 UN Declaration on the Rights of Indigenous Peoples. There are two opportunities for contributing: <br/>
-        (a) provide information via an online questionnaire to the ICCA Registry Database, and <br/>
-        (b) create a Case Study for the ICCA Registry website.
+      <%= t 'contribute.para_1' %><br/>
+      <%= t 'contribute.opp_1' %><br/>
+      <%= t 'contribute.opp_2' %><br/>
     </p>
 
 
     <h2 class="flash-h2">
-      (A) Instructions for contributing to the ICCA Registry Database
+      <%= t 'contribute.instructions_title' %>
     </h2>
 
     <h4>
-      Step 1: Read the <%= link_to "ICCA Registry FPIC Form", "docs/ICCA%20Registry%20FPIC%20Form.doc" %> and discuss
-      among community members the ICCA Registry.
+      <%= t 'contribute.step_1.title' %>
     </h4>
     <p>
-      Members of the community need to review together the benefits and risks of contributing to the Registry Database so
-      that everyone is aware of the process, the challenges, and the potential positive and negative consequences. 
+      <%= t 'contribute.step_1.text' %>
     </p>
 
     <h4>
-      Step 2:  Review the Free Prior Informed Consent Form with community members to attain key signatures. Two options
-      exist for completing the form: <br/>
-      (a) <%= link_to "Download the FPIC form", "docs/WDPA%20ICCA%20consent%20form.doc" %>, sign, and return to Registry managers  <br/>
+      <%= t 'contribute.step_2.title' %><br/>
+      (a) <%= link_to t("contribute.step_2.consent_link.text"), "docs/WDPA%20ICCA%20consent%20form.doc" %><%= t 'contribute.step_2.consent_link.suffix' %><br/>
       <% if current_user %>
-        (b) <%= link_to "Open the electronic questionnaire form", forms_path %> and complete the FPIC section.<br/>
+        (b) <%= link_to t("contribute.step_2.questionnaire_link.text"), "docs/WDPA%20ICCA%20consent%20form.doc" %><%= t 'contribute.step_2.questionnaire_link.suffix' %><br/>
       <% else %>
-        (b) <%= link_to "Register", new_user_path %> online, open the electronic questionnaire form and complete the FPIC section.
+        (b) <%= link_to t("contribute.step_2.register_link.text"), "docs/WDPA%20ICCA%20consent%20form.doc" %><%= t 'contribute.step_2.register_link.suffix' %><br/>
       <% end %>
     </h4>
     <p>
-      The purpose of this consent form is to ensure that indigenous and local communities are aware of the process of
-      contributing information to the Registry, they know how and what information will be used and accessed, and they
-      have a choice regarding what information will be disclosed through various means (such as the ICCA website and
-      future analytical publications). All communities can select the extent to which their information is shared. 
+      <%= t 'contribute.step_2.text' %>
     </p>
 
     <h4>
-      Step 3: Complete the ICCA Registry questionnaire with your ICCA information.
+      <%= t 'contribute.step_3.title' %>
     </h4>
     <p>
       <% if current_user %>
-        Visit your <%= link_to "user page", forms_path %> to fill in the ICCA Registry questionnaire online.<br/>
+        <%= t 'contribute.step_3.logged_in.pre_link' %>
+        <%= link_to t('contribute.step_3.logged_in.link_text'), forms_path %>
+        <%= t 'contribute.step_3.logged_in.post_link' %><br/>
       <% else %>
-        In order to fill in the ICCA Registry questionnaire online, you must first <%= link_to "register", new_user_path %>
-        (or, if you have already registered, <%= link_to "login", login_path %>) to access your user page and
-        the electronic questionnaire.<br/>
+        <%= t 'contribute.step_3.logged_out.pre_register_link' %>
+        <%= link_to t('contribute.step_3.logged_out.register_link_text'), new_user_path %>
+        <%= t 'contribute.step_3.logged_out.pre_login_text' %>
+        <%= link_to t("contribute.step_3.logged_out.login_link_text"), login_path %>
+        <%= t 'contribute.step_3.logged_out.post_link_text' %><br/>
       <% end %>
-      There are several required core questions (highlighted) that each community must answer to help inform key ICCA
-      issues. Answers to additional questions will enhance understanding of ICCAs.  If the ICCA is already recognised by
-      national legislation or a protected area system, the community should work with government representatives where
-      possible to provide spatial and other information. The questionnaire can be
-      <%= link_to "downloaded as a PDF Document", "docs/ICCA%20Registry%20Questionnaire.pdf" %>, or can be requested by email
+      <%= t 'contribute.step_3.pre_link_text' %>
+      <%= link_to t('contribute.step_3.questionnaire_pdf_link_text'), "docs/ICCA%20Registry%20Questionnaire.pdf" %>
+      <%= t 'contribute.step_3.post_link_text' %>
     </p>
 
     <h4>
-      Step 4: Submit spatial data and relevant documents. 
+      <%= t 'contribute.step_4.title' %>
     </h4>
     <p>
-      Spatial data can be uploaded for each questionnaire submitted through a link provided on your <%= link_to "user page", forms_path %>.
-      You can also upload useful and relevant documents (such as management plans, community agreements and
-      documented awards) on the user page. 
+      <%= t 'contribute.step_4.pre_link_text' %>
+      <%= link_to t('contribute.step_4.user_page_link'), forms_path %>
+      <%= t 'contribute.step_4.post_link_text' %>
     </p>
 
-    <h2 class="flash-h2">
-      (B) Instructions for contributing ICCA Case Studies
-    </h2>
+    <h2 class="flash-h2"><%= t 'contribute.case_study_instructions.title' %></h2>
+    <p><%= t 'contribute.case_study_instructions.text' %> </p>
+
+    <h4><%= t 'contribute.case_study_instructions.step_1.title' %></h4>
     <p>
-      Communities who are interested in having a visual presence on the ICCA Registry website can propose a case study
-      webpage for their ICCA.
+      <%= t 'contribute.case_study_instructions.step_1.text_1' %>
+      <%= link_to t("contribute.case_study_instructions.step_1.link_text_1"), "docs/ICCA%20Registry%20Case%20Study%20Template.doc"%>
+      <%= t 'contribute.case_study_instructions.step_1.text_2' %>
     </p>
 
-    <h4>Step 1: Submit your completed case study template. </h4>
-    <p>Download and complete the <%= link_to "case study template", "docs/ICCA%20Registry%20Case%20Study%20Template.doc"%> using information from your ICCA.</p>
-    <h4>Step 2: Submit photos, videos, visual material, documents and weblinks.</h4>
+    <h4><%= t 'contribute.case_study_instructions.step_2.title' %></h4>
     <p>
-      We encourage you to send photos of community members, habitats, species, videos, website links, documents and
-      other materials (such as scans of brochures or maps) to <%= link_to "iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org"%>
+      <%= t 'contribute.case_study_instructions.step_2.para_1.text' %>
+      <%= link_to t("contribute.case_study_instructions.step_2.para_1.link_text"), "mailto:iccaregistry@unep-wcmc.org"%>
     </p>
     <p>
-      Photos should be of good resolution, with a minimum of 300 dpi, for inclusion on the website. Any videos,
-      including interview clips, to be included on the webpage must have a hyperlink provided from open source video
-      website, e.g. YouTube or Google Videos. You can also submit useful and relevant documents (such as management
-      plans, community agreements and documented awards).  Links to existing websites can also be included on the case
-      study webpage to provide additional information about the ICCA and its conservation efforts and successes. All
-      submissions should be clearly labelled with the specific ICCA reference.
+      <%= t 'contribute.case_study_instructions.step_2.para_2' %>
     </p>
     
   </div>
