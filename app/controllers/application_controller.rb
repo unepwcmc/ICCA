@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
   end
 
   def set_user_language
-    I18n.locale =  (params[:locale].present? ? params[:locale] : 'es')
+    I18n.locale =  (params[:locale].present? ? params[:locale] : 'en')
   end
 
   # add the local to URLs
