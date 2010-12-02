@@ -102,43 +102,38 @@ es:
       post_link_text: '. También puede subir documentos útiles y relevantes en la página de usuario (como planes de gestión, acuerdos comunitarios, o premios y menciones acreditados).'
 
     case_study_instructions:
-      title: "(B) Instructions for contributing ICCA Case Studies"
-      text: "Communities who are interested in having a visual presence on the ICCA Registry website can propose a case study webpage for their ICCA."
+      title: "B) Instrucciones para contribuir al Estudio de Casos Prácticos de ICCAs."
+      text: "Las comunidades interesadas en tener presencia visual en la página web del Registro ICCA pueden proponer una web con el caso práctico de su ICCA."
 
       step_1:
-        title: "Step 1: Submit your completed case study template."
-        text_1: 'Download and complete the '
-        link_text_1: 'case study template'
-        text_2: ' using information from your ICCA.'
+        title: "Paso1: Rellene y remita su plantilla de caso práctico."
+        text_1: 'Descargue y rellene la '
+        link_text_1: 'plantilla de caso práctico '
+        text_2: 'utilizando la información de su ICCA.'
       step_2:
-        title: 'Step 2: Submit photos, videos, visual material, documents and weblinks.'
+        title: 'Paso 2: Remita fotos, vídeos, material gráfico, documentos y enlaces a páginas web.'
         para_1:
-          text: 'We encourage you to send photos of community members, habitats, species, videos, website links, documents and other materials (such as scans of brochures or maps) to '
+          text: 'Les animamos a enviar fotos de miembros de su comunidad, ecosistemas, especies, vídeos, enlaces a páginas web, documentos y otros materiales (como mapas o folletos escaneados) a '
           link_text: 'iccaregistry@unep-wcmc.org'
-        para_2: "Photos should be of good resolution, with a minimum of 300 dpi, for inclusion on the website. Any videos,
-                including interview clips, to be included on the webpage must have a hyperlink provided from video website with embeddable
-                links, e.g. YouTube or Google Videos. You can also submit useful and relevant documents (such as management
-                plans, community agreements and documented awards).  Links to existing websites can also be included on the case
-                study webpage to provide additional information about the ICCA and its conservation efforts and successes. All
-                submilink_text_1 should be clearly labelled with the specific ICCA reference."
+        para_2: "Las fotos deben tener una buena resolución, con un mínimo de 300 dpi, para su inclusión en la web. Cualquier vídeo, incluidas entrevistas, debe acompañarse de un hipervínculo a una web de vídeo de acceso libre, tipo YouTube o Google Videos. Usted también puede remitir documentos útiles y relevantes (como planes de gestión, acuerdos comunitarios, o premios y menciones acreditados). También pueden incluirse en la web de estudio de casos prácticos enlaces a webs existentes que proporcionen información adicional sobre la ICCA, los esfuerzos realizados para su conservación y los éxitos conseguidos. Todos los envíos deben etiquetarse claramente con la referencia específica de la ICCA."
 
 
   contribute_menu:
-    title: "Follow these Steps to Contribute"
+    title: "Siga estos Pasos para Contribuir"
     step_list:
       step_1: 
-        link_text: "Read the ICCA Registry FPIC Form"
+        link_text: "Lea el Formulario CIPV del Registro ICCA"
       step_2: 
-        text: "Review and sign the Free Prior Informed Consent form"
+        text: "Revise y firme el Formulario de Consentimiento Informado, Previo y Voluntario"
         sub_step_1:
-          link_text: 'Download'
-          text: ', complete and submit'
+          link_text: 'Descargue'
+          text: ', rellene y remita'
         sub_step_2:
           logged_in: 'Complete the form online'
           logged_out:
-            link_text: 'Register'
-            text: ' and complete online'
+            link_text: 'Regístrese'
+            text: ' y rellene en línea'
       step_3: 
         logged_in: 'Complete the ICCA Questionnaire'
-        logged_out: 'Complete the ICCA Questionnaire online'
-      step_4: 'Upload spatial data and other documents'
+        logged_out: 'Rellene el Cuestionario ICCA en línea'
+      step_4: 'Suba a la aplicación datos espaciales o de otro tipo'
