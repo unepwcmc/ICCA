@@ -23,7 +23,9 @@
     </h2>
 
     <h4>
-      <%= t 'contribute.step_1.title' %>
+      <%= t 'contribute.step_1.title_1' %>
+      <%= link_to t('contribute.step_1.link_text'), t('files.fpic')  %>
+      <%= t 'contribute.step_1.title_2' %>
     </h4>
     <p>
       <%= t 'contribute.step_1.text' %>
@@ -31,11 +33,11 @@
 
     <h4>
       <%= t 'contribute.step_2.title' %><br/>
-      (a) <%= link_to t("contribute.step_2.consent_link.text"), "docs/WDPA%20ICCA%20consent%20form.doc" %><%= t 'contribute.step_2.consent_link.suffix' %><br/>
+      (a) <%= link_to t("contribute.step_2.consent_link.text"), t("files.wdpa_consent") %><%= t 'contribute.step_2.consent_link.suffix' %><br/>
       <% if current_user %>
-        (b) <%= link_to t("contribute.step_2.questionnaire_link.text"), "docs/WDPA%20ICCA%20consent%20form.doc" %><%= t 'contribute.step_2.questionnaire_link.suffix' %><br/>
+        (b) <%= link_to t("contribute.step_2.questionnaire_link.text"), forms_path %><%= t 'contribute.step_2.questionnaire_link.suffix' %><br/>
       <% else %>
-        (b) <%= link_to t("contribute.step_2.register_link.text"), "docs/WDPA%20ICCA%20consent%20form.doc" %><%= t 'contribute.step_2.register_link.suffix' %><br/>
+        (b) <%= link_to t("contribute.step_2.register_link.text"), new_user_path %><%= t 'contribute.step_2.register_link.suffix' %><br/>
       <% end %>
     </h4>
     <p>
@@ -58,7 +60,7 @@
         <%= t 'contribute.step_3.logged_out.post_link_text' %><br/>
       <% end %>
       <%= t 'contribute.step_3.pre_link_text' %>
-      <%= link_to t('contribute.step_3.questionnaire_pdf_link_text'), "docs/ICCA%20Registry%20Questionnaire.pdf" %>
+      <%= link_to t('contribute.step_3.questionnaire_pdf_link_text'), t("files.questionnaire") %>
       <%= t 'contribute.step_3.post_link_text' %>
     </p>
 
@@ -84,7 +86,7 @@
     <h4><%= t 'contribute.case_study_instructions.step_2.title' %></h4>
     <p>
       <%= t 'contribute.case_study_instructions.step_2.para_1.text' %>
-      <%= link_to t("contribute.case_study_instructions.step_2.para_1.link_text"), "mailto:iccaregistry@unep-wcmc.org"%>
+      <%= link_to "iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org"%>
     </p>
     <p>
       <%= t 'contribute.case_study_instructions.step_2.para_2' %>

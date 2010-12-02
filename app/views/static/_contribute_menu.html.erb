@@ -1,11 +1,11 @@
 <div class="new">	
   <h2 class="newsColumn flash-h2"><%= t 'contribute_menu.title' %></h2>
     <ol>
-      <li><%= link_to t("contribute_menu.step_list.step_1.link_text"), "/docs/ICCA%20Registry%20FPIC%20Form.doc" %></li>
+      <li><%= link_to t("contribute_menu.step_list.step_1.link_text"), t("files.fpic") %></li>
       <li>
         <%= t 'contribute_menu.step_list.step_2.text' %><br/>
           <i>
-            (a)<%= link_to t("contribute_menu.step_list.step_2.sub_step_1.link_text"), "docs/WDPA%20ICCA%20consent%20form.doc" %><%= t'contribute_menu.step_list.step_2.sub_step_1.text' %><br/>
+            (a)<%= link_to t("contribute_menu.step_list.step_2.sub_step_1.link_text"), t("files.wdpa_consent") %><%= t'contribute_menu.step_list.step_2.sub_step_1.text' %><br/>
             <% if current_user %>
               (b)<%= link_to t("contribute_menu.step_list.step_2.sub_step_2.logged_in"), forms_path %><br/>
             <% else %>

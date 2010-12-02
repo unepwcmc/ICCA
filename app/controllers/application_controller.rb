@@ -37,7 +37,6 @@ class ApplicationController < ActionController::Base
 
   # add the local to URLs
   def default_url_options(options={})
-    logger.debug "default_url_options is passed options: #{options.inspect}\n"
     { :locale => I18n.locale.to_s }
   end
 end

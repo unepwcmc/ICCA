@@ -11,6 +11,11 @@ es:
     contribute: "CONTRIBUYE"
     login: "ACCESO"
 
+  files:
+    questionnaire: "/docs/Cuestionario%20del%20Registro%20ICCA.pdf"
+    fpic: "/docs/ICCA%20Registry%20FPIC%20Form.doc"
+    wdpa_consent: "/docs/WDPA%20Consent%20ES.doc"
+
   learn_more: "Conozca más"
 
   home:
@@ -63,7 +68,9 @@ es:
     instructions_title: "(A) Instrucciones para contribuir a la Base de Datos del Registro ICCA"
 
     step_1:
-      title: 'Paso 1: Lea el <a href="docs/ICCA%20Registry%20FPIC%20Form.doc">Formulario CIPV del Registro ICCA</a> y comente entre los miembros de su comunidad acerca del Registro ICCA.'
+      title_1: 'Paso 1: Lea el '
+      link_text: 'Formulario CIPV del Registro ICCA'
+      title_2: 'y comente entre los miembros de su comunidad acerca del Registro ICCA.'
       text: 'Los miembros de la comunidad han de evaluar conjuntamente los beneficios y los riesgos de contribuir a la Base de Datos del Registro para que todo el mundo sea consciente del proceso, los retos, y las consecuencias potenciales positivas y negativas'
 
     step_2:
@@ -114,7 +121,6 @@ es:
         title: 'Paso 2: Remita fotos, vídeos, material gráfico, documentos y enlaces a páginas web.'
         para_1:
           text: 'Les animamos a enviar fotos de miembros de su comunidad, ecosistemas, especies, vídeos, enlaces a páginas web, documentos y otros materiales (como mapas o folletos escaneados) a '
-          link_text: 'iccaregistry@unep-wcmc.org'
         para_2: "Las fotos deben tener una buena resolución, con un mínimo de 300 dpi, para su inclusión en la web. Cualquier vídeo, incluidas entrevistas, debe acompañarse de un hipervínculo a una web de vídeo de acceso libre, tipo YouTube o Google Videos. Usted también puede remitir documentos útiles y relevantes (como planes de gestión, acuerdos comunitarios, o premios y menciones acreditados). También pueden incluirse en la web de estudio de casos prácticos enlaces a webs existentes que proporcionen información adicional sobre la ICCA, los esfuerzos realizados para su conservación y los éxitos conseguidos. Todos los envíos deben etiquetarse claramente con la referencia específica de la ICCA."
 
 
@@ -137,3 +143,5 @@ es:
         logged_in: 'Complete the ICCA Questionnaire'
         logged_out: 'Rellene el Cuestionario ICCA en línea'
       step_4: 'Suba a la aplicación datos espaciales o de otro tipo'
+
+
