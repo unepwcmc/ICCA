@@ -7,9 +7,9 @@ class RenameDocumentFieldFileToDocFile < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :documents, :doc_file_name, :file_file_name
-    remove_column :documents, :doc_file_name, :file_content_type
-    remove_column :documents, :doc_file_name, :file_file_size
-    remove_column :documents, :doc_file_name, :file_updated_at
+    rename_column :documents, :doc_file_name, :file_file_name
+    rename_column :documents, :doc_content_type, :file_content_type
+    rename_column :documents, :doc_file_size, :file_file_size
+    rename_column :documents, :doc_updated_at, :file_updated_at
   end
 end
