@@ -3,4 +3,3 @@ authlogic
 paperclip
 aws-s3
 cancan
-rails -v 2.3.8
