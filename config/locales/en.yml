@@ -162,3 +162,6 @@ en:
         logged_in: 'Complete the ICCA Questionnaire'
         logged_out: 'Complete the ICCA Questionnaire online'
       step_4: 'Upload spatial data and other documents'
+
+  form:
+    key: "dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA"
