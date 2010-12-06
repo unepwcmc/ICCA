@@ -1,5 +1,7 @@
-<% content_for :title do %>
-  <p class="flash-Bigtitle"><%= t 'home.title' %></p>
+<% content_for :title do 
+  title_text = t("home.title")
+  two_lines = title_text.length > 60 %>
+  <p class="flash-Bigtitle" style="<%= "line-height:0.5em;" if two_lines %>"><%= title_text %></p>
 <% end %>
 
 <% content_for :banner do %>
