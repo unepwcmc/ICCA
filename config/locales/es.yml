@@ -153,3 +153,11 @@ es:
 
   form:
     key: "dHdsZWdiVHZ5U0NDcXBQZWJUVGlSNmc6MA"
+
+  #ActiveRecord stuff...
+  activerecord:
+    errors:
+      template:
+        header: "Sorry, there were some problems with what you submitted"
+        body: "There were problems with the following fields:"
+
