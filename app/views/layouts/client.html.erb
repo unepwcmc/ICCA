@@ -45,12 +45,12 @@
         <li class=""><%= link_to t("nav.contribute"), contribute_path %> </li>
         <% if current_user %>
             /
-            <li class=""><%= link_to "LOGOUT", logout_path %></li> <br/>
-            <li class=""><%= link_to "USER PAGE", forms_path %> /</li>
-            <li class=""><%= link_to "CHANGE PASSWORD", edit_user_path(current_user)%></li>
+            <li class=""><%= link_to t("nav.logout"), logout_path %></li> <br/>
+            <li class=""><%= link_to t("nav.user_page"), forms_path %> /</li>
+            <li class=""><%= link_to t("nav.change_password"), edit_user_path(current_user)%></li>
             <% if current_user.role? :admin %>
                 /
-                <li class=""><%= link_to "USERS", users_path %></li>
+                <li class=""><%= link_to t("nav.users"), users_path %></li>
             <% end %>
         <% else %>
             /

@@ -10,6 +10,10 @@ en:
     contact: "CONTACT"
     contribute: "CONTRIBUTE"
     login: "LOGIN"
+    logout: "LOGOUT"
+    user_page: "USER PAGE"
+    change_password: "CHANGE PASSWORD"
+    users: "USERS"
 
   files:
     questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"

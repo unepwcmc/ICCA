@@ -10,6 +10,10 @@ es:
     contact: "CONTACTO"
     contribute: "CONTRIBUYE"
     login: "ACCESO"
+    logout: "SALIR"
+    user_page: "PÁGINA DE USUARIO"
+    change_password: "CAMBIAR SU CONTRASEÑA"
+    users: "USERS"
 
   files:
     questionnaire: "/docs/Cuestionario%20del%20Registro%20ICCA.pdf"
@@ -80,8 +84,8 @@ es:
         text: 'Descargue el Formulario CIPV'
         suffix: ', fírmelo y devuélvalo a los gestores del Registro.'
       questionnaire_link:
-        text: 'Open the electronic questionnaire form'
-        suffix: ' and complete the FPIC section.'
+        text: 'Abrir el formulario cuestionario electrónico'
+        suffix: ' y completar la sección de consentimiento informado, previo y voluntario'
       register_link:
         text: 'Regístrese'
         suffix: ' en línea, abra el cuestionario electrónico y rellene la parte correspondiente al CIPV.'
@@ -90,9 +94,9 @@ es:
     step_3:
       title: 'Paso 3: Rellene el Cuestionario del Registro ICCA con la información de su ICCA.'
       logged_in:
-        pre_link: "Visit your "
-        link_text: "user page "
-        post_link: "to fill in the ICCA Registry questionnaire online."
+        pre_link: "Visite su "
+        link_text: "página de usuario "
+        post_link: "para rellener el Cuestionario del Registro ICCA en línea "
       logged_out:
         pre_register_link: "Para rellenar el cuestionario del Registro ICCA en línea, debe primero "
         register_link_text: "registrarse "
@@ -136,12 +140,12 @@ es:
           link_text: 'Descargue'
           text: ', rellene y remita'
         sub_step_2:
-          logged_in: 'Complete the form online'
+          logged_in: 'Completar el formulario en línea'
           logged_out:
             link_text: 'Regístrese'
             text: ' y rellene en línea'
       step_3: 
-        logged_in: 'Complete the ICCA Questionnaire'
+        logged_in: 'Completar el Cuestionario ICCA'
         logged_out: 'Rellene el Cuestionario ICCA en línea'
       step_4: 'Suba a la aplicación datos espaciales o de otro tipo'
 
