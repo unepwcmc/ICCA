@@ -25,54 +25,59 @@
 
 <body>
   <% if flash[:error] %>	
-  <div class="flash flash_error"><%= flash[:error] %></div>
+    <div class="flash flash_error"><%= flash[:error] %></div>
   <% end -%>
   <% if flash[:notice] %>	
-  <div class="flash flash_notice"><%= flash[:notice] %></div>
+    <div class="flash flash_notice"><%= flash[:notice] %></div>
   <% end -%>
 
-<div class="container">
-  <div id="gmaps-key" style="display:none"><%= GOOGLE_MAPS_KEY %></div>
-  <div class="span-24 column header">
-    <%= link_to "<div class='span-1 last headerLogo'></div>", home_path %>
-    <div class="span-1 last menu">
-      <ul>
-        <li class=""><%= link_to t("nav.home"), home_path %> /</li>
-        <li class=""><%= link_to t("nav.about"), about_path %> /</li>
-        <li class=""><%= link_to t("nav.registry"), countries_path %> /</li>
-        <li class=""><%= link_to t("nav.faqs"), faqs_path %> /</li>
-        <li class=""><%= link_to t("nav.contact"), contact_path %> /</li>
-        <li class=""><%= link_to t("nav.contribute"), contribute_path %> </li>
-        <% if current_user %>
+  <div class="language_picker">
+    <%= t 'nav.language'%>: <br/>
+    <%= link_to image_tag('/images/flags/en.png'), url_for(:locale => :en) %>
+    <%= link_to image_tag('/images/flags/es.png'), url_for(:locale => :es) %>
+  </div>
+  <div class="container">
+    <div id="gmaps-key" style="display:none"><%= GOOGLE_MAPS_KEY %></div>
+    <div class="span-24 column header">
+      <%= link_to "<div class='span-1 last headerLogo'></div>", home_path %>
+      <div class="span-1 last menu">
+        <ul>
+          <li class=""><%= link_to t("nav.home"), home_path %> /</li>
+          <li class=""><%= link_to t("nav.about"), about_path %> /</li>
+          <li class=""><%= link_to t("nav.registry"), countries_path %> /</li>
+          <li class=""><%= link_to t("nav.faqs"), faqs_path %> /</li>
+          <li class=""><%= link_to t("nav.contact"), contact_path %> /</li>
+          <li class=""><%= link_to t("nav.contribute"), contribute_path %> </li>
+          <% if current_user %>
             /
             <li class=""><%= link_to t("nav.logout"), logout_path %></li> <br/>
             <li class=""><%= link_to t("nav.user_page"), forms_path %> /</li>
             <li class=""><%= link_to t("nav.change_password"), edit_user_path(current_user)%></li>
             <% if current_user.role? :admin %>
-                /
-                <li class=""><%= link_to t("nav.users"), users_path %></li>
+              /
+              <li class=""><%= link_to t("nav.users"), users_path %></li>
             <% end %>
-        <% else %>
+          <% else %>
             /
             <li class=""><%= link_to t("nav.login"), login_path %></li>
-        <% end %>
-      </ul>
+          <% end %>
+        </ul>
+      </div>
+      <div class="span-24 column headerInfoInf">
+        <p class="flash-Bigtitle"><%= yield :title %></p>
+      </div>
     </div>
-    <div class="span-24 column headerInfoInf">
-      <p class="flash-Bigtitle"><%= yield :title %></p>
-    </div>
-  </div>
-  <%= yield :banner %>
+    <%= yield :banner %>
 
-  <div class="span-24 last contentContainer<%= "2" if controller.class == SitesController %>">
-    <%= yield %>
+    <div class="span-24 last contentContainer<%= "2" if controller.class == SitesController %>">
+      <%= yield %>
+    </div>
   </div>
-</div>
-<div class="footerContainer">
-  <div class="container">
-    <div class="span-1 last logos"></div>
-    <div class="span-18 last footerInfo"><p style="float:right;">All rights reserved, ICCA 2010  /  <%= link_to "Contact us", contact_path %></p></div>
+  <div class="footerContainer">
+    <div class="container">
+      <div class="span-1 last logos"></div>
+      <div class="span-18 last footerInfo"><p style="float:right;">All rights reserved, ICCA 2010  /  <%= link_to "Contact us", contact_path %></p></div>
+    </div>
   </div>
-</div>
 </body>
 </html>

@@ -14,6 +14,7 @@ en:
     user_page: "USER PAGE"
     change_password: "CHANGE PASSWORD"
     users: "USERS"
+    language: "Language"
 
   files:
     questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"

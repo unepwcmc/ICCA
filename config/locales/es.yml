@@ -14,6 +14,7 @@ es:
     user_page: "PÁGINA DE USUARIO"
     change_password: "CAMBIAR SU CONTRASEÑA"
     users: "USERS"
+    language: "Idioma"
 
   files:
     questionnaire: "/docs/Cuestionario%20del%20Registro%20ICCA.pdf"

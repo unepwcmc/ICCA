@@ -764,3 +764,5 @@ a#satellite.current {background-position:0 -25px;}
 a#terrain {position:absolute; top:15px; right:95px; z-index:1000; background:url(../images/terrain.png) no-repeat 0 0; height:25px; width:74px;}
 a#terrain:hover {background-position:0 -25px; }
 a#terrain.current {background-position:0 -25px;}
+
+div.language_picker { float:right; color:#AAA; padding-right:18px; text-align:center;}
