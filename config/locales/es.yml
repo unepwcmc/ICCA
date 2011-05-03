@@ -75,7 +75,7 @@ es:
 
     step_1:
       title_1: 'Paso 1: Lea el '
-      link_text: 'Formulario CIPV del Registro ICCA'
+      link_text: 'ICCA Hoja de Información CIPV'
       title_2: 'y comente entre los miembros de su comunidad acerca del Registro ICCA.'
       text: 'Los miembros de la comunidad han de evaluar conjuntamente los beneficios y los riesgos de contribuir a la Base de Datos del Registro para que todo el mundo sea consciente del proceso, los retos, y las consecuencias potenciales positivas y negativas'
 
@@ -134,7 +134,7 @@ es:
     title: "Siga estos Pasos para Contribuir"
     step_list:
       step_1: 
-        link_text: "Lea el Formulario CIPV del Registro ICCA"
+        link_text: "Lea el ICCA Hoja de Información CIPV"
       step_2: 
         text: "Revise y firme el Formulario de Consentimiento Informado, Previo y Voluntario"
         sub_step_1:

@@ -74,7 +74,7 @@ en:
 
     step_1:
       title_1: 'Step 1: Read the '
-      link_text: 'ICCA Registry FPIC Form'
+      link_text: 'ICCA Registry FPIC Information Sheet'
       title_2: ' and discuss among community members the ICCA Registry.'
       text: 'Members of the community need to review together the benefits and risks of contributing to the Registry Database so
       that everyone is aware of the process, the challenges, and the potential positive and negative consequences.'
@@ -147,7 +147,7 @@ en:
     title: "Follow these Steps to Contribute"
     step_list:
       step_1: 
-        link_text: "Read the ICCA Registry FPIC Form"
+        link_text: "Read the ICCA Registry FPIC Information Sheet"
       step_2: 
         text: "Review and sign the Free Prior Informed Consent form"
         sub_step_1:
