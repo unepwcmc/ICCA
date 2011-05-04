@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100906104653) do
+ActiveRecord::Schema.define(:version => 20110504121358) do
 
   create_table "countries", :force => true do |t|
     t.string    "name"
@@ -23,25 +23,25 @@ ActiveRecord::Schema.define(:version => 20100906104653) do
   end
 
   create_table "documents", :force => true do |t|
-    t.integer  "form_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "doc_file_name"
-    t.string   "name"
-    t.integer  "site_id"
+    t.integer   "form_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "doc_file_name"
+    t.string    "name"
+    t.integer   "site_id"
   end
 
   create_table "forms", :force => true do |t|
-    t.integer   "site_id"
-    t.integer   "user_id"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "spatial_data_file_name"
-    t.string    "spatial_data_content_type"
-    t.integer   "spatial_data_file_size"
-    t.timestamp "spatial_data_updated_at"
-    t.string    "name"
-    t.string    "edit_link"
+    t.integer  "site_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "spatial_data_file_name"
+    t.string   "spatial_data_content_type"
+    t.integer  "spatial_data_file_size"
+    t.datetime "spatial_data_updated_at"
+    t.string   "name"
+    t.text     "edit_link",                 :limit => 255
   end
 
   create_table "links", :force => true do |t|
