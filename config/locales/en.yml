@@ -86,6 +86,32 @@ en:
     icca_elem_2: "The concerned indigenous peoples or local community plays a key role in making decisions about the management of the ecosystem, area or species. The community possesses (in law or in practice) the power to make and enforce key management decisions regarding the territory and resources."
     icca_elem_3: "The voluntary management decisions and efforts of the concerned community lead to, or at least are well in the process of leading to, the conservation of biodiversity, habitats, species, ecological functions and associated cultural values, regardless of the original management objectives as perceived by the community."
 
+    threats: "Threats to ICCAs"
+    threats_para: "While the ecological and cultural significance of areas governed by Indigenous Peoples and Local Communities gains greater attention at the global level, so does the range of threats which communities face while they try to maintain their close association with the natural environment.  These threats include direct and indirect impacts from human activities as well as natural phenomena.  As efforts to document ICCAs increases, we expect to understand more clearly the threats to communities. The ICCA Registry assesses the range of threats that ICCAs face as a natural step in understanding the full range of solutions available."
+
+    current_threats: 'Major current threats to ICCAs'
+    threat_1: "Undeclared ownership or tenure of land and resources (i.e., lack of recognition)"
+    threat_2: "Inappropriate forms of recognition or national policies which weaken traditional governance"
+    threat_3: "Conflict with other protected areas overlapping with the ICCA, leading to expropriation of community lands"
+    threat_4: "Development (transport infrastructure, buildings and so forth)"
+    threat_5: "Extraction (e.g. hunting, mining, logging, fishing)"
+    threat_6: "Localized impacts of global climate change"
+    threat_7: "Invasive species"
+    threat_8: "Over-harvesting of resources"
+    threat_9: "Biodiversity decline"
+    threat_10: "Loss of important sacred sites, species and traditional medicines"
+    threat_11: "Excessive tourism access"
+    threat_12: "Inappropriate management"
+    threat_13: "De-legitimisation of customary rights"
+    threat_14: "Inequities (social, economic and/or political) within the ICCA"
+    threat_15: "Conflict with neighbouring or associated communities"
+    threat_16: "War and movement of refugees"
+    threat_17: "Loss of traditional or local knowledge "
+    threat_18: "Change in cultural practices "
+    threat_19: "Destabilization of community due to exodus of members"
+
+
+
   registry:
     title: "<em>ICCA Registry</em>"
     project_title: "The project"
