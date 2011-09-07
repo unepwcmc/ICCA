@@ -8,7 +8,7 @@ en:
     registry: "REGISTRY"
     faqs: "FAQS"
     contact: "CONTACT"
-    contribute: "CONTRIBUTE"
+    participate: "PARTICIPATE"
     login: "LOGIN"
     logout: "LOGOUT"
     user_page: "USER PAGE"
@@ -27,7 +27,18 @@ en:
   home:
     title: "<em>Recognising indigenous</em> and community conservation"
 
-    explore_map: "Welcome to the ICCA Registry"
+    explore_map: "Explore the ICCA World Map"
+
+    welcome_title: "Welcome to the ICCA Registry"
+
+    learn: "Learn"
+    learn_text: "about ICCAs (Indigenous and Community Conserved Areas), an important form of local conservation."
+
+    participate: "Participate"
+    participate_text: "in the ICCA Registry. Register your ICCA or submit a case study."
+
+    explore: "Explore"
+    explore_text: "interactive maps and ICCA case studies.  Begin your journey with the world map."
 
     icca_title: "Indigenous and Community Conserved Areas"
     para_1: "Indigenous and Community Conserved Areas (ICCAs) are natural sites, resources and species' habitats conserved in a voluntary and self-directed way through	community values, practices, rules and institutions. For hundreds of years, indigenous people and local communities have been a crucial part of conservation. While the conservation practices of ICCAs are potentially the oldest on earth, they are under- recognized and not well understood, thus leaving them in jeopardy from lack of political and financial support and increasingly vulnerable to external threats. Recent international meetings, including the 2003 World Parks Congress and the 2004 Programme of Work on Protected Areas of the Convention on Biological Diversity, have contributed to a re-evaluation of ICCAs as one of the main avenues to strengthen sustainable natural resource use and conservation. Thus, there is a need for detailed knowledge and experience to be gathered, analyzed, and shared. "

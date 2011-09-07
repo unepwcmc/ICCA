@@ -9,17 +9,12 @@
 <% end %>
 
 <div class="span-15 first articles">
-  <div class="span-15 last article">
-    <h2 class="flash-h2"><%= t 'home.explore_map' %></h2>
-    <div class="worldmap" id="worldmap">
-    </div>
-  </div>
   <div class="span-15 last article articleborder">
     <h2 class="flash-h2">
       <% if @content %>
         <%= @content.title %>
       <% else %>	
-        <%= t('home.icca_title') %>
+        <%= t('home.welcome_title') %>
       <% end -%>
     </h2>
     <% if @content %>
@@ -28,9 +23,9 @@
         <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
       <% end %>
     <% else %>			
-      <p><%= t 'home.para_1' %></p>
-      <p><%= t 'home.para_2' %></p>
-      <p><%= t 'home.para_3' %></p>
+      <p><%= link_to t('home.learn'), about_path %> <%= t('home.learn_text') %></p>
+      <p><%= link_to t('home.participate'), participate_path %> <%= t('home.participate_text') %></p>
+      <p><%= link_to t('home.explore'), about_path %> <%= t('home.explore_text') %></p>
     <% end -%>
   </div>
   <div class="span-15 last moreICCA">

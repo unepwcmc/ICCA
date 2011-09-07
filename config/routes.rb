@@ -10,7 +10,7 @@ ActionController::Routing::Routes.draw do |map|
   map.about "about", :controller => :static, :action => :about
   map.faqs "faqs", :controller => :static, :action => :faqs
   map.contact "contact", :controller => :static, :action => :contact
-  map.contribute "contribute", :controller => :static, :action => :contribute
+  map.participate "participate", :controller => :static, :action => :participate
 
   map.make_user_admin "make_user_admin/:id", :controller => :users, :action => :make_user_admin
 
