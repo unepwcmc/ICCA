@@ -44,8 +44,10 @@ en:
     intro:
       para_1: "The ICCA Registry website is an online information platform for Indigenous and Community Conserved Areas, where communities themselves provide data, case studies, maps, photos and stories which result in useful statistics and analysis on featured ICCAs around the world.  Participation in the ICCA Registry is a voluntary process, with %{benefits_link} for participating communities.  The ICCA Registry is inclusive of a secure, current non-publically accessible database on ICCAs and is a critical mechanism for understanding the conservation impact of communities."
       benefits_link: "multiple benefits"
-      para_2: ""
-      para_3: ""
+      para_2: "The website and related products are designed for an audience which includes indigenous peoples, local communities, conservation practitioners, policy and decision-makers, researchers, and the general public, who want to understand and build their knowledge on ICCAs, their diverse biological, ecological and cultural values, and their geographical extent. Case studies provide an introduction to the broad range and diversity of ICCAs which exist. The Registry complements other efforts to understand the impacts of community conservation through documentation and sharing of experiences and analyses."
+      para_3: "The overall goal of the ICCA Registry is to provide the best available knowledge held on ICCAs. Information on ICCAs from different countries and regions of the world will be available in one place. In particular, the database holds qualitative, quantitative and spatial data. The degree to which this data is available to the public depends on the agreements we have with the communities who have contributed the information. The website, which features visual media such as maps, videos and photos, represents a positive mechanism to circulate this valuable data around the globe, demonstrate the conservation value of ICCAs, and foster greater recognition of ICCAs."
+      para_4: "For further information about the project, click %{here} (insert link to “ICCA Registry project” page)."
+      project_link: "here"
 
 
 
