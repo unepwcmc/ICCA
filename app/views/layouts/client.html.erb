@@ -42,9 +42,26 @@
       <%= link_to "<div class='span-1 last headerLogo'></div>", home_path %>
       <div class="span-1 last menu">
         <ul>
-          <li class=""><%= link_to t("nav.home"), home_path %> /</li>
-          <li class=""><%= link_to t("nav.about"), about_path %> /</li>
-          <li class=""><%= link_to t("nav.explore"), countries_path %> /</li>
+          <li class="">
+            <%= link_to t("nav.home"), home_path %> /
+            <ul class="submenu">
+              <li><%= link_to t("nav.acknowledgements"), acknowledgements_path %></li>
+            </ul>
+          </li>
+          <li class="">
+            <%= link_to t("nav.about"), about_path %> /
+            <ul class="submenu">
+              <li><%= link_to t("nav.project"), project_path %></li>
+            </ul>
+          </li>
+          <li class="">
+            <%= link_to t("nav.explore"), countries_path %> /
+            <ul class="submenu">
+              <li><%= link_to t("nav.register"), register_path %></li>
+              <li><%= link_to t("nav.case_studies"), case_studies_path %></li>
+              <li><%= link_to t("nav.benefits"), benefits_path %></li>
+            </ul>
+          </li>
           <li class=""><%= link_to t("nav.participate"), participate_path %> /</li>
           <li class=""><%= link_to t("nav.faqs"), faqs_path %> /</li>
           <li class=""><%= link_to t("nav.contact"), contact_path %> </li>

@@ -14,6 +14,8 @@ ActionController::Routing::Routes.draw do |map|
   map.benefits "benefits", :controller => :static, :action => :benefits
   map.project "project", :controller => :static, :action => :project
   map.acknowledgements "acknowledgements", :controller => :static, :action => :acknowledgements
+  map.register "register", :controller => :static, :action => :register
+  map.case_studies "case_studies", :controller => :static, :action => :case_studies
 
   map.make_user_admin "make_user_admin/:id", :controller => :users, :action => :make_user_admin
 

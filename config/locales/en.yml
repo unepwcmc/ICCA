@@ -16,6 +16,11 @@ en:
     change_password: "CHANGE PASSWORD"
     users: "USERS"
     language: "Language"
+    acknowledgements: "Acknowledgements"
+    project: "Project"
+    register: "Register"
+    case_studies: "Case Studies"
+    benefits: "Benefits/Risks"
 
   files:
     questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"

@@ -83,6 +83,14 @@ div.menu{
     font-size: 18px;
     display: inline;
     list-style: none;
+    position:relative;
+}
+
+.menu li ul.submenu {
+  height:0;
+  width:0;
+  overflow:visible;
+  position:absolute;
 }
 
 .menu a{
