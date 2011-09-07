@@ -23,9 +23,11 @@
         <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
       <% end %>
     <% else %>			
-      <p><%= link_to t('home.learn'), about_path %> <%= t('home.learn_text') %></p>
-      <p><%= link_to t('home.participate'), participate_path %> <%= t('home.participate_text') %></p>
-      <p><%= link_to t('home.explore'), about_path %> <%= t('home.explore_text') %></p>
+      <ul>
+        <li><%= link_to t('home.learn'), about_path %> <%= t('home.learn_text') %></li>
+        <li><%= link_to t('home.participate'), participate_path %> <%= t('home.participate_text') %></li>
+        <li><%= link_to t('home.explore'), about_path %> <%= t('home.explore_text') %></li>
+      </ul>
     <% end -%>
   </div>
 </div>
@@ -36,7 +38,7 @@
     <p><%= t 'home.intro.para_1', :benefits_link => link_to(t('home.intro.benefits_link'), benefits_path) %></p>
     <p><%= t 'home.intro.para_2' %></p>
     <p><%= t 'home.intro.para_3'%></p>
-    <p><%= t 'home.intro.para_4', :here => link_to(t('home.intro.project_link'), project_path) %></p>
+    <p><%= t 'home.intro.para_4', :here => link_to(t('here'), project_path) %></p>
   </div>
 </div>
 
@@ -44,5 +46,29 @@
   <div class="new">
     <h2 class="newsColumn flash-h2"><%= t 'home.what_are_iccas' %></h2>
     <p class="newsContent newborder"><%= t 'home.what_are_iccas_text' %><b><%= link_to " Learn more", countries_path %></b></p>
+
+    <h2 class="newsColumn flash-h2"><%= t 'home.partners' %></h2>
+    <p class="newsContent newborder"><%= t 'home.partners_text' %></p>
+    <ul>
+      <li>
+        <a class="textLinkRight" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102 ">ICCA Consortium<br/>
+        <%= image_tag "ICCA consort.png", :width => "119px" %></a>
+      </li>
+      <li>
+        <a class="textLinkRight" href="http://www.thegef.org/ ">Global Environment Facility<br/>
+        <%= image_tag "GEF new.jpg", :width => "119px" %></a>
+      </li>
+      <li>
+        <a class="textLinkRight" href="http://sgp.undp.org/ ">GEF Small Grants Programme<br/>
+        <%= image_tag "SGP_transparent.png", :width => "119px" %></a>
+      </li>
+      <li>
+        <a class="textLinkRight" href="http://www.undp.org/ ">UNDP<br/>
+        <%= image_tag "UNDP_Logo.gif", :width => "119" %></a>
+      </li>
+    </ul>
+
+    <h2 class="newsColumn flash-h2"><%= t 'home.acknowledgements' %></h2>
+    <p class="newsContent newborder"><%= t 'home.acknowledgements_text', :here => link_to(t('here'), acknowledgements_path) %></p>
   </div>
 </div>

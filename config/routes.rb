@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.participate "participate", :controller => :static, :action => :participate
   map.benefits "benefits", :controller => :static, :action => :benefits
   map.project "project", :controller => :static, :action => :project
+  map.acknowledgements "acknowledgements", :controller => :static, :action => :acknowledgements
 
   map.make_user_admin "make_user_admin/:id", :controller => :users, :action => :make_user_admin
 
