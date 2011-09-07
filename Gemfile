@@ -12,4 +12,5 @@ source :rubygems
 
   group :development do
     gem "taps", "~> 0.3.22"
+    gem "heroku"
   end

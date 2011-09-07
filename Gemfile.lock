@@ -11,6 +11,7 @@ GEM
     activeresource (2.3.14)
       activesupport (= 2.3.14)
     activesupport (2.3.14)
+    addressable (2.2.6)
     authlogic (2.1.6)
       activesupport
     aws-s3 (0.6.2)
@@ -24,7 +25,14 @@ GEM
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
       i18n (>= 0.4.0)
+    heroku (2.7.0)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      rubyzip
+      term-ansicolor (~> 1.0.5)
     i18n (0.5.0)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
     linecache (0.43)
     mime-types (1.16)
     paperclip (2.3.6)
@@ -47,6 +55,7 @@ GEM
       ruby-debug-base (~> 0.10.3.0)
     ruby-debug-base (0.10.3)
       linecache (>= 0.3)
+    rubyzip (0.9.4)
     sequel (3.20.0)
     sinatra (1.0)
       rack (>= 1.0)
@@ -57,6 +66,7 @@ GEM
       sequel (~> 3.20.0)
       sinatra (~> 1.0.0)
       sqlite3-ruby (~> 1.2)
+    term-ansicolor (1.0.6)
     xml-simple (1.0.12)
 
 PLATFORMS
@@ -67,6 +77,7 @@ DEPENDENCIES
   aws-s3
   cancan
   formtastic
+  heroku
   paperclip
   pg
   rails (= 2.3.14)
