@@ -8,8 +8,8 @@
   <%= render :partial => "site_photo_banner" %>
 <% end %>
 
-<div class="span-15 first articles">
-  <div class="span-15 last article articleborder">
+<div class="span-24 first last articles">
+  <div class="span-24 last article articleborder">
     <h2 class="flash-h2">
       <% if @content %>
         <%= @content.title %>
@@ -28,11 +28,14 @@
       <p><%= link_to t('home.explore'), about_path %> <%= t('home.explore_text') %></p>
     <% end -%>
   </div>
-  <div class="span-15 last moreICCA">
-    <p><a href="about" class="more">Learn more about ICCAs</a></p>
-  </div>
 </div>
 
+<div class="span-15 first articles">
+  <div class="span-15 last article articleborder">
+    <h2><%= t 'home.introduction' %></h2>
+    <p><%= t 'home.intro.para_1', :benefits_link => link_to(t('home.intro.benefits_link'), benefits_path) %></p>
+  </div>
+</div>
 
 <div class="span-8 last newshome">
   <div class="new">

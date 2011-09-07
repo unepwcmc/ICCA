@@ -40,6 +40,15 @@ en:
     explore: "Explore"
     explore_text: "interactive maps and ICCA case studies.  Begin your journey with the world map."
 
+    introduction: "Introduction"
+    intro:
+      para_1: "The ICCA Registry website is an online information platform for Indigenous and Community Conserved Areas, where communities themselves provide data, case studies, maps, photos and stories which result in useful statistics and analysis on featured ICCAs around the world.  Participation in the ICCA Registry is a voluntary process, with %{benefits_link} for participating communities.  The ICCA Registry is inclusive of a secure, current non-publically accessible database on ICCAs and is a critical mechanism for understanding the conservation impact of communities."
+      benefits_link: "multiple benefits"
+      para_2: ""
+      para_3: ""
+
+
+
     icca_title: "Indigenous and Community Conserved Areas"
     para_1: "Indigenous and Community Conserved Areas (ICCAs) are natural sites, resources and species' habitats conserved in a voluntary and self-directed way through	community values, practices, rules and institutions. For hundreds of years, indigenous people and local communities have been a crucial part of conservation. While the conservation practices of ICCAs are potentially the oldest on earth, they are under- recognized and not well understood, thus leaving them in jeopardy from lack of political and financial support and increasingly vulnerable to external threats. Recent international meetings, including the 2003 World Parks Congress and the 2004 Programme of Work on Protected Areas of the Convention on Biological Diversity, have contributed to a re-evaluation of ICCAs as one of the main avenues to strengthen sustainable natural resource use and conservation. Thus, there is a need for detailed knowledge and experience to be gathered, analyzed, and shared. "
     para_2: "The ICCA Registry website is a pilot online database for Indigenous and Community Conserved Areas, offering information, maps, statistics and analysis on featured ICCAs to indigenous communities, researchers, conservation practitioners, policy and decision-makers and general public who want to understand and obtain information on ICCAs characteristics and geographical extent."
