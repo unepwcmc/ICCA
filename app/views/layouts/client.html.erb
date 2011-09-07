@@ -44,10 +44,10 @@
         <ul>
           <li class=""><%= link_to t("nav.home"), home_path %> /</li>
           <li class=""><%= link_to t("nav.about"), about_path %> /</li>
-          <li class=""><%= link_to t("nav.registry"), countries_path %> /</li>
+          <li class=""><%= link_to t("nav.explore"), countries_path %> /</li>
+          <li class=""><%= link_to t("nav.participate"), participate_path %> /</li>
           <li class=""><%= link_to t("nav.faqs"), faqs_path %> /</li>
-          <li class=""><%= link_to t("nav.contact"), contact_path %> /</li>
-          <li class=""><%= link_to t("nav.participate"), participate_path %> </li>
+          <li class=""><%= link_to t("nav.contact"), contact_path %> </li>
           <% if current_user %>
             /
             <li class=""><%= link_to t("nav.logout"), logout_path %></li> <br/>

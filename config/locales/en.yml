@@ -4,9 +4,9 @@
 en:
   nav:
     home: "HOME"
-    about: "ABOUT"
-    registry: "REGISTRY"
-    faqs: "FAQS"
+    about: "ABOUT ICCAs"
+    explore: "EXPLORE"
+    faqs: "FAQs"
     contact: "CONTACT"
     participate: "PARTICIPATE"
     login: "LOGIN"
