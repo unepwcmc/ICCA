@@ -42,44 +42,7 @@
 
 <div class="span-8 last newshome">
   <div class="new">
-    <h2 class="newsColumn flash-h2"><%= t 'home.about_title' %></h2>
-    <p class="newsContent newborder"><%= t 'home.about_text' %><b><%= link_to " Learn more", countries_path %></b></p>
-  </div>
-
-  <%= render :partial => 'publications' %>
-	
-  <div class="new">
-    <h2 class="newsColumn flash-h2"><% t 'partners' %></h2>
-    <ul >
-      <li>
-        <a class="textLinkRight" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102 ">ICCA Consortium<br/>
-        <%= image_tag "ICCA consort.png", :width => "119px" %></a>
-      </li>
-      <li>
-        <a class="textLinkRight" href="http://www.thegef.org/ ">Global Environment Facility<br/>
-        <%= image_tag "GEF new.jpg", :width => "119px" %></a>
-      </li>
-      <li>
-        <a class="textLinkRight" href="http://sgp.undp.org/ ">GEF Small Grants Programme<br/>
-        <%= image_tag "SGP_transparent.png", :width => "119px" %></a>
-      </li>
-      <li>
-        <a class="textLinkRight" href="http://www.undp.org/ ">UNDP<br/>
-        <%= image_tag "UNDP_Logo.gif", :width => "119" %></a>
-      </li>
-
-    </ul>
+    <h2 class="newsColumn flash-h2"><%= t 'home.what_are_iccas' %></h2>
+    <p class="newsContent newborder"><%= t 'home.what_are_iccas_text' %><b><%= link_to " Learn more", countries_path %></b></p>
   </div>
 </div>
-<script language="javaScript" type="text/javascript">
-    /*$(document).ready( function() {
-
-        String.prototype.linkify = function() {
-            return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
-                return m.link(m);
-            });
-        };
-
-    });
-    */
-</script>
