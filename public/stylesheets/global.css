@@ -91,6 +91,7 @@ div.menu{
   width:0;
   overflow:visible;
   position:absolute;
+  left:0;
 }
 
 .menu a{
