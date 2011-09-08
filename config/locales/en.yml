@@ -207,12 +207,25 @@ en:
                 plans, community agreements and documented awards).  Links to existing websites can also be included on the case
                 study webpage to provide additional information about the ICCA and its conservation efforts and successes. All
                 submilink_text_1 should be clearly labelled with the specific ICCA reference."
+
   acknowledgements:
     title: "Acknowledgements"
     para: "The ICCA Registry team would like to thank the following for their contributions and dedication in support of ICCAs:"
     volunteers: "volunteers"
 
+  project:
+    title: "The ICCA Registry project"
+    para_1: "The Indigenous and Community Conserved Areas Registry was developed in response to a growing recognition that local communities and indigenous peoples play a significant role in protecting and maintaining biodiversity and ecosystem services. Despite this raised awareness, there has been no consistent way to measure and document the values and roles of communities in conservation; as a result, the Registry idea was generated. The aim is to build a solid base of evidence at a scale that approaches our current knowledge of the biodiversity conservation impact of government managed national parks and protected areas."
+    para_2: "The development of the ICCA Registry has been guided by input at recent global meetings and is advised by the %{link}, a collaborative group of experts and organizations formed during the 2008 World Conservation Congress. Through a multi-faceted process, this group is gradually working with indigenous and local communities who want to raise awareness of community governance and the contributions that Indigenous Peoples and Local Communities are making to conservation. UNEP-WCMC, as a partner in the ICCA Consortium, is playing a key role in building awareness and recognition of ICCAs through management of an interactive registry for ICCAs worldwide."
+    para_3: "The contribution of case studies and registration of areas governed by communities has been a collaborative process since 2009, ensuring slow but positive support of the concept, and engaging staff at UNEP-WCMC as well as members of the ICCA Consortium, community members, other UN institutions, governments and consultants in the field. Indigenous Peoples and Local Communities are core contributors to this knowledge base.  We invite feedback at any time to ensure this product meets the needs of communities while also ensuring protection of sensitive information. To contact us, please click %{link}."
+    para_4: "The Registry, developed in the same structure as the World Database on Protected Areas (WDPA; see %{link}), stores two types of information critical to understanding ICCAs: (1) descriptive information, such as the main habitats within the ICCA and the management features of the community or communities living within or near the ICCA, and (2) spatial information, such as the size and location of the area. In the future, the Registry will be linked to the WDPA for enhanced access to information about protected areas and ICCAs. This also serves as a mechanism to increase information in the WDPA about diverse forms of protected area governance."
+    volunteers: "volunteers"
 
+    fpic_title: "Free Prior Informed Consent (FPIC)"
+    fpic_para: "The Registry adheres to the principle of Free Prior Informed Consent (FPIC), whereby communities must give their consent prior to participating in a project that may affect them. The ICCA Registry has developed a special FPIC form which must be completed and signed by communities or their representative prior to the ICCA being registered. The purpose of this form is to record consent and ensure that communities are aware of the process of contributing information to the Registry, they know how and what information will be used and accessed, and they have a choice regarding what information will be disclosed through various means (such as on the ICCA website and in future analytical publications). All communities can select the extent to which their information is shared. No information submitted will be shared without consent."
+
+    future_title: "Future of the ICCA Registry"
+    future_para: "The number of communities who register their ICCAs with the Registry will likely increase as the importance of locally-managed conservation gains greater recognition at the global scale.  An advisory group is being established to ensure validation of communities who register; this will maintain credibility of the process and benefit to communities who are working so diligently to protect and manage their resources and culture. Ultimately, this wealth of information can serve as a learning platform amongst indigenous peoples and community members across the world who share common successes and challenges despite their diverse cultures and natural habitats. In the future, we anticipate the development of a searchable, partially accessible online database that can help inform policies and contribute to the recognition of communities as critical custodians for biodiversity and livelihoods."
 
 
   contribute_menu:
