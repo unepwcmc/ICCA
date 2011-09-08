@@ -90,9 +90,8 @@ div.menu{
   display:none;
   position: absolute;
   padding: 2px;
-  font-size: 12px;
   left:0;
-  z-index:51;
+  z-index:1;
   margin-top: 24px;
   list-style: none;
   border: solid 1px #CCC;
@@ -105,10 +104,6 @@ div.menu{
 }
 
 .menu > ul > li:hover ul.submenu {
-  display:inline;
-}
-
-.menu > ul > li ul.submenu:hover {
   display:inline;
 }
 
