@@ -144,6 +144,35 @@ en:
 
     instructions_title: "(A) Instructions for contributing to the ICCA Registry Database"
 
+  benefits:
+    title: "Benefits and Risks of Participating"
+
+    title_1: "Is your community considering participating in the ICCA Registry?"
+    para_1: "If you and your community are uncertain about whether to participate, we offer some further information below about what you might expect as benefits and risks.  Participation is entirely voluntary so no community should feel obliged to contribute.  Communities who choose not to participate will in no way be viewed negatively as a result."
+
+    benefits_title: "Benefits of the ICCA Registry database and case studies: "
+    benefits_para: "The ICCA Registry is a tool that can benefit a range of communities who govern and manage natural resources for the benefit of biodiversity and their livelihoods.  The ICCA Registry:"
+    benefit_1: "Raises awareness of community conservation approaches, processes and impacts at international level"
+    benefit_2: "Enhances documentation of ICCA sites and systems, which may also assist with securing legal status "
+    benefit_3: "Safeguards sensitive information submitted to the ICCA Registry database: Communities choose the extent to which their information is shared and can register without sharing any information to an external audience"
+    benefit_4: "Documents the story and point location of ICCAs through online case studies and interactive map."
+    benefit_5: "Allows communities to share photos, videos, management plans and other types of documentation "
+    benefit_6: "Increases opportunities for communities to learn about each other and share insights from their efforts"
+    benefit_7: "Contributes to a growing body of knowledge that can inform conservation and other policies regarding the positive influence of community-based environmental management and governance"
+    benefit_7: "Provides communities with ecotourism and other entrepreneurial ventures a chance to link their websites with their case studies on the ICCA Registry website"
+    benefit_8: "Respects Intellectual Property Rights, which are retained with the community. An ICCA can be removed from the database or case studies at any time on request."
+
+    risks_title: "Risks of the ICCA Registry database and case studies:"
+    risks_para: "While safeguards are included in the Registry, it is difficult to predict all potential threats resulting from participation. Here are some possible risks:"
+    risk_1: "Exposing the location of some vulnerable communities on the internet may open them to unwanted or increased attention.  "
+    risk_2: "Some communities who are working with economically valuable resources may not wish to incorporate these into a geo-referenced map."
+    risk_3: "The Registry cannot assist communities with local or immediate threats to their area, such as boundary disputes with other communities or national entities and extraction by multinational companies."
+    risk_4: "Information that is hosted publicly on the internet can be visited and used by anyone."
+
+    para_2: "If you have any concerns or questions, please %{link} to discuss your participation."
+
+
+
     step_1:
       title_1: 'Step 1: Read the '
       link_text: 'ICCA Registry FPIC Information Sheet'

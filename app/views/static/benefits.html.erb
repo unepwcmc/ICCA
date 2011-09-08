@@ -1,0 +1,32 @@
+<% content_for :title do %>
+  <p class="flash-Bigtitle"><em>
+    <%= t 'benefits.title' %>
+  </em></p>
+<% end %>
+
+<% content_for :banner do %>
+    <%= render :partial => "site_photo_banner" %>
+<% end %>
+
+
+<div class="span-15 first articles">
+  <div class="span-15 last article">
+    <h2 class="flash-h2">
+      <%= t 'benefits.title' %>
+    </h2>
+    <p><%= t 'benefits.para_1' %></p>
+    <p><%= t 'benefits.para_2', :link => link_to("contact us", contact_path) %></p>
+  </div>
+
+</div>
+
+
+<div class="span-8 last newscontact">
+  <div class="new">
+    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
+    <%= render :partial => "photos/media_browser" %>
+    <div id="basic-modal-content">
+    </div>
+    <br clear="all" />
+  </div>
+</div>
