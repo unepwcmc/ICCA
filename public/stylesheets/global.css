@@ -53,7 +53,7 @@ div.headerInfoInf em{
     color: #9cc342;
 }
 
-div.headerInfoInf a:hover{
+div.headerInfoInf a:hover {
     color: #ffffff;
 }
 
@@ -87,11 +87,28 @@ div.menu{
 }
 
 .menu li ul.submenu {
-  height:0;
-  width:0;
-  overflow:visible;
-  position:absolute;
+  display:none;
+  position: absolute;
+  padding: 2px;
+  font-size: 12px;
   left:0;
+  z-index:51;
+  margin-top: 22px;
+  list-style: none;
+  background-color: #DDD;
+  border: solid 1px #CCC;
+}
+
+.menu ul.submenu li {
+  float:left;
+}
+
+.menu > ul > li:hover ul.submenu {
+  display:inline;
+}
+
+.menu > ul > li ul.submenu:hover {
+  display:inline;
 }
 
 .menu a{

@@ -16,13 +16,12 @@ $(document).ready(function(){
                                 "border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name],"+
                                 "hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style]"
 
-    })
+    });
 
 		/**
 		* Displays a cute flash message and then fades it out.
 		*/		
 		setTimeout(function() {$(".flash").hide("normal")}, 3000);
-
 });
 
 window.onerror=function(desc,page,line,chr){
