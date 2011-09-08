@@ -50,19 +50,20 @@
           </li>
           <li>
             <%= link_to t("nav.about"), about_path %> /
+          </li>
+          <li>
+            <%= link_to t("nav.explore"), countries_path %> /
             <ul class="submenu">
               <li><%= link_to t("nav.project"), project_path %></li>
             </ul>
           </li>
-          <li>
-            <%= link_to t("nav.explore"), countries_path %> /
+          <li><%= link_to t("nav.participate"), participate_path %> /
             <ul class="submenu">
               <li><%= link_to t("nav.register"), register_path %></li>
               <li><%= link_to t("nav.case_studies"), case_studies_path %></li>
               <li><%= link_to t("nav.benefits"), benefits_path %></li>
             </ul>
           </li>
-          <li><%= link_to t("nav.participate"), participate_path %> /</li>
           <li><%= link_to t("nav.faqs"), faqs_path %> /</li>
           <li><%= link_to t("nav.contact"), contact_path %> </li>
           <% if current_user %>

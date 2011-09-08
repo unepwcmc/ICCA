@@ -94,8 +94,9 @@ div.menu{
   z-index:1;
   margin-top: 24px;
   list-style: none;
-  border: solid 1px #CCC;
-  background-color: #DDD;
+  border: solid 1px #F2EBE6;
+  border-top: 0px;
+  background-color: #29211C;
 }
 
 .menu ul.submenu li {
