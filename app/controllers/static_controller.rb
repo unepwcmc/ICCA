@@ -19,6 +19,9 @@ class StaticController < ApplicationController
   def contribute
   end
 
+  def acknowledgements
+  end
+
   private
   def get_some_images
     sites = Site.all :limit => 10, :order => "updated_at DESC"

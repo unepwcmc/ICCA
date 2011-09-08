@@ -207,6 +207,12 @@ en:
                 plans, community agreements and documented awards).  Links to existing websites can also be included on the case
                 study webpage to provide additional information about the ICCA and its conservation efforts and successes. All
                 submilink_text_1 should be clearly labelled with the specific ICCA reference."
+  acknowledgements:
+    title: "Acknowledgements"
+    para: "The ICCA Registry team would like to thank the following for their contributions and dedication in support of ICCAs:"
+    volunteers: "volunteers"
+
+
 
 
   contribute_menu:

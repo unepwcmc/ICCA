@@ -1,0 +1,38 @@
+<% content_for :title do %>
+    <p class="flash-Bigtitle"><em>Contact Us</em></p>
+<% end %>
+
+<% content_for :banner do %>
+    <%= render :partial => "site_photo_banner" %>
+<% end %>
+
+
+<div class="span-15 first articles">
+  <div class="span-15 last article">
+    <h2 class="flash-h2">
+      <%= t 'acknowledgements.title' %>
+    </h2>
+    <p><%= t 'acknowledgements.para' %></p>
+    <p>UNEP-WCMC <%= t 'acknowledgements.volunteers' %></p>
+    <ul>
+      <li>Sarah Jones</li>
+      <li>Lea Wortmann</li>
+      <li>Daniel Ham</li>
+      <li>Katy Lannas</li>
+      <li>Robin Johnson</li>
+      <li>Sam Yellen</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div class="span-8 last newscontact">
+  <div class="new">
+    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
+    <%= render :partial => "photos/media_browser" %>
+    <div id="basic-modal-content">
+    </div>
+    <br clear="all" />
+  </div>
+</div>
