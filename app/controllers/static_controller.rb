@@ -16,7 +16,7 @@ class StaticController < ApplicationController
     @content = StaticContent.find_by_content_for "contact"
   end
 
-  def contribute
+  def participate
   end
 
   def acknowledgements

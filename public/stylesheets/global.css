@@ -793,3 +793,10 @@ div.language_picker { float:right; color:#AAA; padding-right:18px; text-align:ce
 p.map_explain {
   margin-top: 10px;
 }
+
+div.participateLinks h4 {
+  padding:5px;
+  border: 1px solid black;
+  background: #29211C;
+  margin: 5px;
+}

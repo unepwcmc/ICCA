@@ -1,0 +1,36 @@
+<% content_for :title do %>
+  <p class="flash-Bigtitle"><%= t 'contribute.title' %></p>
+<% end %>
+
+<% content_for :banner do %>
+    <%= render :partial => "site_photo_banner" %>
+<% end %>
+
+<div class="span-15 first articles">
+  <div class="span-15 last article">
+    <h1 class="flash-h2">
+      <%= t 'participate.participate_title' %>
+    </h1>
+    <p><%= t 'participate.para_1' %></p>
+    <p><%= t 'participate.para_2' %></p>
+    <ol>
+      <li>
+        <h4><%= link_to t('participate.opp_1'), register_path %></h4>
+        <p><%= t 'participate.opp_1_para' %></p>
+      </li>
+      <li>
+        <h4><%= link_to t('participate.opp_2'), case_studies_path %></h4>
+        <p><%= t 'participate.opp_2_para' %></p>
+      </li>
+    </ol>
+    <p><%= t 'participate.para_3', :link => link_to(t('here'), benefits_path) %></p>
+  </div>
+</div>
+
+
+<div class="span-8 last newscontact">
+  <div class="newsContent participateLinks">
+    <h4><%= link_to t('nav.register') + ' >', register_path %></h4>
+    <h4><%= link_to t('nav.case_studies') + ' >', case_studies_path %></h4>
+  </div>
+</div>

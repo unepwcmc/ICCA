@@ -128,14 +128,20 @@ en:
     countries_title: "ICCA Countries"
     side_countries_title: "Countries"
 
-  contribute:
-    title: "<em>Contribute to the ICCA registry</em>"
+  participate:
+    title: "<em>Participate in the ICCA Registry</em>"
 
-    contribute_title: "Contributing to the Registry"
-    para_1: "For communities and others who want to contribute to the Registry and benefit from using it, there are several important but simple steps to follow. All information is treated with respect and discretion while adhering to the principles of the 2007 UN Declaration on the Rights of Indigenous Peoples. There are two opportunities for contributing:"
-    opp_1: "(a) provide information via an online questionnaire to the ICCA Registry Database, and"
-    opp_2: "(b) create a Case Study for the ICCA Registry website."
-    
+    participate_title: "Two ways to participate in the Registry"
+    para_1: "All information in the Registry is treated with respect and discretion while adhering to the principles of the 2007 UN Declaration on the Rights of Indigenous Peoples."
+    para_2: "There are two main ways to participate:"
+
+    opp_1: "Register your conservation area as an ICCA in the ICCA Registry database."
+    opp_1_para: "Sign-up and complete an online questionnaire OR download or request a questionnaire to complete by hand or electronically (off-line)"
+    opp_2: "Create a Case Study for the ICCA Registry website."
+    opp_2_para: "An ICCA case study can be submitted without going through the process of registering, or it can be part of the full registration process of an ICCA. The main purpose of creating a case study is to provide greater visibility to communities who wish to share their conservation work and its richness in through visual media on the internet."
+
+    para_3: "Note: While we encourage interested communities to participate, we want to ensure the benefits and risks of participating in the Registry are clearly understood.  For further information, please click %{link}. "
+
     instructions_title: "(A) Instructions for contributing to the ICCA Registry Database"
 
     step_1:
