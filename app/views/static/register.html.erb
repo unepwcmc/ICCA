@@ -1,5 +1,6 @@
 <% content_for :title do %>
-    <p class="flash-Bigtitle"><em>Contact Us</em></p>
+    <p class="flash-Bigtitle"><em><%= t 'register.title' %></em></p>
+      
 <% end %>
 
 <% content_for :banner do %>
@@ -10,22 +11,24 @@
 <div class="span-15 first articles">
   <div class="span-15 last article">
     <h2 class="flash-h2">
-      <%= t 'project.title' %>
+      <%= t 'register.title' %>
     </h2>
-    <p><%= t 'project.para_1' %></p>
-    <p><%= t 'project.para_2', :link => link_to("ICCA Consortium", "http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102") %></p>
-    <p><%= t 'project.para_3', :link => link_to( t('here'), contact_path) %></p>
-    <p><%= t 'project.para_4', :link => link_to( "www.wdpa.org", "http://wdpa.org") %></p>
+    <p><%= t 'register.para_1' %></p>
+    <h3>
+      <%= t 'register.register_online_title' %>
+    </h3>
+    <p><b><%= t('step').humanize %> 1. </b> <%= t 'register.online_step_1', :fpic_link => link_to(t("files.name.fpic_info_sheet"), t("files.location.fpic_info_sheet")) %></p>
+    <p><b><%= t('step').humanize %> 2. </b> <%= t 'register.online_step_2', :signup_link => link_to(t("sign_up").humanize, new_user_path), :login_link => link_to(t("log_in"), login_path) %></p>
+    <p><b><%= t('step').humanize %> 3. </b> <%= t 'register.online_step_3' %></p>
+    <p><%= t 'register.online_step_3_note' %></p>
+    <p><b><%= t('step').humanize %> 4. </b> <%= t 'register.online_step_4' %></p>
+    <p><b><%= t('step').humanize %> 5. </b> <%= t 'register.online_step_5' %></p>
+    <p><b><%= t('register.need_help').humanize %></b> <%= t 'register.help', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org") %></p>
 
     <h3>
-      <%= t 'project.fpic_title' %>
+      <%= t 'register.future_title' %>
     </h3>
-    <p><%= t 'project.fpic_para' %></p>
-
-    <h3>
-      <%= t 'project.future_title' %>
-    </h3>
-    <p><%= t 'project.future_para' %></p>
+    <p><%= t 'register.future_para' %></p>
   </div>
 
 </div>
