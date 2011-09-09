@@ -6,6 +6,9 @@ en:
   step: "step"
   sign_up: "sign up"
   log_in: "log in"
+  photos: "photos"
+  videos: "videos"
+  links: "links"
   nav:
     home: "HOME"
     about: "ABOUT ICCAs"
@@ -203,7 +206,20 @@ en:
 
     documents_title: "Documents Required for Registering an ICCA"
 
+  case_studies:
+    title: "Create a case study for your ICCA"
+    para_1: "Communities who are interested in having a more visual and immediate presence on the ICCA Registry website can create a case study webpage for their ICCA within the website."
 
+    step_1: "Download, complete and submit your %{case_study_link}. Send this to the Registry managers at %{mail_link}."
+    step_2: "Once your form has been submitted, you will be contacted for a brief interview where possible."
+    step_3: "We encourage you to send photos of community members, habitats, species, videos, website links, documents and other materials (such as scans or electronic versions of brochures or maps) to %{mail_link} "
+
+    photos: "Any photos submitted should be of good resolution (minimum of 300 dpi) for inclusion on the website. All submissions should include reference to the ICCA as well as credits (photographer; author)."
+    videos: "Please include web links for any videos, including interview clips which are hosted on other websites (e.g. YouTube or Google Videos). You can also submit useful and relevant documents (such as management plans, community agreements and documented awards). "
+    links: "Links to existing websites can be included on the case study webpage to provide additional information about the ICCA and its conservation efforts and successes. "
+
+
+  contribute_old:
     step_1:
       title_1: 'Step 1: Read the '
       link_text: 'ICCA Registry FPIC Information Sheet'

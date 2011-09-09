@@ -800,3 +800,6 @@ div.participateLinks h4 {
   background: #29211C;
   margin: 5px;
 }
+div.inset {
+  padding-left:15px;
+}

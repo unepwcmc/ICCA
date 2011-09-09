@@ -1,0 +1,40 @@
+<% content_for :title do %>
+    <p class="flash-Bigtitle"><em><%= t 'case_studies.title' %></em></p>
+<% end %>
+
+<% content_for :banner do %>
+    <%= render :partial => "site_photo_banner" %>
+<% end %>
+
+
+<div class="span-15 first articles">
+  <div class="span-15 last article">
+    <h2 class="flash-h2">
+      <%= t 'case_studies.title' %>
+    </h2>
+    <p><%= t 'case_studies.para_1' %></p>
+    <p><b><%= t('step').humanize %> 1. </b> <%= t 'case_studies.step_1', :case_study_link => link_to(t("files.name.case_study_template"), t("files.location.case_study_template")), :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org") %></p>
+    <p><b><%= t('step').humanize %> 2. </b> <%= t 'case_studies.step_2'%></p>
+    <p><b><%= t('step').humanize %> 3. </b> <%= t 'case_studies.step_3', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org")%></p>
+
+    <div class='inset'>
+      <p><b><%= t('photos').humanize %>: </b><%= t 'case_studies.photos' %></p>
+      <p><b><%= t('videos').humanize %>: </b><%= t 'case_studies.videos' %></p>
+      <p><b><%= t('links').humanize %>: </b><%= t 'case_studies.links' %></p>
+    </div>
+
+    <p><b><%= t('register.need_help').humanize %></b> <%= t 'register.help', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org") %></p>
+  </div>
+
+</div>
+
+
+<div class="span-8 last newscontact">
+  <div class="new">
+    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
+    <%= render :partial => "photos/media_browser" %>
+    <div id="basic-modal-content">
+    </div>
+    <br clear="all" />
+  </div>
+</div>
