@@ -196,6 +196,12 @@ en:
     need_help: "Need help?"
     help: "Please contact us anytime at %{mail_link}"
 
+    offline_title: "(Option 2) Register via downloading the questionnaire"
+    offline_step_2: "Download and complete the %{fpic_link} with key signature(s) of community members. "
+    offline_step_3: "Download the ICCA Registry questionnaire and complete it using your community’s information."
+    offline_step_4: "Email the completed FPIC form and questionnaire to Registry managers at %{mail_link} or post them to the address %{contact_link}. Spatial data (such as GIS layers or maps), photos and relevant documents (such as management plans) are optional but can also be submitted by email to %{mail_link}."
+
+
     step_1:
       title_1: 'Step 1: Read the '
       link_text: 'ICCA Registry FPIC Information Sheet'
