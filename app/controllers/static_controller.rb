@@ -28,6 +28,9 @@ class StaticController < ApplicationController
   def benefits
   end
 
+  def register
+  end
+
   private
   def get_some_images
     sites = Site.all :limit => 10, :order => "updated_at DESC"

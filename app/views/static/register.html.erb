@@ -1,0 +1,42 @@
+<% content_for :title do %>
+    <p class="flash-Bigtitle"><em>Contact Us</em></p>
+<% end %>
+
+<% content_for :banner do %>
+    <%= render :partial => "site_photo_banner" %>
+<% end %>
+
+
+<div class="span-15 first articles">
+  <div class="span-15 last article">
+    <h2 class="flash-h2">
+      <%= t 'project.title' %>
+    </h2>
+    <p><%= t 'project.para_1' %></p>
+    <p><%= t 'project.para_2', :link => link_to("ICCA Consortium", "http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102") %></p>
+    <p><%= t 'project.para_3', :link => link_to( t('here'), contact_path) %></p>
+    <p><%= t 'project.para_4', :link => link_to( "www.wdpa.org", "http://wdpa.org") %></p>
+
+    <h3>
+      <%= t 'project.fpic_title' %>
+    </h3>
+    <p><%= t 'project.fpic_para' %></p>
+
+    <h3>
+      <%= t 'project.future_title' %>
+    </h3>
+    <p><%= t 'project.future_para' %></p>
+  </div>
+
+</div>
+
+
+<div class="span-8 last newscontact">
+  <div class="new">
+    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
+    <%= render :partial => "photos/media_browser" %>
+    <div id="basic-modal-content">
+    </div>
+    <br clear="all" />
+  </div>
+</div>

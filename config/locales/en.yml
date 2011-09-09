@@ -3,6 +3,7 @@
 
 en:
   here: "here"
+  step: "step"
   nav:
     home: "HOME"
     about: "ABOUT ICCAs"
@@ -23,6 +24,17 @@ en:
     benefits: "Benefits/Risks"
 
   files:
+    name:
+      questionnaire_intro: "Introduction to the ICCA Registry Questionnaire"
+      fpic_info_sheet: "FPIC Information Sheet"
+      fpic_signature_form: "FPIC Signature Form"
+      case_study_template: "ICCA Registry Case Study Template"
+    location:
+      questionnaire_intro: "/docs/Introduction to the ICCA Registry Questionnaire.pdf"
+      fpic_info_sheet: "/docs/FPIC Information Sheet.pdf"
+      fpic_signature_form: "/docs/FPIC Signature Form.doc"
+      case_study_template: "/docs/ICCA Registry Case Study Template.pdf"
+
     questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"
     fpic: "/docs/ICCA%20Registry%20FPIC%20Form.doc"
     wdpa_consent: "/docs/WDPA%20ICCA%20consent%20form.doc"
@@ -171,7 +183,11 @@ en:
 
     para_2: "If you have any concerns or questions, please %{link} to discuss your participation."
 
-
+  register:
+    title: "Official Registration of your ICCA"
+    para_1: "Communities can register either through an online questionnaire (Option 1) or by downloading the questionnaire and returning it (Option 2). These two processes are described below."
+    register_online_title: "(Option 1) Register via the online questionnaire"
+    online_step_1: "Read the %{fpic_link} and discuss the ICCA Registry with community members."
 
     step_1:
       title_1: 'Step 1: Read the '
