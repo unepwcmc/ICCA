@@ -39,11 +39,13 @@
 
 
 <div class="span-8 last newscontact">
-  <div class="new">
-    <h2 class="newsColumn flash-h2">Multimedia resources</h2>
-    <%= render :partial => "photos/media_browser" %>
-    <div id="basic-modal-content">
-    </div>
-    <br clear="all" />
+  <div class="newsContent participateLinks">
+    <h2 class="newsColumn flash-h2"><%= t('register.documents_title') %></h2>
+    <ol>
+      <li><h4><%= link_to t('files.name.fpic_info_sheet') + ' >', t('files.location.fpic_info_sheet') %></h4></li>
+      <li><h4><%= link_to t('files.name.fpic_signature_form') + ' >', t('files.location.fpic_signature_form') %></h4></li>
+      <li><h4><%= link_to t('files.name.case_study_template') + ' >', t('files.location.case_study_template') %></h4></li>
+    </ol>
   </div>
+  <br clear="all" />
 </div>
