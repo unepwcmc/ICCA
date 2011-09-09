@@ -1,0 +1,14 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+fr:
+  files:
+    name:
+      fpic_info_sheet: "Fiche d'information CLPE"
+      fpic_signature_form: "Formulaire de signature CLPE"
+      case_study_template: "Modèle d'étude de cas du Registre APAC"
+    location:
+      questionnaire_intro: "/docs/Introduction to the ICCA Registry Questionnaire.pdf"
+      fpic_info_sheet: "/docs/Fiche d'information CLPE.pdf"
+      fpic_signature_form: "/docs/Formulaire de signature CLPE.docx"
+      case_study_template: "/docs/Modele d'etude de cas du Registre APAC.pdf"
