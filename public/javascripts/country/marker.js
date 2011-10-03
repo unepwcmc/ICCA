@@ -1,6 +1,6 @@
 	Marker.prototype = new google.maps.OverlayView();
 
- 
+
   function Marker(latlng, data, map) {
     this.map_ = map;
 		this.data_ = data;
@@ -13,14 +13,14 @@
 	  this.setMap(map);
 
   }
- 
+
   Marker.prototype.onAdd = function() {
 
     var div = document.createElement('DIV');
     div.style.width = "43px";
     div.style.height = "43px";
     div.style.position = "absolute";
- 
+
     var img = document.createElement("div");
     img.src = "/images/marker.png";
     img.style.width = "43px";
@@ -62,7 +62,7 @@
 
     div.appendChild(over);
 
-		
+
 		$(div).hover(function(){$(over).show()},function(){$(over).hide()});
 
 
@@ -71,9 +71,9 @@
     var panes = this.getPanes();
     panes.overlayImage.appendChild(div);
   }
- 
+
   Marker.prototype.draw = function() {
- 
+
     var div = this.div_;
 		var pixPosition = this.getProjection().fromLatLngToDivPixel(this.latlng_);
 	  if (pixPosition) {
@@ -83,7 +83,7 @@
 		  div.style.top = (pixPosition.y + this.offsetVertical_) + "px";
 	  }
   }
- 
+
   Marker.prototype.onRemove = function() {
     this.div_.parentNode.removeChild(this.div_);
     this.div_ = null;

@@ -33,19 +33,17 @@ $(document).ready(function() {
         center: myLatlng,
         disableDefaultUI: true,
         mapTypeId: google.maps.MapTypeId.TERRAIN
-    }
+    };
     map = new google.maps.Map(document.getElementById("countries_map"), myOptions);
 
     $.getJSON('/iccaCountryDetails.json',function(data){
+        var latlng, marker;
 
         for (var i=0; i<data.iccas.length; i++) {
-            var latlng = new google.maps.LatLng(data.iccas[i].lat,data.iccas[i].lng);
-            var marker = new Marker(latlng,data.iccas[i],map);
+            latlng = new google.maps.LatLng(data.iccas[i].lat,data.iccas[i].lng);
+            marker = new continentMarker(latlng,data.iccas[i],map);
             bounds.extend(latlng);
         }
         map.fitBounds(bounds);
-        console.log(data);
     });
 });
-
-
