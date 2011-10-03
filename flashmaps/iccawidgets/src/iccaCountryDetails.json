@@ -1,0 +1,119 @@
+{
+	"zoom":2,
+	"lat":17.040182144806664, 
+	"lng":-10.8984375,
+	"iccas":[
+			    {
+			        "name": "MEXICO",
+			        "url": "http://www.vizzuality.com",
+			        "value": "Lorem ipsum dolor set eman crosina em...",
+			        "lat": 23.634501,
+			        "lng": -102.552784,
+			        "short": "MEX",
+			        "sites": 2,
+			        "textSites": [ {
+			        					"name": "The Olmecs",
+			        					"url": "http://www.vizzuality.com"
+			        				},
+			        			    {
+			        					"name": "Nkootos",
+			        					"url": "http://www.vizzuality.com"
+			        				}
+			        			  ]
+			    },
+			    {
+			        "name": "FIDJI",
+			        "url": "http://www.vizzuality.com",
+			        "value": "Lorem ipsum dolor set eman crosina em...",
+			        "lat": -16.578193,
+			        "lng": 179.414413,
+			        "short": "FID",
+			        "sites": 1,
+			        "textSites": [ {
+			        					"name": "The Olmecs",
+			        					"url": "http://www.vizzuality.com"
+			        				}
+			        			  ]
+			    },
+			    {
+			        "name": "KENYA",
+			        "url": "http://www.vizzuality.com",
+			        "value": "Lorem ipsum dolor set eman crosina em asdf asdf asdfasd f",
+			        "lat": -0.023559,
+			        "lng":  37.906193,
+			        "short": "KEN",
+			        "sites": 3,
+			        "textSites": [ {
+			        					"name": "The Olmecs",
+			        					"url": "http://www.vizzuality.com"
+			        				},
+			        			    {
+			        					"name": "Nkootos",
+			        					"url": "http://www.vizzuality.com"
+			        				},
+			        			    {
+			        					"name": "The Jammons",
+			        					"url": "http://www.vizzuality.com"
+			        				}
+			        			  ]
+			    },
+			    {
+			        "name": "HAITI",
+			        "url": "http://www.vizzuality.com",
+			        "value": "Lorem ipsum dolor set eman crosina em...",
+			        "lat": 18.971187,
+			        "lng":  -72.285215,
+			        "short": "HAI",
+			        "sites": 4,
+			        "textSites": [ {
+			        					"name": "The Olmecs",
+			        					"url": "http://www.vizzuality.com"
+			        				},
+			        			    {
+			        					"name": "Nkootos",
+			        					"url": "http://www.vizzuality.com"
+			        				},
+			        			    {
+			        					"name": "The Jammons",
+			        					"url": "http://www.vizzuality.com"
+			        				},
+			        			    {
+			        					"name": "The Vizzualeños",
+			        					"url": "http://www.vizzuality.com"
+			        				}
+			        			  ]
+			    },
+			    {
+			        "name": "NIGERIA",
+			        "url": "http://www.vizzuality.com",
+			        "value": "Lorem ipsum dolor set eman crosina em...",
+			        "lat": 9.081999, 
+			        "lng": 8.675277,
+			        "short": "NIG",
+			        "sites": 2,
+			        "textSites": [ {
+			        					"name": "The Olmecs",
+			        					"url": "http://www.vizzuality.com"
+			        				},
+			        			    {
+			        					"name": "Nkootos",
+			        					"url": "http://www.vizzuality.com"
+			        				}
+			        			  ]
+			    },
+			    {
+			        "name": "PHILIPHINES",
+			        "url": "http://www.vizzuality.com",
+			        "value": "Lorem ipsum dolor set eman crosina em...",
+			        "lat": 12.879721, 
+			        "lng": 121.774017,
+			        "short": "PHI",
+			        "sites": 1,
+			        "textSites": [ {
+			        					"name": "The Olmecs",
+			        					"url": "http://www.vizzuality.com"
+			        				}
+			        			  ]
+			    } 
+    ]
+}

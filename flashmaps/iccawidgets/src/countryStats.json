@@ -1,0 +1,32 @@
+[
+    {
+        "name": "SOUTH AMERICA",
+        "value": "6",
+        "color": "0xC74020"
+    },
+    {
+        "name": "AFRICA",
+        "value": "4",
+        "color": "0x815C21"
+    },
+    {
+        "name": "AUSTRALIA",
+        "value": "3",
+        "color": "0x689218"
+    },
+    {
+        "name": "ASIA",
+        "value": "3",
+        "color": "0xE6A712"
+    },
+    {
+        "name": "NORTH AMERICA",
+        "value": "1",
+        "color": "0x2772C6" 
+    },
+    {
+        "name": "EUROPE",
+        "value": "0",
+        "color": "0x7BCFE3"
+    } 
+]
