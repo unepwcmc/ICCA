@@ -176,8 +176,9 @@ div.menu{
 }
 
 .homepage-map{
-    width: 350px;
+    width: 330px;
     height: 200px;
+    margin: 10px;
 }
 
 .contentContainer{
@@ -358,12 +359,7 @@ div.menu{
     border-bottom: 1px silver solid;
 }
 
-div.welcome-strip {
-    padding: 10px;
-    color:white;
-    font-size:14px;
-    height:180px;
-    
+.orange-bg {
     background: rgb(224,105,58); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(224,105,58,1) 0%, rgba(186,59,9,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,105,58,1)), color-stop(100%,rgba(186,59,9,1))); /* Chrome,Safari4+ */
@@ -373,8 +369,16 @@ div.welcome-strip {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0693a', endColorstr='#ba3b09',GradientType=0 ); /* IE6-9 */
     background: linear-gradient(top, rgba(224,105,58,1) 0%,rgba(186,59,9,1) 100%); /* W3C */
 }
+
+div.welcome-strip {
+    padding: 10px;
+    color:white;
+    font-size:14px;
+    height:180px;
+}
 div.welcome-strip h2{
     margin-top:0px;
+    margin-bottom:12px;
     color:white;
 }
 div.welcome-strip a{
@@ -384,7 +388,7 @@ div.welcome-strip ul {
     list-style-type: none;
 }
 div.welcome-strip ul li {
-    margin-bottom: 1px;
+    margin-bottom: 11px;
 }
 
 .imageContainer{

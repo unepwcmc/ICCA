@@ -11,41 +11,40 @@
 <% end %>
 
 <% content_for :banner do %>
+    <div class="span-24 first last articles orange-bg">
+      <div class="span-15 first article">
+        <div class="welcome-strip">
+            <h2 class="flash-h2">
+              <% if @content %>
+                <%= @content.title %>
+              <% else %>
+                <%= t('home.welcome_title') %>
+              <% end -%>
+            </h2>
+            <% if @content %>
+              <%= @content.body %>
+              <% if can? :update, @content %>
+                <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
+              <% end %>
+            <% else %>
+              <ul>
+                <li><%= link_to t('home.learn'), about_path %> <%= t('home.learn_text') %></li>
+                <li><%= link_to t('home.participate'), participate_path %> <%= t('home.participate_text') %></li>
+                <li><%= link_to t('home.explore'), about_path %> <%= t('home.explore_text') %></li>
+              </ul>
+            <% end -%>
+        </div>
+      </div>
+      <div class='span-8 last article'>
+        <div class="homepage-map" id="countries_map">
+        </div>
+      </div>
+    </div>
   <%= render :partial => "site_photo_banner" %>
 <% end %>
 
-<div class="span-24 first last articles">
-  <div class="span-15 first article">
-    <div class="welcome-strip">
-        <h2 class="flash-h2">
-          <% if @content %>
-            <%= @content.title %>
-          <% else %>
-            <%= t('home.welcome_title') %>
-          <% end -%>
-        </h2>
-        <% if @content %>
-          <%= @content.body %>
-          <% if can? :update, @content %>
-            <%= link_to 'Edit', edit_static_content_path(@content), :class => "textLink" %>
-          <% end %>
-        <% else %>
-          <ul>
-            <li><%= link_to t('home.learn'), about_path %> <%= t('home.learn_text') %></li>
-            <li><%= link_to t('home.participate'), participate_path %> <%= t('home.participate_text') %></li>
-            <li><%= link_to t('home.explore'), about_path %> <%= t('home.explore_text') %></li>
-          </ul>
-        <% end -%>
-    </div>
-  </div>
-  <div class='span-8 last article'>
-    <div class="homepage-map" id="countries_map">
-    </div>
-  </div>
-</div>
-
 <div class="span-15 first articles">
-  <div class="span-8 article articleborder">
+  <div class="span-15 article articleborder">
     <h2><%= t 'home.introduction' %></h2>
     <p><%= t 'home.intro.para_1', :benefits_link => link_to(t('home.intro.benefits_link'), benefits_path) %></p>
     <p><%= t 'home.intro.para_2' %></p>
