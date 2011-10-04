@@ -47,5 +47,9 @@ $(document).ready(function() {
             }
         }
         map.fitBounds(bounds);
+        //Force zoomlevel 2 as max if we're dealing with a big map
+        if (map.zoom < 2 && $('#countries_map').width() > 400) {
+            map.setZoom(2);
+        }
     });
 });
