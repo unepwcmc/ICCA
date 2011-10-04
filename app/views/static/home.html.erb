@@ -1,7 +1,7 @@
 <% content_for :javascripts do %>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="/javascripts/country/countries_map.js"></script>
-    <script type="text/javascript" src="/javascripts/country/continentMarker.js"></script>
+    <script type="text/javascript" src="/javascripts/country/countryMarker.js"></script>
 <% end %>
         
 <% content_for :title do
@@ -30,7 +30,7 @@
               <ul>
                 <li><%= link_to t('home.learn'), about_path %> <%= t('home.learn_text') %></li>
                 <li><%= link_to t('home.participate'), participate_path %> <%= t('home.participate_text') %></li>
-                <li><%= link_to t('home.explore'), about_path %> <%= t('home.explore_text') %></li>
+                <li><%= link_to t('home.explore'), countries_path %> <%= t('home.explore_text') %></li>
               </ul>
             <% end -%>
         </div>

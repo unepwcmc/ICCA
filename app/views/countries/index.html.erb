@@ -9,9 +9,13 @@
 <% end %>
 
 <% content_for :banner do %>
-  <div class="span-24 column widgetContainer">
+  <div class="span-24 column widgetContainer" style="position:relative">
     <div class="widget2" id="countries_map">
     </div>
+    <a href="javascript:void zoomIn()" id="zoom_in"></a>
+    <a href="javascript:void zoomOut()" id="zoom_out"></a>
+    <a href="javascript:void changeMapType('satellite')" id="satellite"></a>
+    <a href="javascript:void changeMapType('terrain')" id="terrain" class="current"></a>
   </div>
 <% end %>
 
