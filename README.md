@@ -10,7 +10,7 @@ point the icca-stage remote at:
   Push  URL: git@heroku.com:icca-new-stage.git
 
 To deploy the development branch to staging:
- git push icca-stage develop:master
+  git push icca-stage develop:master
 
 point the heroku branch remove at:
   Fetch URL: git@heroku.com:icca.git
@@ -18,5 +18,8 @@ point the heroku branch remove at:
 
 To deploy the production app
  git push heroku master
+
+# Translations
+Translations are handled using tolk, which is installed as a plugin, as per the github page for tolk
 
 
