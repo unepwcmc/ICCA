@@ -26,7 +26,11 @@ continentMarker.prototype.onAdd = function() {
     img.style.width = "43px";
     img.style.height = "43px";
     img.style.position = "relative";
-    img.style.background = "url(/images/marker.png) no-repeat 0 0";
+    if (this.data_.sites > 0){
+      img.style.background = "url(/images/marker_blank.png) no-repeat 0 0";
+    } else {
+      img.style.background = "url(/images/marker.png) no-repeat 0 0";
+    }
     img.style.float = "left";
     img.style.display = "block";
     div.appendChild(img);
@@ -70,7 +74,7 @@ continentMarker.prototype.onAdd = function() {
         var sites_display = document.createElement('DIV');
         $(sites_display).html(this.data_.sites);
         sites_display.style.top = "13px";
-        sites_display.style.left = "18px";
+        sites_display.style.left = "17px";
         sites_display.style.position = "absolute";
         sites_display.style.font = "bold 15px Arial";
         sites_display.style.color = "white";
