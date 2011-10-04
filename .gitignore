@@ -5,5 +5,4 @@ log/*
 .DS_Store
 .bundle/*
 vendor/ruby*
-
 .DS_Store
