@@ -40,9 +40,11 @@ $(document).ready(function() {
         var latlng, marker;
 
         for (var i=0; i<data.iccas.length; i++) {
-            latlng = new google.maps.LatLng(data.iccas[i].lat,data.iccas[i].lng);
-            marker = new continentMarker(latlng,data.iccas[i],map);
-            bounds.extend(latlng);
+            if (data.iccas[i].lat !== '' && data.iccas[i].lat !== ''){
+                latlng = new google.maps.LatLng(parseFloat(data.iccas[i].lat),parseFloat(data.iccas[i].lng));
+                marker = new continentMarker(latlng,data.iccas[i],map);
+                bounds.extend(latlng);
+            }
         }
         map.fitBounds(bounds);
     });

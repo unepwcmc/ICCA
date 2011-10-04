@@ -23,7 +23,6 @@ $(document).ready(function() {
         height: 346
     });	
 
-
 });
 
 function showImage(idPhoto,srcPhoto, citation) {
