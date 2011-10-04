@@ -32,16 +32,16 @@ ActiveRecord::Schema.define(:version => 20111004142828) do
   end
 
   create_table "forms", :force => true do |t|
-    t.integer  "site_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "spatial_data_file_name"
-    t.string   "spatial_data_content_type"
-    t.integer  "spatial_data_file_size"
-    t.datetime "spatial_data_updated_at"
-    t.string   "name"
-    t.text     "edit_link",                 :limit => 255
+    t.integer   "site_id"
+    t.integer   "user_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "spatial_data_file_name"
+    t.string    "spatial_data_content_type"
+    t.integer   "spatial_data_file_size"
+    t.timestamp "spatial_data_updated_at"
+    t.string    "name"
+    t.text      "edit_link"
   end
 
   create_table "links", :force => true do |t|
