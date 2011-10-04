@@ -670,7 +670,8 @@ a:link,a:visited{
     text-decoration:none;
     
 }
-p a:link,p a:visited{
+.contentContainer a:link,
+.contentContainer a:visited {
     color:#E0693A;
 }
 a img{
@@ -841,6 +842,12 @@ div.participateLinks h4 {
   background: #29211C;
   margin: 5px;
 }
+div.participateLinks h4 a:visited,
+div.participateLinks h4 a:link
+{
+  color:#9CC342;
+}
+
 div.inset {
   padding-left:15px;
 }
