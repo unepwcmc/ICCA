@@ -1,3 +1,9 @@
+<% content_for :javascripts do %>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="/javascripts/country/countries_map.js"></script>
+    <script type="text/javascript" src="/javascripts/country/continentMarker.js"></script>
+<% end %>
+        
 <% content_for :title do
   title_text = t("home.title")
   two_lines = title_text.length > 60 %>
@@ -9,7 +15,7 @@
 <% end %>
 
 <div class="span-24 first last articles">
-  <div class="span-24 last article articleborder">
+  <div class="span-15 first article articleborder">
     <h2 class="flash-h2">
       <% if @content %>
         <%= @content.title %>
@@ -30,10 +36,14 @@
       </ul>
     <% end -%>
   </div>
+  <div class='span-8 last article'>
+    <div class="homepage-map" id="countries_map">
+    </div>
+  </div>
 </div>
 
 <div class="span-15 first articles">
-  <div class="span-15 last article articleborder">
+  <div class="span-8 article articleborder">
     <h2><%= t 'home.introduction' %></h2>
     <p><%= t 'home.intro.para_1', :benefits_link => link_to(t('home.intro.benefits_link'), benefits_path) %></p>
     <p><%= t 'home.intro.para_2' %></p>

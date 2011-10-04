@@ -175,6 +175,11 @@ div.menu{
     height: 346px;
 }
 
+.homepage-map{
+    width: 350px;
+    height: 200px;
+}
+
 .contentContainer{
     background: #f4efeb;
     height: 100%;
