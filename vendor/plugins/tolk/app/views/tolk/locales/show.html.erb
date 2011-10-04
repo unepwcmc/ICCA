@@ -28,7 +28,7 @@
           <tr>
             <% translation = Tolk::Translation.new(:locale => @locale, :phrase => phrase) %>
             <td class="translation">
-              <%= hidden_field_tag :"translations[][id]", translation.id, :id => "#{translation.object_id}_id" %>
+              <%= hidden_field_tag :"translations[][id]", translation.id, :id => "#{translation.object_id}_id" unless translation.id.nil? %>
               <%= hidden_field_tag :"translations[][phrase_id]", phrase.id, :id => "#{translation.object_id}_phrase_id" %>
               <%= hidden_field_tag :"translations[][locale_id]", translation.locale_id, :id => "#{translation.object_id}_locale_id" %>
               <%= text_area_tag :"translations[][text]", format_i18n_text_area_value(translation.text), :class => "locale", :id => "#{translation.object_id}_text", :onfocus => "$(this).up('tr').addClassName('active');", :onblur => "$(this).up('tr').removeClassName('active');" %>
