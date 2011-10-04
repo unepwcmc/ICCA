@@ -39,6 +39,9 @@ $(document).ready(function() {
     $.getJSON('/areas.json?id='+country_id,function(data){
         var latlng, marker;
 
+        latlng = new google.maps.LatLng(parseFloat(data.country_lat),parseFloat(data.country_lon));
+        bounds.extend(latlng);
+
         for (var i=0; i<data.iccas.length; i++) {
             if (data.iccas[i].lat !== '' && data.iccas[i].lat !== ''){
                 latlng = new google.maps.LatLng(parseFloat(data.iccas[i].lat),parseFloat(data.iccas[i].lng));

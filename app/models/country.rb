@@ -42,6 +42,8 @@ class Country < ActiveRecord::Base
     @json = {}
     @json[:id] = self.id
     @json[:country] = self.name
+    @json[:country_lat] = self.lat
+    @json[:country_lon] = self.lon
 
     @json[:iccas] = []
     self.sites.each do |site|
