@@ -35,20 +35,29 @@ $(document).ready(function() {
         mapTypeId: google.maps.MapTypeId.TERRAIN
     };
     map = new google.maps.Map(document.getElementById("countries_map"), myOptions);
+    var smallMap = ($('#countries_map').width() > 400 ? false : true)
 
     $.getJSON('/iccaCountryDetails.json',function(data){
-        var latlng, marker;
+        var latlng, marker, markerOptions;
 
         for (var i=0; i<data.countries.length; i++) {
             if (data.countries[i].lat !== '' && data.countries[i].lat !== ''){
                 latlng = new google.maps.LatLng(parseFloat(data.countries[i].lat),parseFloat(data.countries[i].lng));
-                marker = new countryMarker(latlng,data.countries[i],map);
+                if (smallMap){
+                  markerOptions = {
+                      position:latlng,
+                      map: map
+                  };
+                  marker = new google.maps.Marker(markerOptions);
+                } else {
+                  marker = new countryMarker(latlng,data.countries[i],map);
+                }
                 bounds.extend(latlng);
             }
         }
         map.fitBounds(bounds);
         //Force zoomlevel 2 as max if we're dealing with a big map
-        if (map.zoom < 2 && $('#countries_map').width() > 400) {
+        if (map.zoom < 2 && !smallMap) {
             map.setZoom(2);
         }
     });
