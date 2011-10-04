@@ -14,7 +14,7 @@ class Country < ActiveRecord::Base
     @json[:lat] = @countries.first.lat #This needs thought
     @json[:lng] = @countries.first.lon #This needs thought
 
-    @json[:iccas] = []
+    @json[:countries] = []
     @countries.each do |country|
       site_json_hash = {}
       site_json_hash[:name] = country.name
@@ -32,7 +32,7 @@ class Country < ActiveRecord::Base
         site_details[:url] = "sites/" + site.id.to_s
         site_json_hash[:textSites] << site_details
       end
-      @json[:iccas] << site_json_hash
+      @json[:countries] << site_json_hash
     end
     return @json
   end

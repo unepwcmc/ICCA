@@ -1,7 +1,7 @@
-continentMarker.prototype = new google.maps.OverlayView();
+countryMarker.prototype = new google.maps.OverlayView();
 
 
-function continentMarker(latlng, data, map) {
+function countryMarker(latlng, data, map) {
     this.map_ = map;
     this.data_ = data;
     this.latlng_ = latlng;
@@ -14,7 +14,7 @@ function continentMarker(latlng, data, map) {
 
 }
 
-continentMarker.prototype.onAdd = function() {
+countryMarker.prototype.onAdd = function() {
 
     var div = document.createElement('DIV');
     div.style.width = "43px";
@@ -93,7 +93,7 @@ continentMarker.prototype.onAdd = function() {
     panes.overlayImage.appendChild(div);
 }
 
-continentMarker.prototype.draw = function() {
+countryMarker.prototype.draw = function() {
 
     var div = this.div_;
     var pixPosition = this.getProjection().fromLatLngToDivPixel(this.latlng_);
@@ -105,7 +105,7 @@ continentMarker.prototype.draw = function() {
     }
 }
 
-continentMarker.prototype.onRemove = function() {
+countryMarker.prototype.onRemove = function() {
     this.div_.parentNode.removeChild(this.div_);
     this.div_ = null;
 }

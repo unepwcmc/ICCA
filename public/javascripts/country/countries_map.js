@@ -39,10 +39,10 @@ $(document).ready(function() {
     $.getJSON('/iccaCountryDetails.json',function(data){
         var latlng, marker;
 
-        for (var i=0; i<data.iccas.length; i++) {
-            if (data.iccas[i].lat !== '' && data.iccas[i].lat !== ''){
-                latlng = new google.maps.LatLng(parseFloat(data.iccas[i].lat),parseFloat(data.iccas[i].lng));
-                marker = new continentMarker(latlng,data.iccas[i],map);
+        for (var i=0; i<data.countries.length; i++) {
+            if (data.countries[i].lat !== '' && data.countries[i].lat !== ''){
+                latlng = new google.maps.LatLng(parseFloat(data.countries[i].lat),parseFloat(data.countries[i].lng));
+                marker = new countryMarker(latlng,data.countries[i],map);
                 bounds.extend(latlng);
             }
         }

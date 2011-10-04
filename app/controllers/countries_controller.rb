@@ -15,9 +15,6 @@ class CountriesController < ApplicationController
   # GET /countries/1
   # GET /countries/1.xml
   def show
-#    redirect_to "/TitilliumText14L.swf" if params[:id] == "TitilliumText14L"
-#    redirect_to "/areas.json" if params[:id] == "areas"
-#    debugger
     @country = Country.find(params[:id])
 
     respond_to do |format|
