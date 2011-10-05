@@ -109,8 +109,10 @@ var slider={
   slider.num=d.length;
   var pos=Math.floor(Math.random()*1);//slider.num);
   for(var i=0;i<slider.num;i++){
-   $('#'+d[i].id).css({left:((i-pos)*1000)});
-   $('#slide-nav').append('<a id="slide-link-'+i+'" href="#" onclick="slider.slide('+i+');return false;" onfocus="this.blur();">'+(i+1)+'</a>');
+    if (typeof d[i] !== 'undefined'){
+      $('#'+d[i].id).css({left:((i-pos)*1000)});
+      $('#slide-nav').append('<a id="slide-link-'+i+'" href="#" onclick="slider.slide('+i+');return false;" onfocus="this.blur();">'+(i+1)+'</a>');
+    }
   }
 
   $('img,div#slide-controls',$('div#slide-holder')).fadeIn();
