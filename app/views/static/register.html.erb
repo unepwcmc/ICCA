@@ -1,6 +1,5 @@
 <% content_for :title do %>
     <p class="flash-Bigtitle"><em><%= t 'register.title' %></em></p>
-      
 <% end %>
 
 <% content_for :banner do %>
@@ -10,32 +9,27 @@
 
 <div class="span-15 first articles">
   <div class="span-15 last article">
-    <h2 class="flash-h2">
-      <%= t 'register.title' %>
-    </h2>
-    <p><%= t 'register.para_1' %></p>
+    <p><%= t 'register.para_1', :fpic_link => link_to(t('register.fpic_info_sheet'), t('files.location.fpic_info_sheet')) %></p>
     <h3>
       <%= t 'register.register_online_title' %>
     </h3>
-    <p><b><%= t('step').humanize %> 1. </b> <%= t 'register.online_step_1', :fpic_link => link_to(t("files.name.fpic_info_sheet"), t("files.location.fpic_info_sheet")) %></p>
-    <p><b><%= t('step').humanize %> 2. </b> <%= t 'register.online_step_2', :signup_link => link_to(t("sign_up").humanize, "http://onlinert.demoapps.unep-wcmc.org/signup?lang=#{I18n.locale}"), :login_link => link_to(t("log_in"), "http://onlinert.demoapps.unep-wcmc.org/") %></p>
+    <p><b><%= t('step').humanize %> 1. </b> <%= t 'register.online_step_1', :signup_link => link_to(t("sign_up").humanize, "http://onlinert.demoapps.unep-wcmc.org/signup?lang=#{I18n.locale}"), :login_link => link_to(t("log_in"), "http://onlinert.demoapps.unep-wcmc.org/") %></p>
+    <p><b><%= t('step').humanize %> 2. </b> <%= t 'register.online_step_2' %></p>
+    <p><%= t 'register.online_step_2_note' %></p>
     <p><b><%= t('step').humanize %> 3. </b> <%= t 'register.online_step_3' %></p>
-    <p><%= t 'register.online_step_3_note' %></p>
     <p><b><%= t('step').humanize %> 4. </b> <%= t 'register.online_step_4' %></p>
-    <p><b><%= t('step').humanize %> 5. </b> <%= t 'register.online_step_5' %></p>
     <p><b><%= t('register.need_help').humanize %></b> <%= t 'register.help', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org") %></p>
 
     <h3>
       <%= t 'register.offline_title' %>
     </h3>
-    <p><b><%= t('step').humanize %> 1. </b> <%= t 'register.online_step_1', :fpic_link => link_to(t("files.name.fpic_info_sheet"), t("files.location.fpic_info_sheet")) %></p>
-    <p><b><%= t('step').humanize %> 2. </b> <%= t 'register.offline_step_2', :fpic_link => link_to(t("files.name.fpic_signature_form"), t("files.location.fpic_signature_form")) %></p>
-    <p><b><%= t('step').humanize %> 3. </b> <%= t 'register.offline_step_3'%></p>
+    <p><b><%= t('step').humanize %> 1. </b> <%= t 'register.offline_step_1', :fpic_link => link_to(t("files.name.fpic_signature_form"), t("files.location.fpic_signature_form")) %></p>
+    <p><b><%= t('step').humanize %> 2. </b> <%= t 'register.offline_step_2'%></p>
     <p><%= t('register.download_options',
                :pdf_link => link_to('PDF', t('files.location.questionnaire')),
                :word_link => link_to('Word', t('files.location.questionnaire_word'))
            )%></p>
-    <p><b><%= t('step').humanize %> 4. </b> <%= t 'register.offline_step_4', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org"), :contact_link => link_to(t('here'), contact_path) %></p>
+    <p><b><%= t('step').humanize %> 3. </b> <%= t 'register.offline_step_3', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org"), :contact_link => link_to(t('here'), contact_path) %></p>
     <p><b><%= t('register.need_help').humanize %></b> <%= t 'register.help', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org") %></p>
   </div>
 

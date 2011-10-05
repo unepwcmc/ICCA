@@ -33,7 +33,7 @@ en:
       questionnaire: "ICCA Registry Questionnaire"
       questionnaire_intro: "Introduction to the ICCA Registry Questionnaire"
       fpic_info_sheet: "FPIC Information Sheet"
-      fpic_signature_form: "FPIC Signature Form"
+      fpic_signature_form: "FPIC Form"
       case_study_template: "ICCA Registry Case Study Template"
     location:
       questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"
@@ -190,22 +190,24 @@ en:
 
   register:
     title: "Official Registration of your ICCA"
-    para_1: "Communities can register either through an online questionnaire (Option 1) or by downloading the questionnaire and returning it (Option 2). These two processes are described below."
-    register_online_title: "(Option 1) Register via the online questionnaire"
-    online_step_1: "Read the %{fpic_link} and discuss the ICCA Registry with community members."
-    online_step_2: "%{signup_link} online. After your participation is authorized, you will receive an email with a link to the questionnaire. Click this link and %{login_link} with your log-in details to access the questionnaire."
-    online_step_3: "Follow instructions online to complete the ICCA Registry questionnaire, including the FPIC section with an electronic signature."
-    online_step_3_note: "(Note: if the ICCA is already recognised by national legislation or a protected area system, the community should work with government representatives where possible to provide spatial and other information.)"
-    online_step_4: "Submit spatial data and relevant documents (such as management plans, community agreements and documented awards) as requested in the online questionnaire."
-    online_step_5: "If you are registering more than one ICCA, you will need to follow Steps 1 and 2 above to access another questionnaire."
+    fpic_info_sheet: Free Prior Informed Consent (FPIC) Information Sheet
+    para_1: "First read the %{fpic_link} Free Prior Informed Consent (FPIC) Information Sheet and discuss the ICCA Registry with community members. Then select from the following two options."
+
+    register_online_title: "Option 1) Register Online"
+    online_step_1: %{signup_link} online with a username (the name of your ICCA) and a password. After your participation is authorized, you will receive an email with a link to the questionnaire. Click on the link to begin the questionnaire 
+    online_step_2: Follow the online instructions to complete the ICCA Registry questionnaire, which includes providing an electronic signature in the FPIC section. You can save the information and return to the questionnaire later by logging on with your username and password details.
+    online_step_2_note: "(Note: if the ICCA is already recognised by national legislation or a protected area system, the community should work with government representatives where possible to provide spatial and other information.)"
+    online_step_3: Submit spatial data (such as GIS layers or maps), photos and relevant documents (such as management plans, community agreements and documented awards) as requested in the online questionnaire.
+    online_step_4: "If you are registering more than one ICCA, you will need to follow Steps 1 and 2 above to access another questionnaire."
+
     need_help: "Need help?"
     help: "Please contact us anytime at %{mail_link}"
 
-    offline_title: "(Option 2) Register via downloading the questionnaire"
-    offline_step_2: "Download and complete the %{fpic_link} with key signature(s) of community members. "
-    offline_step_3: "Download the ICCA Registry questionnaire and complete it using your community’s information."
+    offline_title: "Option 2) Register via downloading the questionnaire"
+    offline_step_1: "Download and complete the %{fpic_link} with key signature(s) of community members. "
+    offline_step_2: "Download the ICCA Registry questionnaire and complete it with your ICCA community’s information."
     download_options: "The questionnaire is available to download in %{pdf_link} format (to print and then scan or post) or %{word_link} format (to fill in electronically and send via email)."
-    offline_step_4: "Email the completed FPIC form and questionnaire to Registry managers at %{mail_link} or post them to the address %{contact_link}. Spatial data (such as GIS layers or maps), photos and relevant documents (such as management plans) are optional but can also be submitted by email to %{mail_link}."
+    offline_step_3: "Email the completed FPIC form and questionnaire to Registry managers at %{mail_link} or post them to the address %{contact_link}. Spatial data (such as GIS layers or maps), photos and relevant documents (such as management plans) are optional but can also be submitted by email to %{mail_link}."
 
     documents_title: "Documents Required for Registering an ICCA"
 
