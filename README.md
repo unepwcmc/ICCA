@@ -37,7 +37,16 @@ You can specify the app to run a command on with the --app option, e.g.
 # Translations
 Translations are handled using tolk, which is installed as a plugin, as per the github page for tolk
 
+There are 2 ways to get the resulting translations from staging
 
+## The easy way
+Simply visit this URL substituting your the server and locale as necessary
+
+http://icca-new-stage.heroku.com/tolk/locales/fr.yml
+
+Then drop the resulting file into config/locales/ and commit them
+
+## The database way
 To add new translations, first deploy the app to staging as details above, then get the users to visit thestagingapp.org/tolk and put in the missing translations. 
 
 Once the translations are complete, you need to pull the staging database down into your local machine using this command:
