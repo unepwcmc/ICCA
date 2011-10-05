@@ -30,17 +30,19 @@ en:
 
   files:
     name:
+      questionnaire: "ICCA Registry Questionnaire"
       questionnaire_intro: "Introduction to the ICCA Registry Questionnaire"
       fpic_info_sheet: "FPIC Information Sheet"
       fpic_signature_form: "FPIC Signature Form"
       case_study_template: "ICCA Registry Case Study Template"
     location:
+      questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"
+      questionnaire_word: "/docs/ICCA%20Registry%20Questionnaire%20(Offline).dotm"
       questionnaire_intro: "/docs/Introduction to the ICCA Registry Questionnaire.pdf"
       fpic_info_sheet: "/docs/FPIC Information Sheet.pdf"
       fpic_signature_form: "/docs/FPIC Signature Form.doc"
       case_study_template: "/docs/ICCA Registry Case Study Template.pdf"
 
-    questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"
     wdpa_consent: "/docs/WDPA%20ICCA%20consent%20form.doc"
 
   learn_more: "Learn more"
@@ -202,6 +204,7 @@ en:
     offline_title: "(Option 2) Register via downloading the questionnaire"
     offline_step_2: "Download and complete the %{fpic_link} with key signature(s) of community members. "
     offline_step_3: "Download the ICCA Registry questionnaire and complete it using your community’s information."
+    download_options: "The questionnaire is available to download in %{pdf_link} format (to print and then scan or post) or %{word_link} format (to fill in electronically and send via email)."
     offline_step_4: "Email the completed FPIC form and questionnaire to Registry managers at %{mail_link} or post them to the address %{contact_link}. Spatial data (such as GIS layers or maps), photos and relevant documents (such as management plans) are optional but can also be submitted by email to %{mail_link}."
 
     documents_title: "Documents Required for Registering an ICCA"

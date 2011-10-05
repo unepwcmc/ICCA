@@ -4,10 +4,13 @@
 fr:
   files:
     name:
+      name: "Questionnaire du registre APAC"
       fpic_info_sheet: "Fiche d'information CLPE"
       fpic_signature_form: "Formulaire de signature CLPE"
       case_study_template: "Modèle d'étude de cas du Registre APAC"
     location:
+      questionnaire: "/docs/Questionnaire%20du%20registre%20APAC.pdf"
+      questionnaire_word: "/docs/Questionnaire%20du%20registre%20APAC%20(Offline).dotm"
       questionnaire_intro: "/docs/Introduction to the ICCA Registry Questionnaire.pdf"
       fpic_info_sheet: "/docs/Fiche d'information CLPE.pdf"
       fpic_signature_form: "/docs/Formulaire de signature CLPE.docx"

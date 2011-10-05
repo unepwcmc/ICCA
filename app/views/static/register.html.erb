@@ -31,6 +31,10 @@
     <p><b><%= t('step').humanize %> 1. </b> <%= t 'register.online_step_1', :fpic_link => link_to(t("files.name.fpic_info_sheet"), t("files.location.fpic_info_sheet")) %></p>
     <p><b><%= t('step').humanize %> 2. </b> <%= t 'register.offline_step_2', :fpic_link => link_to(t("files.name.fpic_signature_form"), t("files.location.fpic_signature_form")) %></p>
     <p><b><%= t('step').humanize %> 3. </b> <%= t 'register.offline_step_3'%></p>
+    <p><%= t('register.download_options',
+               :pdf_link => link_to('PDF', t('files.location.questionnaire')),
+               :word_link => link_to('Word', t('files.location.questionnaire_word'))
+           )%></p>
     <p><b><%= t('step').humanize %> 4. </b> <%= t 'register.offline_step_4', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org"), :contact_link => link_to(t('here'), contact_path) %></p>
     <p><b><%= t('register.need_help').humanize %></b> <%= t 'register.help', :mail_link => link_to("iccaregistry@unep-wcmc.org", "mailto:iccaregistry@unep-wcmc.org") %></p>
   </div>

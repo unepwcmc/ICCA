@@ -18,15 +18,18 @@ es:
 
   files:
     name:
+      questionnaire: Cuestionario del Registro ICCA"
       fpic_info_sheet: "Hoja de Información CPLI"
       fpic_signature_form: "Formulario de Firma CLPI"
       case_study_template: "Plantilla de Estudio de Casos Prácticos del Registro ICCA"
     location:
+      questionnaire: "/docs/Cuestionario del Registro ICCA.pdf"
+      questionnaire_word: "/docs/Cuestionario del Registro ICCA (Offline).dotm"
+      questionnaire_intro: "/docs/Introduction to the ICCA Registry Questionnaire.pdf"
       fpic_info_sheet: "/docs/Hoja de Informacion CLPI.pdf"
       fpic_signature_form: "/docs/Formulario de Firma CLPI.doc"
       case_study_template: "/docs/Plantilla de Estudio de Casos Practicos del Registro ICCA.pdf"
 
-    questionnaire: "/docs/Cuestionario%20del%20Registro%20ICCA.pdf"
     wdpa_consent: "/docs/WDPA%20Consent%20ES.doc"
 
   learn_more: "Conozca más"
