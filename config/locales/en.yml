@@ -210,6 +210,8 @@ en:
     offline_step_3: "Email the completed FPIC form and questionnaire to Registry managers at %{mail_link} or post them to the address %{contact_link}. Spatial data (such as GIS layers or maps), photos and relevant documents (such as management plans) are optional but can also be submitted by email to %{mail_link}."
 
     documents_title: "Documents Required for Registering an ICCA"
+    pdf_description: "Better for printing"
+    word_description: "Better for email submission"
 
   case_studies:
     title: "Create a case study for your ICCA"

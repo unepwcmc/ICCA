@@ -46,8 +46,9 @@
       <li><h4><%= link_to t('files.name.fpic_signature_form') + ' >', t('files.location.fpic_signature_form') %></h4></li>
       <li><h4><%= link_to t('files.name.case_study_template') + ' >', t('files.location.case_study_template') %></h4></li>
       <li>
-        <h4><%= link_to image_tag('pdf_icon.png') + ' ' + t('files.name.questionnaire'), t('files.location.questionnaire') %></h4>
-        <h4><%= link_to image_tag('word_icon.png') + ' ' + t('files.name.questionnaire'), t('files.location.questionnaire_word') %></h4>
+        <h3><%= t('files.name.questionnaire') %>:</h3>
+        <h4><%= link_to image_tag('pdf_icon.png') + " PDF (#{t('register.pdf_description')})", t('files.location.questionnaire') %></h4>
+        <h4><%= link_to image_tag('word_icon.png') + " Word (#{t('register.word_description')})", t('files.location.questionnaire_word') %></h4>
       </li>
     </ol>
   </div>

@@ -858,6 +858,10 @@ div.participateLinks h4 a:visited,
 div.participateLinks h4 a:link {
   color:#9CC342;
 }
+div.participateLinks h3 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
 
 div.inset {
   padding-left:15px;
