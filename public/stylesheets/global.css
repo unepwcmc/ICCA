@@ -836,10 +836,16 @@ p.map_explain {
   margin-top: 10px;
 }
 
+div.participateLinks li {
+  height:35px;
+  overflow:visible;
+}
 div.participateLinks h4 {
+  float:right;
+  width:269px;
   padding:5px;
   border: 1px solid black;
-  margin: 5px;
+  margin-bottom: 5px;
 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
