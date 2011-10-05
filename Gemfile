@@ -10,6 +10,7 @@ gem "aws-s3"
 gem "cancan"
 gem "rake"
 gem "ruby-debug"
+gem "ya2yaml"
 
 group :development do
   gem "taps", "~> 0.3.22"
