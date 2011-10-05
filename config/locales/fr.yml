@@ -4,7 +4,7 @@
 fr:
   files:
     name:
-      name: "Questionnaire du registre APAC"
+      questionnaire: "Questionnaire du registre APAC"
       fpic_info_sheet: "Fiche d'information CLPE"
       fpic_signature_form: "Formulaire de signature CLPE"
       case_study_template: "Modèle d'étude de cas du Registre APAC"
