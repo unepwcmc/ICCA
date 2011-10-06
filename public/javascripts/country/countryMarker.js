@@ -7,8 +7,8 @@ function countryMarker(latlng, data, map) {
     this.latlng_ = latlng;
     this.offsetVertical_ = -21;
     this.offsetHorizontal_ = -21;
-    this.height_ = 43;
-    this.width_ = 43;
+    this.height_ = 26;
+    this.width_ = 26;
     this.div_ = null;
     this.setMap(map);
 
@@ -17,19 +17,19 @@ function countryMarker(latlng, data, map) {
 countryMarker.prototype.onAdd = function() {
 
     var div = document.createElement('DIV');
-    div.style.width = "43px";
-    div.style.height = "43px";
+    div.style.width = "26px";
+    div.style.height = "26px";
     div.style.position = "absolute";
 
     var img = document.createElement("div");
     img.src = "/images/marker.png";
-    img.style.width = "43px";
-    img.style.height = "43px";
+    img.style.width = "26px";
+    img.style.height = "26px";
     img.style.position = "relative";
     if (this.data_.sites > 0){
-      img.style.background = "url(/images/marker_blank.png) no-repeat 0 0";
+      img.style.background = "url(/images/marker_blank_small.png) no-repeat 0 0";
     } else {
-      img.style.background = "url(/images/marker.png) no-repeat 0 0";
+      img.style.background = "url(/images/marker_small.png) no-repeat 0 0";
     }
     img.style.float = "left";
     img.style.display = "block";
@@ -50,7 +50,7 @@ countryMarker.prototype.onAdd = function() {
     over_txt.href = this.data_.url;
     over_txt.style.borderStyle = "none";
     over_txt.style.borderWidth = "0px";
-    
+
     var over_txt_str;
     if (this.data_.name.length>18) {
         over_txt_str = this.data_.name.substr(0,15)+'...'
@@ -73,10 +73,10 @@ countryMarker.prototype.onAdd = function() {
     if (this.data_.sites > 0){
         var sites_display = document.createElement('DIV');
         $(sites_display).html(this.data_.sites);
-        sites_display.style.top = "13px";
-        sites_display.style.left = "17px";
+        sites_display.style.top = "5px";
+        sites_display.style.left = "9px";
         sites_display.style.position = "absolute";
-        sites_display.style.font = "bold 15px Arial";
+        sites_display.style.font = "bold 14px Arial";
         sites_display.style.color = "white";
         div.appendChild(sites_display);
     }
