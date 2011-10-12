@@ -58,7 +58,7 @@ countryMarker.prototype.onAdd = function() {
         over_txt_str = this.data_.name;
     }
     if (this.data_.sites > 0){
-      over_txt_str += "<br/><span class='sites_count'>" + this.data_.sites + " sites</span>";
+        over_txt_str += "<br/><span class='sites_count'>" + this.data_.sites + " sites</span>";
     }
     $(over_txt).html(over_txt_str);
 
