@@ -2,151 +2,280 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 es:
+  here: "aquí"
+  step: "paso"
+  sign_up: "regístrese"
+  log_in: "acceso"
+  photos: "fotos"
+  videos: "vídeos"
+  links: "enlaces"
   nav:
     home: "HOME"
     about: "ACERCA DE"
-    registry: "REGISTRO"
-    faqs: "FAQS"
+    explore: "EXPLORE"
+    faqs: "PREGUNTAS FREQUENTES (FAQS)"
     contact: "CONTACTO"
-    contribute: "CONTRIBUYE"
+    participate: "PARTICIPE"
     login: "ACCESO"
     logout: "SALIR"
-    user_page: "PÁGINA DE USUARIO"
+    user_page: "PÁGINA DE USARIO"
     change_password: "CAMBIAR SU CONTRASEÑA"
-    users: "USERS"
-    language: "Idioma"
+    users: "USARIO"
+    language: "IDIOMA"
+    acknowledgements: "RECONOCIMIENTOS"
+    project: "EL PROYECTO"
+    register: "REGÍSTRESE"
+    case_studies: "ESTUDIO DE CASO"
+    benefits: "BENEFICIOS"
 
   files:
     name:
-      questionnaire: Cuestionario del Registro ICCA"
-      fpic_info_sheet: "Hoja de Información CPLI"
-      fpic_signature_form: "Formulario de Firma CLPI"
-      case_study_template: "Plantilla de Estudio de Casos Prácticos del Registro ICCA"
+      questionnaire: "#"
+      questionnaire_intro: "#"
+      fpic_info_sheet: "#"
+      fpic_signature_form: "#"
+      case_study_template: "#"
     location:
-      questionnaire: "/docs/Cuestionario del Registro ICCA.pdf"
-      questionnaire_word: "/docs/Cuestionario del Registro ICCA (Offline).dotm"
+      questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"
+      questionnaire_word: "/docs/ICCA%20Registry%20Questionnaire%20(Offline).dotm"
       questionnaire_intro: "/docs/Introduction to the ICCA Registry Questionnaire.pdf"
-      fpic_info_sheet: "/docs/Hoja de Informacion CLPI.pdf"
-      fpic_signature_form: "/docs/Formulario de Firma CLPI.doc"
-      case_study_template: "/docs/Plantilla de Estudio de Casos Practicos del Registro ICCA.pdf"
+      fpic_info_sheet: "/docs/FPIC Information Sheet.pdf"
+      fpic_signature_form: "/docs/FPIC Signature Form.doc"
+      case_study_template: "/docs/ICCA Registry Case Study Template.pdf"
 
-    wdpa_consent: "/docs/WDPA%20Consent%20ES.doc"
+    wdpa_consent: "/docs/WDPA%20ICCA%20consent%20form.doc"
 
-  learn_more: "Conozca más"
+  learn_more: "#"
 
   home:
-    title: "<em>Valorando la conservación por pueblos indígenas</em> y comunidades locales"
+    title: "<em>Valorando la conservación por los pueblos indígenas</em> y comunidades locales"
 
-    explore_map: "Explora el mapa mundial de las ICCAs"
+    explore_map: "Explora el mapa mundial de las ICCA"
+
+    welcome_title: "Bienvenido al Registro ICCA"
+
+    learn: "Infórmese"
+    learn_text: "acerca de las ICCA (en español 'Áreas Conservadas por Comunidades Indígenas y Locales'). Lea sobre esta importante forma de conservación local."
+
+    participate: "Participe"
+    participate_text: "en el Registro ICCA. Registre su ICCA o presente un estudio de caso."
+
+    explore: "Explore"
+    explore_text: "los mapas interactivos u estudios de casos de ICCA. Inicie su recorrido en el mapamundi"
+
+    introduction: "Introducción"
+    intro:
+      para_1: "Durante cientos de años, los pueblos indígenas y comunidades locales han sido una parte fundamental de la conservación biocultural. Las Áreas Conservadas por Comunidades Indígenas y Locales (ICCA por sus siglas en inglés) son sitios naturales, recursos, hábitats y biodiversidad asociada, conservados de manera voluntaria y auto-gestionada mediante valores, prácticas, reglas e instituciones comunitarias."
+      benefits_link: "#"
+      para_2: "El sitio web del Registro ICCA es una plataforma de información en línea para Áreas Conservadas por Comunidades Indígenas y Locales, donde las comunidades mismas proporcionan estudios de caso, mapas, fotografías e historias que generan estadísticas útiles y análisis de las ICCA destacadas alrededor del mundo.  Como fuente clave de información y datos sobre las ICCA a nivel global, es un proceso voluntario que invita a participar a comunidades que obtienen beneficios por contribuir. El sitio web y sus productos relacionados están diseñados para una audiencia que incluye pueblos indígenas, comunidades locales, profesionales de la conservación, diseñadores de políticas y personas encargadas de tomar decisiones, investigadores y público en general, que deseen entender y afianzar su conocimiento de las ICCA, sus diversos valores biológicos, ecológicos y culturales y su alcance geográfico. Los estudios de caso ofrecen una introducción al amplio rango y diversidad de las ICCA existentes. El Registro complementa otros esfuerzos por comprender los impactos de la conservación comunitaria a través de la documentación y reparto de experiencias y análisis."
+      para_3: "A través de la construcción de la base de datos (sobre la cual se apoya el sitio web), la información acerca de las ICCA de diferentes países y regiones del mundo podrá encontrarse en un solo lugar, lo que permitirá una asimilación más fácil de la mejor información disponible sobre las ICCA. En particular, la base contiene datos cualitativos, cuantitativos y espaciales. El acceso público a estos datos depende de los acuerdos que tenemos con las comunidades que han aportado la información. El sitio web, que incluye medios visuales como mapas, videos y fotografías, representa un esfuerzo positivo para hacer circular estos valiosos datos alrededor del globo, demostrar el valor de conservación de las ICCA y promover un mayor reconocimiento de las mismas."
+      para_4: "Para más información sobre el proyecto, haga clic %{here}."
+
+    what_are_iccas: "¿Qué son las Áreas Conservadas por Comunidades Indígenas y Locales?"
+    what_are_iccas_text: "Indigenous and Community Conserved Areas (ICCAs) are natural sites, resources, habitats and associated biodiversity conserved in a voluntary and self-directed way through community values, practices, rules and institutions. For hundreds of years, indigenous people and local communities have been a crucial part of bio-cultural conservation. (World Parks Congress Recommendation V26, 2003)."
+
+    partners: "Socios"
+    partners_text: "El Registro de ICCA tiene varios socios claves (listados a continuación) que trabajan del nivel local al internacional, buscando simultáneamente proporcionar apoyo y reconocimiento a las ICCA:"
+
+    acknowledgements: "Reconocimientos"
+    acknowledgements_text: "Many dedicated individuals have contributed their time to this effort.  Click %{here} for more details."
+
+
 
     icca_title: "Áreas Conservadas por Comunidades Indígenas y Locales"
-    para_1: "Las Áreas Conservadas por Comunidades Indígenas y Locales (ICCAs, por sus siglas en inglés) son sitios naturales, recursos y hábitats de especies conservados de forma voluntaria y auto-dirigida mediante valores, prácticas, normas e instituciones comunitarias. Durante cientos de años los pueblos indígenas y las comunidades locales han sido una parte fundamental de la conservación. A pesar de que las prácticas conservacionistas de las ICCAs se encuentran potencialmente entre las más antiguas de la Tierra, están infravaloradas y no son bien conocidas, lo cual las pone en peligro por falta de apoyo político y económico y  las hace más vulnerables a amenazas externas. Recientes encuentros internacionales, incluidos el Congreso Mundial de Parques de 2003 y el Programa de Trabajo de 2004 sobre Áreas Protegidas del Convenio sobre la Diversidad Biológica, han contribuido a la re-evaluación de las ICCAs como uno de los principales canales para reforzar el uso y la conservación de los recursos naturales. Existe, por tanto, la necesidad de recopilar, analizar y compartir los conocimientos y experiencias acerca de estas áreas."
-    para_2: "La página web del Registro de ICCAs es una base de datos pionera sobre Áreas Conservadas por Comunidades Indígenas y Locales que ofrece a las comunidades indígenas, investigadores, conservacionistas, políticos, decisores públicos y al público en general información acerca de las características y extensión geográfica de las diferentes ICCAs mediante mapas, estadísticas y análisis detallados de ciertas ICCAs."
-    para_3: "El propósito, pues, de esta página web es mejorar el conocimiento de las ICCAs y de su biodiversidad y valores ecológicos y culturales. La web pretende convertirse en la fuente principal de información global acerca de las ICCAs de diferentes países para uso de las propias comunidades implicadas, profesionales, investigadores y público en general. De este modo, la información de las ICCAs de diferentes países y regiones del Mundo se encontrará disponible y centralizada a través de esta web, facilitando y mejorando el acceso a la información acerca de las ICCAs. La base de datos incluirá datos cualitativos, cuantitativos y espaciales. El acceso a dichos datos por parte del público depende de los acuerdos alcanzados con los proveedores de la información. La web, que se muestra con iconos y herramientas visuales como mapas, vídeos y fotos, representa el mejor modo de ofrecer estos importantes datos a lo largo y ancho del globo, demuestra el valor de conservación de las ICCAs y fomenta su reconocimiento. "
+    para_1: "Las Áreas Conservadas por Comunidades Indígenas y Locales (ICCA, por sus siglas en inglés) son sitios naturales, recursos y hábitats de especies conservados de forma voluntaria y auto-dirigida mediante valores, prácticas, normas e instituciones comunitarias. Durante cientos de años los pueblos indígenas y las comunidades locales han sido una parte fundamental de la conservación. A pesar de que las prácticas conservacionistas de las ICCA se encuentran potencialmente entre las más antiguas de la Tierra, están infravaloradas y no son bien conocidas, lo cual las pone en peligro por falta de apoyo político y económico y  las hace más vulnerables a amenazas externas. Recientes encuentros internacionales, incluidos el Congreso Mundial de Parques de 2003 y el Programa de Trabajo de 2004 sobre Áreas Protegidas del Convenio sobre la Diversidad Biológica, han contribuido a la re-evaluación de las ICCA como uno de los principales canales para reforzar el uso y la conservación de los recursos naturales. Existe, por tanto, la necesidad de recopilar, analizar y compartir los conocimientos y experiencias acerca de estas áreas."
+    para_2: "La página web del Registro de ICCA es una base de datos pionera sobre Áreas Conservadas por Comunidades Indígenas y Locales que ofrece a las comunidades indígenas, investigadores, conservacionistas, políticos, decisores públicos y al público en general información acerca de las características y extensión geográfica de las diferentes ICCA mediante mapas, estadísticas y análisis detallados de ciertas ICCA."
+    para_3: "El propósito, pues, de esta página web es mejorar el conocimiento de las ICCA y de su biodiversidad y valores ecológicos y culturales. La web pretende convertirse en la fuente principal de información global acerca de las ICCA de diferentes países para uso de las propias comunidades implicadas, profesionales, investigadores y público en general. De este modo, la información de las ICCA de diferentes países y regiones del Mundo se encontrará disponible y centralizada a través de esta web, facilitando y mejorando el acceso a la información acerca de las ICCA. La base de datos incluirá datos cualitativos, cuantitativos y espaciales. El acceso a dichos datos por parte del público depende de los acuerdos alcanzados con los proveedores de la información. La web, que se muestra con iconos y herramientas visuales como mapas, vídeos y fotos, representa el mejor modo de ofrecer estos importantes datos a lo largo y ancho del globo, demuestra el valor de conservación de las ICCA y fomenta su reconocimiento."
 
     about_title: "Acerca del Registro ICCA"
-    about_text: "El Registro ICCA es un recurso electrónico que recoge información sobre Áreas Conservadas por Comunidades Indígenas y Locales (ICCAs) para mejorar el conocimiento de sus valores culturales y de conservación"
+    about_text: "El Registro ICCA es un recurso electrónico que recoge información sobre Áreas Conservadas por Comunidades Indígenas y Locales (ICCA) para mejorar el conocimiento de sus valores culturales y de conservación."
     featured_publications: "Publicaciones relacionadas"
-    partners: "Socios"
 
   about:
-    about_title: "Acerca de las ICCAs"
-    para_1: "Las Áreas Conservadas por Comunidades Indígenas y Locales se definen como:"
-    para_2: '<b>“ecosistemas naturales y/o modificados que contienen valores de biodiversidad y servicios ecológicos significativos, conservadas de forma voluntaria por comunidades indígenas y locales (sedentarias y móviles), mediante leyes tradicionales u otros medios efectivos”</b>  (Recomendación V26 del Congreso Mundial de Parques, 2003).'
-    para_3: 'Ejemplos de ICCAs incluyen territorios indígenas, áreas protegidas indígenas, paisajes culturales terrestres y marinos, especies y lugares sagrados, rutas migratorias de pueblos indígenas nómadas, territorios de patrimonio bio-cultural, reservas de recursos sostenibles, zonas pesqueras, y áreas gestionadas por comunidades. La superficie total de las áreas con este tipo de gobernanza no está clara y es muy posible que esté bastante subestimada.'
-    para_4: "Las ICCAs protegen un rango enorme de ambientes naturales, especies silvestres y paisajes agrícolas y pastorales gestionados por comunidades tradicionales y modernas mediante una amplia diversidad de instituciones y normas. Estas áreas abarcan desde menos de una hectárea hasta montañas, lagos o paisajes completos. Aunque no existe un dato claro acerca de la extensión que las ICCAs alcanzan a lo largo del globo, se estima que un 11% de los bosques del Mundo son bien propiedad  o bien administrados por comunidades.  Por tanto, la contribución de las ICCAs a la conservación de la biodiversidad constituye una herramienta importante para proteger los recursos naturales y los medios de vida humanos."
-    para_5: "Además del valor directo que las ICCAs pueden conferir a las diversas especies, hábitats y procesos ecológicos que se benefician de su gestión, existen múltiples servicios ambientales, como el secuestro de carbono o la depuración del agua, que se ven favorecidos al promover la viabilidad de las ICCAs. Dado el papel significativo pero indocumentado de las áreas gestionadas por pueblos indígenas y comunidades locales en el mantenimiento de la diversidad biológica y de los procesos ecológicos, iniciativas como la Reducción de Emisiones procedentes de la Deforestación y Degradación de los bosques (REDD, por sus siglas en inglés) y aquellas otras dirigidas a la adaptación al cambio climático se basarán cada vez más en el conocimiento actual sobre las ICCAs a medida que sus esfuerzos se hagan más extensos y urgentes."
+    about_title: "Sobre las ICCAs"
+    para_1: "Las Áreas Conservadas por Comunidades Indígenas y Locales (ICCA) se definen como:"
+    para_2: "<b>\"ecosistemas naturales y/o modificados que contienen un valor significativo para la biodiversidad y los servicios ecológicos, que son preservados voluntariamente por comunidades indígenas y locales (sedentarias y móviles), a través de la ley consuetudinaria y otros medios eficaces.\"</b> (%{citation_link})"
+    para_3: "Ejemplos de ICCA incluyen territorios indígenas, áreas indígenas protegidas, paisajes culturales terrestres y marinos, sitios y especies sagrados, rutas migratorias de pueblos indígenas móviles, territorios pertenecientes al patrimonio biocultural, reservas de recursos sostenibles , caladeros y áreas administradas por las comunidades. El tamaño combinado de las áreas bajo este tipo de dirección no es claro y es probable que esté severamente subestimado. Los recientes encuentros internacionales, incluidos el Congreso Mundial de Parques en 2003 y el Programa de Trabajo en Áreas Protegidas de la Convención sobre Diversidad Biológica en 2004, han contribuido a la reevaluación de las ICCA como una de las avenidas principales para fortalecer el uso de recursos naturales sustentables. Las prácticas de conservación de las ICCA son potencialmente las más antiguas del mundo, sin embargo, la subvaloración  y una falta de conocimiento profundo de las mismas, las deja en riesgo, debido a la falta de apoyo político y financiero, y cada vez más vulnerables a amenazas externas. "
+    para_3_sub: "1 Molnar, A., Scherr, S & Khare, A. (2004). Who conserves the world’s forests: community driven strategies to protect forests and respect rights.  Forest Trends & Ecoagriculture Partners: Washington, DC."
+    benefits_title: "Beneficios de las ICCA"
+    para_4: "Las ICCA protegen una enorme variedad de entornos naturales, especies de flora y fauna y paisajes agrarios y de pastoreo administrados a través de una vasta diversidad de instituciones y reglas, tanto por parte de comunidades tradicionales como modernas. La extensión de estos lugares va desde terrenos de menos de una hectárea hasta montañas, lagos y paisajes terrestres y marinos. Aunque no hay una idea precisa de la extensión del área que cubren las ICCA en todo el mundo, se estima que alrededor de 11% del total mundial de bosques está bajo propiedad o administración de dichas comunidades1. Por consiguiente, la contribución de las ICCA a la conservación de la biodiversidad es un elemento importante como herramienta para la protección de los recursos naturales y los modos de subsitencia."
+    para_5: "Además del valor directo que las ICCA confieren a las diversas especies, hábitats y procesos ecológicos que se benefician de su administración, existen multiples servicios medioambientales, como el almacenamiento de carbono y la purificación de agua, que se posibilitan al apoyar la viabilidad de las ICCA. Dado el significativo mas indocumentado rol de las áreas indígenas y localmente administradas en la mantención de la biodiversidad y los procesos ecológicos, iniciativas como el programa de Reducción de Emisiones debidas a Deforestación y Degradación Forestal (REDD) y aquellas que abordan la adaptación al cambio climático, dependerán considerablemente en información actualizada sobre las ICCA en la medida que sus esfuerzos sean más generalizados y urgentes."
+    para_6: "A pesar de que las ICCA son extremadamente variadas en diversos aspectos, todas cuentan con tres características esenciales:"
+    characteristics_title: "Características Definitorias de las ICCAs"
+    characteristics_text: "A pesar de que las ICCA son extremadamente variadas en diversos aspectos, todas cuentan con tres características esenciales:"
 
-    para_6: "A pesar de que las ICCAs son extremadamente diversas en muchos aspectos, todas comparten tres rasgos esenciales:"
-    icca_elem_1: "Existencia de una fuerte relación entre una o más comunidades indígenas o locales (sedentarias o nómadas) y su ambiente físico (como un ecosistema, hábitat, recurso o especie determinados) por razones culturales, sociales, económicas o de otro tipo."
-    icca_elem_2: "Los pueblos indígenas o las comunidades locales implicadas juegan un papel fundamental en la toma de decisiones sobre la gestión del ecosistema, del área o de sus especies. Dichas comunidades tienen (por ley o en la práctica) el poder de elaborar y hacer respetar decisiones cruciales de gestión que impliquen al territorio y sus recursos"
-    icca_elem_3: "Las decisiones voluntarias de gestión y los esfuerzos de las comunidades implicadas conllevan, o al menos están en proceso de permitir,  la conservación de la biodiversidad, los hábitats, las especies, las funciones ecológicas y los valores culturales asociados, independientemente de los objetivos originales de gestión tal y como los entiende la comunidad."
+    icca_elem_1: "Existe un fuerte vínculo entre las comunidades indígenas y locales (móviles y sedentarias) y su medioambiente (ecosistema, hábitat, recursos o especies) que es consecuencia de motivos culturales, sociales, económicos y otros."
+    icca_elem_2: "Los pueblos indígenas y  comunidades locales afectadas juegan un papel clave en la toma de decisiones acerca de la gestión del ecosistema, área o especies. La comunidad posee (por ley o en la práctica) el poder de tomar y hacer respetar decisiones claves en materia de gestión referentes a los territorios y recursos."
+    icca_elem_3: "Las decisiones y esfuerzos de la gestión voluntaria de cada comunidad llevan a, o al menos están bien entradas en el proceso de, la conservación de la biodiversidad, hábitats, especies, funciones ecológicas y valores culturales asociados, independientemente de los objetivos de gestión original percibidos por la comunidad."
+
+    threats: "Amenazas a las ICCAs"
+    threats_para: "Al mismo tiempo que la importancia cultural y ecológica de las áreas gobernadas por Comunidades Indígenas y Locales recibe mayor atención a nivel global, también lo hacen el rango de amenazas que las comunidades enfrentan cuando intentan mantener su estrecho vínculo con el ambiente natural.  Dichas amenazas incluyen impactos directos e indirectos de las actividades humanas, así como fenómenos naturales.  A medida que aumentan nuestros esfuerzos para documentar las ICCA, esperamos entender más claramente las amenazas a las comunidades. El Registro ICCA estima que el rango de amenazas que las ICCA enfrentan es un paso natural en la comprensión de la gama completa de soluciones disponibles."
+
+    current_threats: '¿Cuáles son algunas de las principales amenazas contra las ICCAs en la actualidad?'
+    threat_1: "Posesión o tenencia de tierra y recursos no declarados (por ejempo, falta de reconocimiento)"
+    threat_2: "Formas inadecuadas de reconocimiento o políticas nacionales que debilitan la gobernanza tradicional"
+    threat_3: "Conflicto con otras áreas protegidas que coinciden con la ICCA, lo que lleva a la expropiación de las tierras comunitarias"
+    threat_4: "Desarrollo (infraestructura de transporte, edificios y demás)"
+    threat_5: "Extracción (por ejemplo, caza, minería, tala, pesca)"
+    threat_6: "Impactos localizados del cambio climático global"
+    threat_7: "Especies invasoras"
+    threat_8: "Sobre-explotación de recursos"
+    threat_9: "Disminución de la biodiversidad"
+    threat_10: "Pérdida de sitios sagrados, especies y medicinas tradicionales importantes"
+    threat_11: "Acceso turístico excesivo"
+    threat_12: "Administración inadecuada"
+    threat_13: "Deslegitimación de los derechos tradicionales"
+    threat_14: "Desigualdades (sociales, económicas o políticas) dentro de la ICCA"
+    threat_15: "Conflicto con comunidades vecinas o asociadas"
+    threat_16: "Guerra y movimiento de refugiados"
+    threat_17: "Pérdida del conocimiento tradicional o local"
+    threat_18: "Cambios en las prácticas culturales"
+    threat_19: "Desestabilización de la comunidad debido al éxodo de sus miembros"
+
 
 
   registry:
+    map_explain: "Click on a country to explore ICCA case studies and learn more about the diverse communities who contribute to the health of biodiversity and natural environments."
     title: "<em>Registro ICCA</em>"
     project_title: "El Proyecto"
-    project_text_1: 'El proyecto del Registro de las Áreas Conservadas por Comunidades Indígenas y Locales se ha desarrollado como respuesta a recientes encuentros globales y se encuentra asesorado por el <a class="textLink" target="_blank" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86&Itemid=102">Consorcio ICCA</a>, un grupo de expertos y organizaciones formado durante el Congreso Mundial de la Naturaleza de 2008. A través de un proceso multifacético, este grupo está trabajando poco a poco con comunidades indígenas y locales que quieren concienciar sobre este tipo de gobernanza y sobre la contribución a la conservación que realizan estas comunidades.  El Centro Mundial de Seguimiento de la Conservación del Programa de Naciones Unidas para el Medio Ambiente  (UNEP-WCMC, por sus siglas en inglés), como integrante del Consorcio ICCA, está jugando un papel decisivo en la concienciación y el reconocimiento de las ICCAs mediante el desarrollo de un registro interactivo mundial sobre ICCAs.'
+    project_text_1: 'El proyecto des Registro de las Áreas Conservadas por Comunidades Indígenas y Locales se ha desarrollado como respuesta a recientes encuentros globales y se asesorado por el <a class="textLink" target="_blank" href="http://www.iccaforum.org/index.php?option=com_content&view=article&id=86Itemid=102">Consorcio ICCA</a>, un grupo de expertos y organizaciones formado durante el Congreso Mundial de la Naturaleza de 2008. A través de un proceso multifacético, este grupo está trabajando poco a poco con comunidades indígenas y locales que quieren concienciar sobre este tipo de gobernanza y sobre la contribución a la conservación que realizan estas comunidades. El Centro Mundial de Seguimiento de la Conservación del Programa de Naciones Unidas para el Medio Ambiente (UNEP-WCMC, por sus siglas en inglés), como integrante del Consorcio ICCA, está jugando un papel decisivo en la concienciación y el reconocimiento de las ICCAs mediante el desarrollo de un registro interactivo mundial sobre ICCAs.'
     project_text_2: 'La compilación de información será un proceso cooperativo que asegure un apoyo continuado y positivo del concepto de ICCA, y que implique a personal del UNEP-WCMC así como a otros miembros del Consorcio y a consultores sobre el terreno. Los integrantes de las comunidades indígenas y locales constituirán el soporte central y esencial para la generación básica de dicho conocimiento.'
-    project_text_3: 'El Registro, desarrollado con la misma estructura que la Base de Datos Mundial sobre Áreas Protegidas  (WDPA, por sus siglas en inglés. Véase <a class="textLink" target="_blank" href="http://www.wdpa.org">www.wdpa.org</a> para más información), almacenará dos tipos de información que son críticos para la comprensión de las ICCAs: 1) información descriptiva, como por ejemplo los principales hábitats incluidos en la ICCA y los nombres de la comunidad o comunidades que viven en la ICCA o cerca de ella, y 2) información espacial, como el tamaño, localización y fronteras del área. El Registro estará relacionado con la información contenida en la WDPA y también mediante un enlace que se habilitará entre ambas webs, para un mejor acceso a la información sobre áreas protegidas.'
+    project_text_3: 'El Registro, desarrollado con la misma estructura que la Base de Datos Mundial sobre Áreas Protegidas (WDPA, por sus siglas in inglés. Véase <a class="textLink" target="_blank" href="http://www.wdpa.org</a> para más información), almacenará dos tipos de información que son críticos para la compresión de las ICCAs: 1) información descriptiva, como por ejemplo los principales hábitats incluidos en la ICCA y los nombres de la comunidad o comunidades que viven en la ICCA o cerca de ella, y 2) información espacial, como el tamaño, localización y fronteras dea área. El Registro estará relacionado con la información contenida en la WDPA y tambien mediante un enlace que se habilitará entre ambas webs, para un mejor acceso a la información sobre áreas protegidas.'
 
     countries_title: "Países ICCA"
     side_countries_title: "Países"
 
-  contribute:
-    title: "<em>Contribuya al Registro ICCA</em>"
+  participate:
+    title: "<em>Participe en el Registro ICCA</em>"
 
-    contribute_title: "Contribuir al Registro"
-    para_1: "Para las comunidades y todos aquellos que quieran contribuir al Registro y beneficiarse de usarlo, se muestran algunos pasos importantes y simples que hay que seguir. Toda la información incluida se trata con el respeto y la discreción que garantiza la adhesión a los principios contenidos en la Declaración de los Derechos de los Pueblos Indígenas de las NNUU, de 2007. Hay dos formas de contribuir:"
-    opp_1: "(a) Proporcionar información a la Base de Datos del Registro ICCA a través de un cuestionario en línea, y"
-    opp_2: "(b) Elaborar un Caso Práctico para la página web del Registro ICCA."
-    
-    instructions_title: "(A) Instrucciones para contribuir a la Base de Datos del Registro ICCA"
+    participate_title: "Dos formas de participar en el Registro"
+    para_1: "Toda la información incluida se trata con el respeto y la discreción que garantiza la adhesión a los principios contenidos en la Declaración de los Derechos de los Pueblos Indígenas de las NNUU, de 2007."
+    para_2: "Dos formas de participar en el Registro"
 
-    step_1:
-      title_1: 'Paso 1: Lea el '
-      link_text: 'ICCA Hoja de Información CIPV'
-      title_2: 'y comente entre los miembros de su comunidad acerca del Registro ICCA.'
-      text: 'Los miembros de la comunidad han de evaluar conjuntamente los beneficios y los riesgos de contribuir a la Base de Datos del Registro para que todo el mundo sea consciente del proceso, los retos, y las consecuencias potenciales positivas y negativas'
+    opp_1: "Registre su área de conservación como ICCA en el Regitro ICCA en línea."
+    opp_1_para: "Sign-up and complete an online questionnaire OR download or request a questionnaire to complete by hand or electronically (off-line)"
+    opp_2: "Cree un estudio de caso pro el sitio web ICCA Registro."
+    opp_2_para: "An ICCA case study can be submitted without going through the process of registering, or it can be part of the full registration process of an ICCA. The main purpose of creating a case study is to provide greater visibility to communities who wish to share their conservation work and its richness in through visual media on the internet."
 
-    step_2:
-      title: 'Paso 2: Revise el Formulario de Consentimiento Informado, Previo y Voluntario para conseguir las firmas clave. Existen dos opciones para rellenar el Formulario:'
-      consent_link:
-        text: 'Descargue el Formulario CIPV'
-        suffix: ', fírmelo y devuélvalo a los gestores del Registro.'
-      questionnaire_link:
-        text: 'Abrir el formulario cuestionario electrónico'
-        suffix: ' y completar la sección de consentimiento informado, previo y voluntario'
-      register_link:
-        text: 'Regístrese'
-        suffix: ' en línea, abra el cuestionario electrónico y rellene la parte correspondiente al CIPV.'
-      text: 'El propósito de este formulario de consentimiento es asegurar que las comunidades indígenas y locales estén informadas del proceso de facilitar información al Registro, que conozcan qué tipo de información se proporcionará y será accesible, y cómo se utilizará, y que puedan decidir qué información se mostrará a través de los distintos medios (como la página web de las ICCAs o futuras publicaciones analíticas). Todas las comunidades pueden determinar el grado de difusión de su información'
+    para_3: "Note: While we encourage interested communities to participate, we want to ensure the benefits and risks of participating in the Registry are clearly understood.  For further information, please click %{link}. "
 
-    step_3:
-      title: 'Paso 3: Rellene el Cuestionario del Registro ICCA con la información de su ICCA.'
-      logged_in:
-        pre_link: "Visite su "
-        link_text: "página de usuario "
-        post_link: "para rellener el Cuestionario del Registro ICCA en línea "
-      logged_out:
-        pre_register_link: "Para rellenar el cuestionario del Registro ICCA en línea, debe primero "
-        register_link_text: "registrarse "
-        pre_login_text: "(o, si ya se ha registrado, "
-        login_link_text: "entrar"
-        post_link_text: ") para acceder a su página de usuario y al cuestionario electrónico."
-      pre_link_text: 'Se solicitan muchas preguntas clave (resaltadas) que cada comunidad debe responder para clarificar aspectos clave sobre su ICCA. Las respuestas a las preguntas adicionales ayudarán a mejorar el conocimiento de las ICCAs. Si la ICCA ha sido ya reconocida por la legislación nacional o por el sistema de áreas protegidas, la comunidad debería, en la medida de lo posible, trabajar con los representantes públicos para proporcionar información espacial y de otro tipo. El cuestionario puede '
-      questionnaire_pdf_link_text: 'descargarse como un Documento PDF '
-      post_link_text: 'o puede solicitarse por correo electrónico.'
+    instructions_title: "(A) Instructions for contributing to the ICCA Registry Database"
 
-    step_4:
-      title: 'Paso 4: Remita información espacial y otros documentos relevantes.'
-      pre_link_text: 'La información espacial puede subirse a la aplicación para cada cuestionario remitido mediante un enlace en su '
-      user_page_link: 'página de usuario'
-      post_link_text: '. También puede subir documentos útiles y relevantes en la página de usuario (como planes de gestión, acuerdos comunitarios, o premios y menciones acreditados).'
+  benefits:
+    title: "Beneficios y Riesgos de participar"
 
-    case_study_instructions:
-      title: "B) Instrucciones para contribuir al Estudio de Casos Prácticos de ICCAs."
-      text: "Las comunidades interesadas en tener presencia visual en la página web del Registro ICCA pueden proponer una web con el caso práctico de su ICCA."
+    title_1: "¿Su comunidad está considerando participar en el Registro ICCA?"
+    para_1: "Si usted y su comunidad no están seguros de participar, a más abajo ampliamos la información sobre lo que usted puede esperar en términos de beneficios y riesgos. La participación es totalmente voluntaria por lo que ninguna comunidad debe sentirse obligada a contribuir. Las comunidades que decidan no participar, de ninguna manera serán vistas negativamente como resultado."
 
-      step_1:
-        title: "Paso1: Rellene y remita su plantilla de caso práctico."
-        text_1: 'Descargue y rellene la '
-        link_text_1: 'plantilla de caso práctico '
-        text_2: 'utilizando la información de su ICCA.'
-      step_2:
-        title: 'Paso 2: Remita fotos, vídeos, material gráfico, documentos y enlaces a páginas web.'
-        para_1:
-          text: 'Les animamos a enviar fotos de miembros de su comunidad, ecosistemas, especies, vídeos, enlaces a páginas web, documentos y otros materiales (como mapas o folletos escaneados) a '
-        para_2: "Las fotos deben tener una buena resolución, con un mínimo de 300 dpi, para su inclusión en la web. Cualquier vídeo, incluidas entrevistas, debe acompañarse de un hipervínculo a una web de vídeo de acceso libre, tipo YouTube o Google Videos. Usted también puede remitir documentos útiles y relevantes (como planes de gestión, acuerdos comunitarios, o premios y menciones acreditados). También pueden incluirse en la web de estudio de casos prácticos enlaces a webs existentes que proporcionen información adicional sobre la ICCA, los esfuerzos realizados para su conservación y los éxitos conseguidos. Todos los envíos deben etiquetarse claramente con la referencia específica de la ICCA."
+    benefits_title: "Beneficios:"
+    benefits_para: "El Registro ICCA es una herramienta que puede beneficiar a diversas comunidades que gobiernan y administran los recursos naturales para el beneficio de la biodiversidad y sus modos de subsistencia. El Registro ICCA:"
+    benefit_1: "Sensibiliza a nivel internacional sobre los enfoques, procesos e impactos de la conservación comunitaria."
+    benefit_2: "Mejora la documentación de los sitios y sistemas ICCA, lo cual puede también ayudar a asegurar un estatus legal."
+    benefit_3: "Protege la información sensible: las comunidades eligen en qué medida se comparte su información y pueden inscribirse sin compartir ninguna información con un audiencia externa."
+    benefit_4: "Ofrece estudios de caso en línea que están georeferenciados con mapas interactivos."
+    benefit_5: "Permite a las comunidades compartir fotografías, videos, planes de gestión y otros tipos de documentación."
+    benefit_6: "Aumenta las posibilidades de que las comunidades aprendan unas de otras y compartan impresiones de sus esfuerzos."
+    benefit_7: "Contribuye a un cuerpo creciente de conocimiento que puede informar políticas de conservación y otras relacionadas a la influencia positiva de la gestión y gobernanza medioambiental comunitaria."
+    benefit_8: "Provee a las comunidades que cuentan con ecoturismo y otras operaciones empresariales, la posibilidad de vincular sus sitios web al sitio web de estudios de caso del Registro ICCA."
+    benefit_9: "Respeta los Derechos de Propiedad Intelectual, los cuales conserva la comunidad. Una ICCA puede ser removida del Registro en cualquier momento si se requiere."
+
+    risks_title: "Riesgos:"
+    risks_para: "Aunque se incluyen garantías en el Registro, es difícil predecir todas las amenazas potenciales que resulten de participar. Estos son algunos posibles riesgos:"
+    risk_1: "Exponer la ubicación de algunas comunidades vulnerables en internet puede atraerles una atención  exagerada o indeseada."
+    risk_2: "Algunas comunidades que trabajan con recursos económicos valiosos quizá no deseen incorporalos a un mapa georeferenciado."
+    risk_3: "El Registro no puede ayudar a las comunidades con amenazas locales o inmediatas contra su área, como disputas fronterizas con otras comunidades o entidades nacionales."
+    risk_4: "La información que se ofrece en internet (aunque sólo cuando la comunidad ha otorgado permiso expreso) puede ser visitada y usada por cualquier persona."
+
+    para_2: "Si tiene inquietudes o preguntas, favor contactarnos %{link} para hablar de su participación."
+
+  register:
+    title: "Inscripción Oficial de su ICCA"
+    fpic_info_sheet: Free Prior Informed Consent (FPIC) Information Sheet
+    para_1: "Lea la Hoja de Información FPIC %{fpic_link} y discuta el Registro ICCA con miembros de sus comunidad."
+
+    register_online_title: "Opción 1. Inscripción por cuestionario en línea"
+    online_step_1: "%{signup_link} n línea.  Recibirá un correo electrónico que autoriza su participación y un enlace al cuestionario. Inicie sesión con los detalles de su cuenta para acceder al cuestionario."
+    online_step_2: "Siga las instrucciones en línea para completar el cuestionario del Registro ICCA, incluyendo la sección FPIC con una una firma electrónica."
+    online_step_2_note: "(Nota: si la ICCA ya está reconocida por legislación nacional o sistema de áreas protegidas, la comunidad debe trabajar con representantes del gobierno cuando sea posible para proporcionar la información espacial y demás.)"
+    online_step_3: "Presente los datos espaciales y documentos relevantes (como planes administrativos, acuerdos comunitarios y premios documentados) según lo solicite el cuestionario en línea."
+    online_step_4: "Si está inscribiendo más de una ICCA, tendrá que seguir los Pasos 1 y 2 ariba mencionados para acceder a otro cuestionario."
+
+    need_help: "¿Necesita ayuda?"
+    help: "Favor contactarnos en cualquier momento a %{mail_link}"
+
+    offline_title: "Opción 2. Instrucciones para descargar y devolver el cuestionario"
+    offline_step_1: "Descargue y complete el Fomulario FPIC  %{fpic_link} con las firmas principales de miembros de su comunidad. Envíe el formulario a los administradores del Registro por correo electrónico (%{mail_link}) o físico. "
+    offline_step_2: "Descargue el cuestionario del Registro ICCA, complételo con la información de sus comunidad, y devuélvalo por correo electrónico o físico (como en el Paso 2)."
+    download_options: "The questionnaire is available to download in %{pdf_link} format (to print and then scan or post) or %{word_link} format (to fill in electronically and send via email)."
+    offline_step_3: "(Opcional pero recomendado) Envíe los datos espaciales (como mapas) y documentos relevantes (como planes administrativos) al correo electrónico iccaregistry@unep-wcmc.org. %{mail_link}."
+
+    documents_title: "Documents Required for Registering an ICCA"
+    pdf_description: "Better for printing"
+    word_description: "Better for email submission"
+
+  case_studies:
+    title: "Cree un estudio de caso para su ICCA"
+    para_1: "Las comunidades interesadas en tener una presencia inmediata en el sitio web del Registro ICCA pueden crear una página web de estudio de caso para sus ICCA."
+
+    step_1: "Descargue, complete y presente su plantilla de %{case_study_link}. Envíela a los administradores del Registro a %{mail_link}."
+    step_2: "Una vez presentado su formulario, usted será contactado para una breve entrevista cuando sea posible."
+    step_3: "Le invitamos a enviar fotos de miembros de sus comunidad, hábitats, especies, videos, enlaces de sitios web, documentos y otros materiales (como scans o versiones electrónicas de folletos o mapas) a %{mail_link}."
+
+    photos: "Fotos: Todas las fotos presentadas deben ser de buena resolución (mínimo 300 dpi) para inclusión en el sitio web. Todas deben incluir referencia a la ICCA en cuestión así como créditos (fotógrafo; autor)."
+    videos: "Videos: Por favor incluya enlaces web con todos los videos, incluyendo entrevistas disponibles en otros sitios web (eje. YouTube o Google Videos). También puede presentar documentos útiles y relevantes (como planes administrativos, acuerdos comunitarios y premios documentados)."
+    links: "Enlaces: Se pueden incluir enlaces a sitios web existentes en la página web de estudio de caso para proveer información adicional sobre la ICCA y sus esfuerzos y éxitos en la conservación."
+
+  faqs:
+    title: "Preguntas Frecuentes (FAQ)"
+
+    title_1: "¿Qué son las Áreas Conservadas por Comunidades Indígenas y Locales?"
+    para_1: "Las Áreas Conservadas por Comunidades Indígenas y Locales (ICCA) son ecosistemas naturales o modificados que contienen valores de biodiversidad importantes, servicios ecológicos y valores culturales, conservados voluntariamente por pueblos indígenas y comunidades locales, tanto móviles como sedentarias, a través de leyes consuetudinarias u otros medios efectivos (Borrini-Feyerabend et al., IUCN 2004). Las ICCA van desde áreas administradas con prácticas tradicionales antiguas hasta nuevas iniciativas establecidas por comunidades en la era moderna como forma de mantener la cultura o los recursos naturales o mejorar la biodiversidad. Los ejemplos de ICCA incluyen territorios indígenas, áreas protegidas por indígenas, paisajes terrestres y marinos, sitios y especies sagrados, rutas migratorias de pueblos indígenas móviles, territorios de patrimonio biocultural, reservas de recursos sostenibles, pesquerías, y áreas administradas comunitariamente."
+    title_2: "¿Qué es el Consorcio ICCA?"
+    para_2: "El Consorcio ICCA se estableció durante el Congreso Mundial de Conservación 2008 por muchas pequeñas Organizaciones No Gubernamentales (ONG) respetadas mutuamente y organizaciones representantes de cuerpos indígenas y comunitarios con años de experiencia en temas de ICCA. El grupo desarrolló un programa amplio para promover el reconocimiento y soporte apropiado  de las ICCA a nivel nacional e internacional. Hay más detalles disponibles en el sitio web %{icca_forum_link}."
+    title_3: "¿Qué es el Registro ICCA?"
+    para_3: "El Registro es una base de datos en línea que contiene información sobre ICCA a nivel mundial, mantenida por el United Nations Environment Programme’s World Conservation Monitoring Centre UNEP-WCMC (en español Centro Mundial de Monitoreo de la Conservación del Programa de las Naciones Unidas para el Medio Ambiente). Este Registro se ha establecido para construir una base de conocimientos acerca de las ICCA que aumente la información sobre estas áreas especiales, documente sus valores, mejore la comprensión y reconocimiento de sus propósitos e impactos, e involucre a más comunidades locales y tradicionales en las arenas de conservación y políticas de biodiversidad."
+    title_4: "¿Qué información contiene el Registro??"
+    para_4: "Los dos tipos de información principales que contiene el Registro incluyen: (1) información descriptiva, como los principales hábitats al interior de la ICCA y los nombres de la comunidad o comunidades que viven dentro o cerca de la ICCA, y (2) información espacial, como el tamaño, ubicación y límites del área. Se incluyen detalles adicionales si los hay, como información sobre la historia, gobernanza y administración de una área, detalles de los procesos comunitarios de toma de decisiones y los factores socioeconómicos. Se incorporan datos multimedia, como fotos y videos, en los estudios de caso para ampliar los atributos visuales de las comunidades y la riqueza de su conocimiento y esfuerzos de conservación."
+    title_5: "¿Quién podrá acceder a los datos en el Registro?"
+    para_5: "Todos los estudios de caso agregados al Registro están georeferenciados y abietos al público a través de mapas interactivos o listas de países.  Todos los demás datos contenidos dentro del Registro (por ejemplo, presentados a través del cuestionario de registro) no se encuentran en línea por el momento y no están abiertos al público general.  Una vez el Registro esté completamente en línea en los próximos años, el contenido estará disponible libremente al público a través de la página web, siempre y cuando la comunidad ICCA haya dado su aprobación. Sin embargo, si una comunidad no está en capacidad de permitir que la información sobre su ICCA esté disponible libremente, puede especificar esto en el “Formulario de Consentimiento Previo, Libre e Informado (FPIC por sus siglas en inglés)”. Es obligatorio completar este formulario cuando se presenta información sobre una ICCA. Las comunidades pueden escoger hasta dónde se comparte su información tal como sigue:"
+    information_option_1: "La información está disponible para todos;"
+    information_option_2: "La información está disponible para los administradores del Registro, y para otros con previa autorización de los aportantes de la misma (debe ser otorgada en cada caso particular);"
+    information_option_3: "La información no está disponible nadie excepto los administradores del Registro, en cualquier circunstancia."
+    title_6: "¿Cómo agrego la información de una ICCA al Registro?"
+    para_6: "Tiene dos opciones para aportar información acerca de una ICCA: (1) inscribiendo la ICCA y (2) creando un estudio de caso. Ya que el Registro ICCA se adhiere al principio de Consentimiento Previo, Libre e Informado (FPIC), usted debe primero revisar la \"Hoja de Información FPIC\" y luego completar el “Formulario FPIC”. Para inscribir una ICCA, el cuestionario del Registro se puede completar y presentado en línea a través de este sitio web o la página “Participe” (insert link).  El cuestionario del Registro también se puede descargar como PDF o documento de Word, completar físicamente y enviar al equipo  UNEP-WCMC a iccaregistry@unep-wcmc.org. Toda información sobre cualquier ICCA en el mundo es siempre bienvenida."
+    title_7: "¿Por qué no puedo encontrar información de ICCA en ciertos  países?"
+    para_7: "Este sitio web aún está en etapas tempranas de la base de datos en línea del Registro ICCA. Por lo tanto, sólo contiene información para un reducido número de países, incluyendo cuatroi países piloto que fueron seleccionados durante la fase inicial del proyecto (Fiji, Kenia, México y Filipinas)."
+    para_8: "El sitio se actualizará gradualmente con más países y sitios a medida que más comunidades participen, por lo cual le invitamos a revisar de nuevo si hay cambios. Nuevas contribuciones sobre ICCA en cualquier país se pueden presentar en cualquier momento. Para presentar información de una ICCA, por favor lea el FAQ \"¿Cómo agrego información de una ICCA al Registro?\" o visite la página %{participate_link}."
+
+
+  acknowledgements:
+    title: "Reconocimientos"
+    para: "El equipo de Registro ICCA gustaría agradecer a las siguientes personas por sus contribuciones y dedicación en apoyo de ICCA:"
+    volunteers: "Voluntarios"
+    translators: "Traductores"
+
+  project:
+    title: "El proyecto Registro ICCA"
+    para_1: "The Indigenous and Community Conserved Areas Registry was developed in response to a growing recognition that local communities and indigenous peoples play a significant role in protecting and maintaining biodiversity and ecosystem services. Despite this raised awareness, there has been no consistent way to measure and document the values and roles of communities in conservation; as a result, the Registry idea was generated. The aim is to build a solid base of evidence at a scale that approaches our current knowledge of the biodiversity conservation impact of government managed national parks and protected areas."
+    para_2: "The development of the ICCA Registry has been guided by input at recent global meetings and is advised by the %{link}, a collaborative group of experts and organizations formed during the 2008 World Conservation Congress. Through a multi-faceted process, this group is gradually working with indigenous and local communities who want to raise awareness of community governance and the contributions that Indigenous Peoples and Local Communities are making to conservation. UNEP-WCMC, as a partner in the ICCA Consortium, is playing a key role in building awareness and recognition of ICCAs through management of an interactive registry for ICCAs worldwide."
+    para_3: "The contribution of case studies and registration of areas governed by communities has been a collaborative process since 2009, ensuring slow but positive support of the concept, and engaging staff at UNEP-WCMC as well as members of the ICCA Consortium, community members, other UN institutions, governments and consultants in the field. Indigenous Peoples and Local Communities are core contributors to this knowledge base.  We invite feedback at any time to ensure this product meets the needs of communities while also ensuring protection of sensitive information. To contact us, please click %{link}."
+    para_4: "The Registry, developed in the same structure as the World Database on Protected Areas (WDPA; see %{link}), stores two types of information critical to understanding ICCAs: (1) descriptive information, such as the main habitats within the ICCA and the management features of the community or communities living within or near the ICCA, and (2) spatial information, such as the size and location of the area. In the future, the Registry will be linked to the WDPA for enhanced access to information about protected areas and ICCAs. This also serves as a mechanism to increase information in the WDPA about diverse forms of protected area governance."
+    volunteers: "volunteers"
+
+    fpic_title: "¿Qúe es el Consentimiento Libre, Previo e Informado (CLPI)?"
+    fpic_para: "El Registro adhiere al principio de Consentimiento Libre, Previo e Informado (CLPI), de manera que cada comunidad debe llenar un formulario de CLPI antes de inscribirse. El propósito de este formulario de consentimiento es garantizar que las comunidades indígenas y locales sean conscientes del proceso de aporte de información al Registro, sepan qué información será utilizada o consultada y cómo, y puedan decidir sobre qué información se revelará a través de diversos medios (como el sitio web de las ICCA y futuras publicaciones analíticas). Todas las comunidades pueden elegir en qué medida se comparte la información que han aportado.  Ninguna información enviada al Registro será compartida sin consentimiento."
+
+    future_title: "El Futuro del Registro ICCA"
+    future_para: "El número de comunidades que inscriban sus ICCA en el Registro probablemente aumentará a medida que la importancia de la conservación administrada localmente gane mayor reconocimiento a escala global.  Se está formando un grupo de asesores para garantizar la validación de las comunidades que se inscriban, lo cual mantendrá la credibilidad del proceso y el beneficio para aquellas comunidades que trabajan con diligencia en proteger y administrar sus recursos y cultura. En última instancia, esta riqueza de información puede servir como plataforma de aprendizaje entre los pueblos indígenas y miembros de comunidades alrededor del mundo que comparten éxitos y desafíos comunes a pesar de sus diferentes culturas y hábitats. En el futuro, anticipamos el desarrollo de una base de datos consultable y parcialmente accesible en línea, que pueda ayudar a dar contenido a las políticas y contribuir al reconocimiento de las comunidades como guardianes fundamentales de la biodiversidad y los modos de subsistencia."
 
 
   contribute_menu:
-    title: "Siga estos Pasos para Contribuir"
+    title: "Sigue estos pasos para contribuir"
     step_list:
       step_1: 
-        link_text: "Lea el ICCA Hoja de Información CIPV"
+        link_text: "Lea el ICCA Hoja de Información CPIC"
       step_2: 
-        text: "Revise y firme el Formulario de Consentimiento Informado, Previo y Voluntario"
+        text: "Revise y firme el Formulario de Consentimiento Informado, Prévio y Voluntario"
         sub_step_1:
           link_text: 'Descargue'
           text: ', rellene y remita'
@@ -156,18 +285,9 @@ es:
             link_text: 'Regístrese'
             text: ' y rellene en línea'
       step_3: 
-        logged_in: 'Completar el Cuestionario ICCA'
-        logged_out: 'Rellene el Cuestionario ICCA en línea'
-      step_4: 'Suba a la aplicación datos espaciales o de otro tipo'
-
+        logged_in: 'Complete el Cuestionario ICCA'
+        logged_out: 'Complete el cuestionario ICCA en línea'
+      step_4: 'Suba a la aplicación datos espaciales u de otro tipo'
 
   form:
-    key: "dHdsZWdiVHZ5U0NDcXBQZWJUVGlSNmc6MA"
-
-  #ActiveRecord stuff...
-  activerecord:
-    errors:
-      template:
-        header: "Sorry, there were some problems with what you submitted"
-        body: "There were problems with the following fields:"
-
+    key: "dE5xLTdLVjFuV2VCUlczUVk2bE1ZMGc6MA"
