@@ -1,6 +1,6 @@
 source :rubygems
 
-gem "rails", '2.3.16'
+gem "rails", '2.3.18'
 gem "sqlite3-ruby", "1.3.2"
 gem "pg"
 gem "formtastic"
