@@ -30,18 +30,17 @@ es:
 
   files:
     name:
-      questionnaire: "#"
-      questionnaire_intro: "#"
-      fpic_info_sheet: "#"
-      fpic_signature_form: "#"
-      case_study_template: "#"
+      questionnaire: "Cuestionario del Registro ICCA"
+      fpic_info_sheet: "Hoja de Información CPLI"
+      fpic_signature_form: "Formulario de Firma CLPI"
+      case_study_template: "Plantilla de Estudio de Casos Prácticos del Registro ICCA"
     location:
-      questionnaire: "/docs/ICCA%20Registry%20Questionnaire.pdf"
-      questionnaire_word: "/docs/ICCA%20Registry%20Questionnaire%20(Offline).dotm"
+      questionnaire: "/docs/Cuestionario del Registro ICCA.pdf"
+      questionnaire_word: "/docs/Cuestionario del Registro ICCA (Offline).dotm"
       questionnaire_intro: "/docs/Introduction to the ICCA Registry Questionnaire.pdf"
-      fpic_info_sheet: "/docs/FPIC Information Sheet.pdf"
-      fpic_signature_form: "/docs/FPIC Signature Form.doc"
-      case_study_template: "/docs/ICCA Registry Case Study Template.pdf"
+      fpic_info_sheet: "/docs/Hoja de Informacion CLPI.pdf"
+      fpic_signature_form: "/docs/Formulario de Firma CLPI.doc"
+      case_study_template: "/docs/Plantilla de Estudio de Casos Practicos del Registro ICCA.pdf"
 
     wdpa_consent: "/docs/WDPA%20ICCA%20consent%20form.doc"
 
@@ -204,7 +203,7 @@ es:
     help: "Favor contactarnos en cualquier momento a %{mail_link}"
 
     offline_title: "Opción 2. Instrucciones para descargar y devolver el cuestionario"
-    offline_step_1: "Descargue y complete el Fomulario FPIC  %{fpic_link} con las firmas principales de miembros de su comunidad. Envíe el formulario a los administradores del Registro por correo electrónico (%{mail_link}) o físico. "
+    offline_step_1: "Descargue y complete el Fomulario FPIC  %{fpic_link} con las firmas principales de miembros de su comunidad."
     offline_step_2: "Descargue el cuestionario del Registro ICCA, complételo con la información de sus comunidad, y devuélvalo por correo electrónico o físico (como en el Paso 2)."
     download_options: "The questionnaire is available to download in %{pdf_link} format (to print and then scan or post) or %{word_link} format (to fill in electronically and send via email)."
     offline_step_3: "(Opcional pero recomendado) Envíe los datos espaciales (como mapas) y documentos relevantes (como planes administrativos) al correo electrónico iccaregistry@unep-wcmc.org. %{mail_link}."
