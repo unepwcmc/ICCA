@@ -34,6 +34,8 @@ set :scm, :git
 set :scm_username, "unepwcmc-read"
 set :deploy_via, :remote_cache
 set :copy_exclude, [ '.git' ]
+set :branch, "Brightbox"
+
 
 ### Other options you can set ##
 # Comma separated list of additional domains for Apache
