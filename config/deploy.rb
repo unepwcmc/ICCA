@@ -76,6 +76,10 @@ set :branch, "Brightbox"
 # items are symlinked in when the code is updated.
 
 
+set :local_shared_files, %w(config/database.yml)
+
+
+
 ## Global Shared Area
 # These are the list of files and directories that you want
 # to share between all releases of your application across all servers.
@@ -162,27 +166,27 @@ default_run_options[:pty] = true
 # lingering until the workers time out
 # set :passenger_restart_strategy, :hard
 
-#task :setup_production_database_configuration do
-#  the_host = Capistrano::CLI.ui.ask("Database IP address: ")
-#  database_name = Capistrano::CLI.ui.ask("Database name: ")
-#  database_user = Capistrano::CLI.ui.ask("Database username: ")
-#  pg_password = Capistrano::CLI.password_prompt("Database user password: ")
+task :setup_production_database_configuration do
+  the_host = Capistrano::CLI.ui.ask("Database IP address: ")
+  database_name = Capistrano::CLI.ui.ask("Database name: ")
+  database_user = Capistrano::CLI.ui.ask("Database username: ")
+  pg_password = Capistrano::CLI.password_prompt("Database user password: ")
 
-#  require 'yaml'
-#
-#  spec = {
-#    "#{rails_env}" => {
-#      "adapter" => "postgresql",
-#      "database" => database_name,
-#      "username" => database_user,
-#      "host" => the_host,
-#      "password" => pg_password
-#    }
-#  }
+  require 'yaml'
 
-#  run "mkdir -p #{shared_path}/config"
-#  put(spec.to_yaml, "#{shared_path}/config/database.yml")
-#end
+  spec = {
+    "#{rails_env}" => {
+      "adapter" => "postgresql",
+      "database" => database_name,
+      "username" => database_user,
+      "host" => the_host,
+      "password" => pg_password
+    }
+  }
+
+  run "mkdir -p #{shared_path}/config"
+  put(spec.to_yaml, "#{shared_path}/config/database.yml")
+end
 
 #namespace :mailer do
 #  task :setup do
@@ -213,6 +217,6 @@ default_run_options[:pty] = true
 #  end
 #end
 
-#after "deploy:setup", :setup_production_database_configuration
+after "deploy:setup", :setup_production_database_configuration
 #after "deploy:setup", 'mailer:setup'
 
