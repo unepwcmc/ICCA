@@ -10,8 +10,12 @@ class Photo < ActiveRecord::Base
                             :full => "700x525>"
                             },
                     :storage => :s3,
-                    :s3_credentials => { :access_key_id     => ENV['S3_KEY'], 
-                                       :secret_access_key => ENV['S3_SECRET'] },
+#                    :s3_credentials => { :access_key_id     => ENV['S3_KEY'], 
+#                                       :secret_access_key => ENV['S3_SECRET'] },
+
+                    :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+
+
                     :path => "avatars/:id/:style_:extension",
                     :bucket => "icca-#{RAILS_ENV}-images"
 end
