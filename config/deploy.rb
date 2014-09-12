@@ -76,7 +76,7 @@ set :branch, "Brightbox"
 # items are symlinked in when the code is updated.
 
 
-set :local_shared_files, %w(config/database.yml)
+set :local_shared_files, %w(config/database.yml config/s3.yml)
 
 
 
@@ -217,6 +217,27 @@ end
 #  end
 #end
 
+task :setup_s3_access do
+
+access_key_id = Capistrano::CLI.ui.ask("S3 access key: ")
+secret_access_key = Capistrano::CLI.ui.ask("S3 secret access key: ")
+bucket = Capistrano::CLI.ui.ask("bucket: ")
+
+require 'yaml'
+
+  spec = {
+      "access_key_id" => access_key_id,
+      "secret_access_key" => secret_access_key,
+      "bucket" => bucket,
+    }
+
+
+  run "mkdir -p #{shared_path}/config"
+  put(spec.to_yaml, "#{shared_path}/config/s3.yml")
+end
+
+
+after "deploy:setup", :setup_s3_access
 after "deploy:setup", :setup_production_database_configuration
 #after "deploy:setup", 'mailer:setup'
 
