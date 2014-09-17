@@ -9,7 +9,7 @@ require 'brightbox/passenger'
 set :generate_webserver_config, false
 
 require 'rvm/capistrano'
-set :rvm_ruby_string, '1.8.7-head'
+set :rvm_ruby_string, 'ruby-1.8.7-p374'
 
 ssh_options[:forward_agent] = true
 
