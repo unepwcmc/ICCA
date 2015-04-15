@@ -194,7 +194,7 @@ en:
     para_1: "First read the %{fpic_link} and discuss the ICCA Registry with community members. Then select from the following two options."
 
     register_online_title: "Option 1) Register Online"
-    online_step_1: "%{signup_link} online with a username (the name of your ICCA) and a password. After your participation is authorized, you will receive an email with a link to the questionnaire. Click on the link to begin the questionnaire."
+    online_step_1: %{signup_link} online with a username (the name of your ICCA) and a password. After your participation is authorized, you will receive an email with a link to the questionnaire. Click on the link to begin the questionnaire.
     online_step_2: Follow the online instructions to complete the ICCA Registry questionnaire, which includes providing an electronic signature in the FPIC section. You can save the information and return to the questionnaire later by logging on with your username and password details.
     online_step_2_note: "(Note: if the ICCA is already recognised by national legislation or a protected area system, the community should work with government representatives where possible to provide spatial and other information.)"
     online_step_3: Submit spatial data (such as GIS layers or maps), photos and relevant documents (such as management plans, community agreements and documented awards) as requested in the online questionnaire.

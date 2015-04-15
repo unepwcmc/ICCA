@@ -8,10 +8,10 @@ gem "paperclip"
 gem "aws-s3"
 gem "cancan"
 gem "rake"
+gem "ruby-debug"
 gem "ya2yaml"
 
 group :development do
-  gem "debugger"
   gem "taps", "~> 0.3.22"
   gem "heroku" # possibly obsolete?
   gem 'capistrano', '~> 2.15.5'
