@@ -1,7 +1,7 @@
 set :default_stage, 'staging'
 
 require 'capistrano/ext/multistage'
-## Generated with 'brightbox' on 2013-06-27 08:45:55 +0100
+## Generated with 'brightbox-capify' on 2015-04-15 21:55:19 +0100
 gem 'brightbox', '>=2.4.4'
 require 'brightbox/recipes'
 require 'brightbox/passenger'
@@ -16,11 +16,6 @@ ssh_options[:forward_agent] = true
 # The name of your application.  Used for deployment directory and filenames
 # and Apache configs. Should be unique on the Brightbox
 set :application, "ICCA"
-
-
-# got sick of "gem X not found in any of the sources" when using the default whenever recipe
-# probable source of issue:
-# https://github.com/javan/whenever/commit/7ae1009c31deb03c5db4a68f5fc99ea099ce5655
 
 # Target directory for the application on the web and app servers.
 set(:deploy_to) { File.join("", "home", user, application) }
@@ -37,7 +32,7 @@ set :copy_exclude, [ '.git' ]
 set :branch, "Brightbox"
 
 
-### Other options you can set ##
+### Other options you can set ###
 # Comma separated list of additional domains for Apache
 # set :domain_aliases, "www.example.com,dev.example.com"
 
@@ -48,11 +43,13 @@ set :branch, "Brightbox"
 #
 # If you're using Bundler, then you don't need to specify your
 # gems here as well as there (and the bundler gem is installed for
-# you automatically)
-#
+# you automatically). If you're not using bundler, uncomment the
+# following line to explicitly disable it
+# set :bundle_disable, true
+# 
 # Gem with a source (such as github)
 # depend :remote, :gem, "tmm1-amqp", ">=0.6.0", :source => "http://gems.github.com"
-#
+# 
 # Specify your specific Rails version if it is not vendored
 # depend :remote, :gem, "rails", "=2.2.2"
 #
@@ -74,11 +71,8 @@ set :branch, "Brightbox"
 #
 # The shared area is prepared with 'deploy:setup' and all the shared
 # items are symlinked in when the code is updated.
-
-
+# set :local_shared_dirs, %w(public/upload)
 set :local_shared_files, %w(config/database.yml config/s3.yml)
-
-
 
 ## Global Shared Area
 # These are the list of files and directories that you want
@@ -156,15 +150,16 @@ default_run_options[:pty] = true
 # directly as 'user' by the run command. If you switch on sudo
 # make sure you set the :runner variable - which is the user the
 # capistrano default tasks use to execute commands.
-# NB. This just affects the default recipes unless you use the
-# 'try_sudo' command to run your commands.
+# NOTE: This just affects the default recipes unless you use the
+# 'try_sudo' command to run your commands. The 'try_sudo' command
+# has been deprecated in favour of 'run "#{sudo} <command>"' syntax.
 # set :use_sudo, false
 # set :runner, user## Passenger Configuration
 # Set the method of restarting passenger
-# Defaults to :hard which is used to instantly free up database connections
-# :soft uses the standard touch tmp/restart.txt which leaves database connections
-# lingering until the workers time out
-# set :passenger_restart_strategy, :hard
+# :soft is the default and just touches tmp/restart.txt as normal.
+# :hard forcibly kills running instances, rarely needed now but used
+# to be necessary with older versions of passenger
+# set :passenger_restart_strategy, :soft
 
 task :setup_production_database_configuration do
   the_host = Capistrano::CLI.ui.ask("Database IP address: ")
@@ -188,35 +183,6 @@ task :setup_production_database_configuration do
   put(spec.to_yaml, "#{shared_path}/config/database.yml")
 end
 
-#namespace :mailer do
-#  task :setup do
-#    smtp_user = Capistrano::CLI.ui.ask("SMTP username: ")
-#    smtp_password = Capistrano::CLI.password_prompt("SMTP password: ")
-#
-#    require 'yaml'
-
-#    spec = {
-#      "#{rails_env}" => {
-#        :default_url_options => {
-#          :host => "#{domain}"
-#        },
-#        :smtp_settings => {
-#          :enable_starttls_auto => true,
-#          :address => 'pod51017.outlook.com',
-#          :port => 587,
-#          :domain => 'unep-wcmc.org',
-#          :authentication => 'login',
-#          :user_name => smtp_user,
-#          :password => smtp_password
-#        }
-#      }
-#    }
-
-#    run "mkdir -p #{shared_path}/config"
-#    put(spec.to_yaml, "#{shared_path}/config/mailer_config.yml")
-#  end
-#end
-
 task :setup_s3_access do
 
 access_key_id = Capistrano::CLI.ui.ask("S3 access key: ")
@@ -239,5 +205,3 @@ end
 
 after "deploy:setup", :setup_s3_access
 after "deploy:setup", :setup_production_database_configuration
-#after "deploy:setup", 'mailer:setup'
-
