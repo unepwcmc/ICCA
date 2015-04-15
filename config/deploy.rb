@@ -2,7 +2,7 @@ set :default_stage, 'staging'
 
 require 'capistrano/ext/multistage'
 ## Generated with 'brightbox' on 2013-06-27 08:45:55 +0100
-gem 'brightbox', '>=2.3.9'
+gem 'brightbox', '>=2.4.4'
 require 'brightbox/recipes'
 require 'brightbox/passenger'
 

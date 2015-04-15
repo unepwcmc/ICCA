@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "rails", '2.3.18'
 gem "sqlite3-ruby", "1.3.2"
@@ -12,7 +12,13 @@ gem "rake"
 gem "ruby-debug"
 gem "ya2yaml"
 
+gem "highline", "1.6.21" # last version to support ruby 1.8.7
+
 group :development do
   gem "taps", "~> 0.3.22"
-  gem "heroku"
+  gem "heroku" # possibly obsolete?
+  gem 'capistrano', '~> 2.15.5'
+  gem 'capistrano-ext'
+  gem 'rvm-capistrano', :require => false
+  gem 'brightbox', '~> 2.4.4'
 end
