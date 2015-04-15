@@ -12,12 +12,11 @@ gem "rake"
 gem "ruby-debug"
 gem "ya2yaml"
 
-gem "highline", "1.6.21" # last version to support ruby 1.8.7
-
 group :development do
   gem "taps", "~> 0.3.22"
   gem "heroku" # possibly obsolete?
   gem 'capistrano', '~> 2.15.5'
+  gem "highline", "1.6.21" # last version to support ruby 1.8.7, required by capistrano
   gem 'capistrano-ext'
   gem 'rvm-capistrano', :require => false
   gem 'brightbox', '~> 2.4.4'
