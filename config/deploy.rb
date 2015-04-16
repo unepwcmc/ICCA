@@ -29,7 +29,7 @@ set :scm, :git
 set :scm_username, "unepwcmc-read"
 set :deploy_via, :remote_cache
 set :copy_exclude, [ '.git' ]
-set :branch, "Brightbox"
+set :branch, "master"
 
 
 ### Other options you can set ###
