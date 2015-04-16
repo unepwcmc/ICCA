@@ -1,6 +1,6 @@
 <div class="span-24 column widgetContainer">
   <div class="widgetHome">
-		<% if request.env['HTTP_USER_AGENT'].downcase =~ /msie/i%>
+		<% if request.env['HTTP_USER_AGENT'] && request.env['HTTP_USER_AGENT'].downcase =~ /msie/i%>
 			<%= link_to image_tag("ie_banner.jpg"), site_path(2) %>
 		<% else %>	
 	    <div id="slide-holder">
