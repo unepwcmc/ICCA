@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+# probably fixes  ArgumentError (invalid byte sequence in US-ASCII) globally
+if RUBY_VERSION =~ /1.9/ # assuming you're running Ruby ~1.9
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
+
 gem "rails", '2.3.18'
 gem "pg"
 gem "formtastic"
