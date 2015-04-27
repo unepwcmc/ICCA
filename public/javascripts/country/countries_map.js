@@ -32,7 +32,7 @@ $(document).ready(function() {
         zoom: 4,
         center: myLatlng,
         disableDefaultUI: true,
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        mapTypeId: google.maps.MapTypeId.SATELLITE
     };
     map = new google.maps.Map(document.getElementById("countries_map"), myOptions);
     var smallMap = ($('#countries_map').width() > 400 ? false : true)
