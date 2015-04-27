@@ -3,38 +3,21 @@ This app uses the standard bundle install --path vendor/ and bundle
 package procedure.
 
 # Deployment
-The app is hosted on heroku, there is a staging app at http://icca-new-stage.heroku.com/en/home and production is currently at http://iccaregistry.org/
 
+The app is deployed to Brightbox, for both staging and production environments (using capistrano-ext).
 
-point the icca-stage remote at:
+It has been ported to ruby 1.9.3, but because it is a Rails 2 app there is a dependency on old rubygems. If you get:
 
-  Fetch URL: git@heroku.com:icca-new-stage.git
+  `undefined method ``source_index' for Gem:Module (NoMethodError)`
 
-  Push  URL: git@heroku.com:icca-new-stage.git
+the solution is:
 
-
-To deploy the development branch to staging:
-
-  git push icca-stage develop:master
-
-
-point the heroku branch remote at:
-
-  Fetch URL: git@heroku.com:icca.git
-
-  Push  URL: git@heroku.com:icca.git
-
-
-To deploy the production app
-
-  git push heroku master
-
-## Running heroku commands on specific apps
-You can specify the app to run a command on with the --app option, e.g.
-
-  heroku rake db:migrate --app icca-new-stage
-
+  `rvm rubygems --force latest-1.8`
+  
 # Translations
+
+__Please note the following infromation needs to be updated to reflect new deployment hosts__
+
 Translations are handled using tolk, which is installed as a plugin, as per the github page for tolk
 
 There are 2 ways to get the resulting translations from staging
