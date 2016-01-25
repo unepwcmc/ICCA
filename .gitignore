@@ -6,3 +6,5 @@ log/*
 .bundle/*
 vendor/ruby*
 .DS_Store
+
+config/s3.yml

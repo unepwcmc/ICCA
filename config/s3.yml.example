@@ -1,0 +1,13 @@
+development:
+  access_key_id: xxxxxxxxxxxx
+  secret_access_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+test:
+  access_key_id: xxxxxxxxxxxx
+  secret_access_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+staging:
+  access_key_id: xxxxxxxxxxxx
+  secret_access_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+production:
+  access_key_id: xxxxxxxxxxxx
+  secret_access_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
