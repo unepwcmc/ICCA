@@ -10,6 +10,7 @@ class Photo < ActiveRecord::Base
     },
     :storage => :s3,
     :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+    :url => ":s3_domain_url",
     :path => "avatars/:id/:style_:extension",
     :bucket => "icca-#{RAILS_ENV}-images"
 end

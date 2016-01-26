@@ -9,6 +9,7 @@ class Form < ActiveRecord::Base
   validates_uniqueness_of :name, :message => 'Please give the questionnaire a unique name for easier identification'
 
   has_attached_file :spatial_data,
+    :url => ":s3_domain_url",
     :storage => :s3,
     :s3_credentials => {
       :access_key_id     => ENV['S3_KEY'],
