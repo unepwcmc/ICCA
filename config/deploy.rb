@@ -9,7 +9,7 @@ require 'brightbox/passenger'
 set :generate_webserver_config, false
 
 require 'rvm/capistrano'
-set :rvm_ruby_string, 'ruby-1.9.3-p551'
+set :rvm_ruby_string, 'ruby-2.1.2'
 
 ssh_options[:forward_agent] = true
 
@@ -46,10 +46,10 @@ set :branch, "master"
 # you automatically). If you're not using bundler, uncomment the
 # following line to explicitly disable it
 # set :bundle_disable, true
-# 
+#
 # Gem with a source (such as github)
 # depend :remote, :gem, "tmm1-amqp", ">=0.6.0", :source => "http://gems.github.com"
-# 
+#
 # Specify your specific Rails version if it is not vendored
 # depend :remote, :gem, "rails", "=2.2.2"
 #
