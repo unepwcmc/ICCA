@@ -3,6 +3,9 @@ require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 require 'test_help'
 require "mocha/test_unit"
 
+# terrible hack for ruby 2.2
+Mocha::Integration::TestUnit::AssertionCounter = Mocha::Integration::AssertionCounter
+
 class ActiveSupport::TestCase
   # Transactional fixtures accelerate your tests by wrapping each test method
   # in a transaction that's rolled back on completion.  This ensures that the

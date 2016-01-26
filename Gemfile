@@ -8,7 +8,6 @@ gem "paperclip"
 gem "aws-sdk", '~> 2.2.13'
 gem "cancan"
 gem "rake"
-gem 'mocha'
 gem "ya2yaml"
 gem "iconv", '~> 1.0.4'
 
@@ -22,4 +21,9 @@ end
 
 group :development, :test do
   gem "byebug"
+end
+
+group :test do
+  gem 'mocha'
+  gem 'test-unit'
 end
