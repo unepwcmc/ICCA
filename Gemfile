@@ -8,6 +8,7 @@ gem "paperclip"
 gem "aws-sdk", '~> 2.2.13'
 gem "cancan"
 gem "rake"
+gem 'mocha'
 gem "ya2yaml"
 gem "iconv", '~> 1.0.4'
 
@@ -17,7 +18,6 @@ group :development do
   gem 'capistrano-ext'
   gem 'rvm-capistrano', :require => false
   gem 'brightbox', '~> 2.4.4'
-  gem "sqlite3-ruby", "1.3.2"
 end
 
 group :development, :test do
