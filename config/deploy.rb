@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'icca'
-set :repo_url, 'git@github.com:unepwcmc/parcc.git'
+set :repo_url, 'git@github.com:unepwcmc/ICCA.git'
 
 set :branch, 'server-migration'
 
