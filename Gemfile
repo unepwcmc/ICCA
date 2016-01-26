@@ -13,10 +13,11 @@ gem "iconv", '~> 1.0.4'
 
 group :development do
   gem "taps", "~> 0.3.22"
-  gem 'capistrano', '~> 2.15.5'
-  gem 'capistrano-ext'
-  gem 'rvm-capistrano', :require => false
-  gem 'brightbox', '~> 2.4.4'
+  gem 'capistrano-rvm',   '~> 0.1', require: false
+  gem 'capistrano', '~> 3.4.0', require: false
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-passenger', '~> 0.1.1', require: false
 end
 
 group :development, :test do
