@@ -12,7 +12,6 @@ gem "ya2yaml"
 gem "iconv", '~> 1.0.4'
 
 group :development do
-  gem "taps", "~> 0.3.22"
   gem 'capistrano', '~> 2.15.5'
   gem 'capistrano-ext'
   gem 'rvm-capistrano', :require => false
