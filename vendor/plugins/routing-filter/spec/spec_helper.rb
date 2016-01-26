@@ -29,7 +29,7 @@ end
 
 module RoutingFilterHelpers
   def draw_routes(&block)
-    set = returning ActionController::Routing::RouteSet.new do |set|
+    set = ActionController::Routing::RouteSet.new.tap do |set|
       class << set; def clear!; end; end
       set.draw &block
       silence_warnings{ ActionController::Routing.const_set 'Routes', set }
@@ -38,7 +38,7 @@ module RoutingFilterHelpers
   end
 
   def instantiate_controller(params)
-    returning ActionController::Base.new do |controller|
+    ActionController::Base.new.tap do |controller|
       request = ActionController::TestRequest.new
       url = ActionController::UrlRewriter.new(request, params)
       controller.stub!(:request).and_return request
@@ -96,9 +96,9 @@ module RoutingFilterHelpers
     @locale_filter = @set.filters.first
     @pagination_filter = @set.filters.last
   end
-  
+
   def with_deactivated_filters(*filters, &block)
-    states = filters.inject({}) do |states, filter| 
+    states = filters.inject({}) do |states, filter|
       states[filter], filter.active = filter.active, false
       states
     end
